@@ -1,6 +1,9 @@
 :Character:
 ## This is the Character block, where you add some basic information about your character that can be accessed from outside, like their name or place on the select screen.
 ## You can also add another file to this with the Skeleton: property.
+
+Name: Testuo
+EditorName: Testuo
 :Specs-PhysicsMovement:
 # Automatic creation
 :Specs-Graphics:
