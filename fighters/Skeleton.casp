@@ -6,9 +6,24 @@
 ## etc.
 :Specs-PhysicsSystem:
 # Automatic creation
+:Specs-PhysicsMovement:
+def MOVE_Dashes_CanRun bool() = 1
+def MOVE_Dashes_CanBackdash bool() = 1
+def MOVE_Landing_RecoverCrouching bool() = 0
 :Specs-Graphics:
 # Automatic creation
+:Specs-AudioSFX:
+# Automatic creation
+:Specs-AttacksTypes:
+# Automatic creation
+:Specs-AttacksMechanics:
+def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
 # Automatic creation
 :Variables:
 ## These variables are common to all characters since it's in the skeleton.
+
+var Lane int() = 1
+:Shift-In-Stand:
+# Simple medium attack template
+AttackRegister(Light, 5A+B)

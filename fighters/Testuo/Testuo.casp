@@ -4,6 +4,7 @@
 
 Name: Testuo
 EditorName: Testuo
+Skeleton: res://fighters/Skeleton.casp
 :Specs-PhysicsMovement:
 # Automatic creation
 :Specs-Graphics:
