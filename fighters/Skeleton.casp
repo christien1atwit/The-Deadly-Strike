@@ -7,7 +7,11 @@
 :Specs-PhysicsTeching:
 # Automatic creation
 :Specs-PhysicsSystem:
-# Automatic creation
+def PHYSICS_StandardHurtbox_Bottom int() = 0
+def PHYSICS_StandardColbox_Bottom int() = 0
+def PHYSICS_StandardColbox_Width int() = 4000
+def PHYSICS_StandardHurtbox_Use bool() = 1
+def PHYSICS_StandardColbox_Use bool() = 1
 :Specs-PhysicsMovement:
 def MOVE_Dashes_CanRun bool() = 1
 def MOVE_Dashes_CanBackdash bool() = 1
@@ -27,12 +31,27 @@ def ATTACK_CanBlockInAir bool() = 0
 # Automatic creation
 :Variables-System:
 var current_lane int() = 1
+
+def DEF_SCALE int() = 3000
+def SCALING_AMOUNT int() = 375
+def DEF_ORIGIN_X int() = 75
+def DEF_ORIGIN_Y int() = 0
+def ORIGIN_AMOUNT=20
+var current_scale int() = 3000
 :Variables:
 ## These variables are common to all characters since it's in the skeleton.
 ##var current_lane int() = 1
 :Custom-NeutralStateCommon:
 CallParent()
 Call(Raise-Lane-Flag)
+SetColboxMode(1)
+SetColboxLayer(current_lane)
+:Init-Set-Collision-Layer:
+## Sets the Colliders of each of the characters to interact only with others on the same layer/line as them
+
+SetColboxMode(1)
+SetColboxLayer(current_lane)
+##LogB("hello")
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
@@ -54,12 +73,21 @@ F1:
 endif
 :Shift-In-Stand:
 # Simple medium attack template
+Call(Raise-Lane-Flag)
 AttackRegister(Light, 5A+B)
+AttackDuration(20)
 
-
-
-F1:
-	Flag(BackLane)
+Vcurrent_lane>0:
+	Sub(current_scale, 18)
+	ModelScale(current_scale)
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
 endif
 :State-Template-Attack-Normal-Lane:
 # Simple medium attack template for Lane Combat
