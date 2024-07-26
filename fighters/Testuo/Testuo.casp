@@ -215,11 +215,14 @@ AttackRegister(Light, 5A)
 # Adjust parameters here
 AttackDamage(1000)
 AttackDuration(28)
-
+HitboxRequires()
 
 # Put your animation here
 Anim(5A)
 
+F1:
+	Log(current_lane)
+endif
 # Active frames and hitboxes
 F3-8:
 	Hitbox(1000, 15000, 20000, 30000)
