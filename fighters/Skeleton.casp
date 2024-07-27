@@ -44,8 +44,8 @@ var current_scale int() = 3000
 :Custom-NeutralStateCommon:
 CallParent()
 Call(Raise-Lane-Flag)
-SetColboxMode(1)
-SetColboxLayer(current_lane)
+#SetColboxMode(1)
+#SetColboxLayer(current_lane)
 :Init-Set-Collision-Layer:
 ## Sets the Colliders of each of the characters to interact only with others on the same layer/line as them
 
