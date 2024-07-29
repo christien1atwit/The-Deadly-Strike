@@ -14,7 +14,7 @@ def PHYSICS_StandardHurtbox_Top int() = 30000
 :Specs-Graphics:
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
-def GRAPHICS_Scale int() = 3000
+def GRAPHICS_Scale int() = 4000
 def GRAPHICS_SPRITESHEET_Testuo int() = 0
 def GRAPHICS_SPRITESHEET_Testuo___Path str() = res://fighters/Testuo/Testuo_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 71
