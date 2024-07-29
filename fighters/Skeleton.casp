@@ -33,6 +33,7 @@ def MOVE_StandToCrouch_Time int() = 3
 def MOVE_CrouchToStand_Time int() = 3
 def MOVE_Run_SpeedStart int() = 2100
 def MOVE_Run_StartTime int() = 5
+def MOVE_Backdash_Speed int() = -1900
 :Specs-Graphics:
 # Automatic creation
 :Specs-AudioSFX:
@@ -125,6 +126,46 @@ CallParent()
 Unflag(FaceTarget)
 
 AttackCancel(Shift-In-FDash, 6A+B)
+AttackCancel(Shift-Out-FDash, 6C+D)
+:Shift-In-BDash:
+AttackRegister(Light, 4A+B)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	F1:
+		SetMomentum(-3000, 0)
+	endif
+
+	F3+:
+		AttackCancel(Shift-Out-FDash, 6C+D)
+	endif	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
 :Shift-In-FDash:
 AttackRegister(Light, 6A+B)
 Call(Raise-Lane-Flag)
@@ -186,6 +227,45 @@ Vcurrent_lane>0:
 	
 	F15:
 		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Out-BDash:
+AttackRegister(Light, 4C+D)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	
+	F1:
+		SetMomentum(-3000, 0)
+	endif
+
+	
+	F16+:
+		AttackCancel(Shift-In-FDash, 6A+B)
+	endif	
+	
+	F15:
+		Add(current_lane, 1)
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
