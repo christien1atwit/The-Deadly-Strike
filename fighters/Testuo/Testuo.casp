@@ -5,6 +5,10 @@
 Name: Testuo
 EditorName: Testuo
 Skeleton: res://fighters/Skeleton.casp
+:Specs-PhysicsTeching:
+# Automatic creation
+:Specs-PhysicsSystem:
+def PHYSICS_StandardHurtbox_Top int() = 30000
 :Specs-PhysicsMovement:
 # Automatic creation
 :Specs-Graphics:
@@ -205,6 +209,10 @@ def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 46
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 47
+:Specs-AttacksTypes:
+# Automatic creation
+:Specs-AttacksMechanics:
+# Automatic creation
 :Specs-Anims:
 def ANIMS_UseStandardAnims bool() = 0
 :Variables:
@@ -223,7 +231,19 @@ Anim(5A)
 
 # Active frames and hitboxes
 F3-8:
-	Hitbox(1000, 15000, 20000, 30000)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(1000, 15000, 15000, 25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(1000, 15000, 20000, 30000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(1500, 16500, 25000, 35000)
+		endif
+	
 endif
 
 F3+:
