@@ -17,7 +17,7 @@ def GRAPHICS_UseSprites bool() = 1
 def GRAPHICS_Scale int() = 4000
 def GRAPHICS_SPRITESHEET_Testuo int() = 0
 def GRAPHICS_SPRITESHEET_Testuo___Path str() = res://fighters/Testuo/Testuo_DS-Sheet.png
-def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 71
+def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 84
 def GRAPHICS_SPRITESHEET_Testuo___SpritesY int() = 1
 def GRAPHICS_SPRITESHEET_Testuo___OriginX int() = 75
 def GRAPHICS_SPRITESHEET_Testuo___OriginY int() = 0
@@ -153,14 +153,14 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Frame int() = 33
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Duration int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Duration int() = 35
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 35
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Duration int() = 36
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 36
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Frame int() = 37
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___6_Duration int() = 4
@@ -209,6 +209,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 46
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 47
+def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Frame int() = 81
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Frame int() = 82
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Frame int() = 83
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Frame int() = 80
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Frame int() = 0
 :Specs-AttacksTypes:
 # Automatic creation
 :Specs-AttacksMechanics:
@@ -264,6 +295,68 @@ Anim(5B)
 F3-15:
 	Hitbox(4000, 19000, 10000, 24000)
 endif
+:5C_P1:
+Call(Raise-Lane-Flag)
+AttackRegister(Heavy, 5C)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(64)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(5C_0)
+
+
+# Active frames and hitboxes
+F10-12:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(1000, 15000, 15000, 25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(1000, 15000, 20000, 30000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(1500, 16500, 25000, 35000)
+		endif
+	
+endif
+
+F24+:
+	AttackCancel(5C_P2, C)
+endif
+:5C_P2:
+Call(Raise-Lane-Flag)
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(44)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(5C_1)
+
+
+# Active frames and hitboxes
+F10-12:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(1000, 15000, 15000, 25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(1000, 15000, 20000, 30000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(1500, 16500, 25000, 35000)
+		endif
+	
+endif
 :AnimCrouching:
 CallParent()
 
@@ -273,3 +366,12 @@ CallParent()
 
 Anim(Stand)
 AnimLoop(36)
+:AnimWalkB:
+CallParent()
+Anim(Walk)
+AnimLoop(32)
+:AnimWalkF:
+CallParent()
+
+Anim(Walk)
+AnimLoop(32)
