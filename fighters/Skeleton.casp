@@ -73,6 +73,18 @@ VANIMS_UseStandardAnims:
 	Anim(ANIM_Movement_Dashes_Run)
 	AnimLoop(ANIM_Movement_Dashes_Run_Loop)
 endif
+:Correct-Scale:
+Vcurrent_lane==0:
+	Set(current_scale, BAK_SCALE)
+endif
+
+Vcurrent_lane==1:
+	Set(current_scale, DEF_SCALE)
+endif
+
+Vcurrent_lane==2:
+	Set(current_scale, FRN_SCALE)
+endif
 :Custom-NeutralStateCommon:
 CallParent()
 Call(Raise-Lane-Flag)
@@ -94,6 +106,7 @@ endif
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
+Call(Correct-Scale)
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
