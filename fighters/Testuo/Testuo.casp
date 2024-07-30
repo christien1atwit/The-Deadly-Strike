@@ -58,22 +58,22 @@ def GRAPHICS_SPRITE_ANIMATIONS_5A int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5A___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5A___1_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___1_Frame int() = 9
-def GRAPHICS_SPRITE_ANIMATIONS_5A___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___2_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___2_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___2_Frame int() = 10
-def GRAPHICS_SPRITE_ANIMATIONS_5A___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___3_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___3_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___3_Frame int() = 11
-def GRAPHICS_SPRITE_ANIMATIONS_5A___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___4_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___4_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___4_Frame int() = 12
-def GRAPHICS_SPRITE_ANIMATIONS_5A___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___5_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___5_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___5_Frame int() = 13
-def GRAPHICS_SPRITE_ANIMATIONS_5A___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___6_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___6_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___6_Frame int() = 14
-def GRAPHICS_SPRITE_ANIMATIONS_5A___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5A___7_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5A___7_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5A___7_Frame int() = 15
 def GRAPHICS_SPRITE_ANIMATIONS_5A___8_Duration int() = 4
@@ -253,7 +253,7 @@ AttackRegister(Light, 5A)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(28)
+AttackDuration(16)
 
 
 # Put your animation here
@@ -279,6 +279,7 @@ endif
 
 F3+:
 	AttackCancel(5A, 5A,  7)
+	AttackCancel(5C_P2, 5C,  7)
 endif
 :5B:
 AttackRegister(Light, 5B)
