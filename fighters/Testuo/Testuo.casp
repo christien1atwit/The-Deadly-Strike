@@ -301,7 +301,9 @@ AttackRegister(Heavy, 5C)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(64)
+AttackDuration(33)
+AttackMomentumHit(1000)
+
 # AttackFlag(Low)
 
 # Put your animation here
@@ -309,7 +311,7 @@ Anim(5C_0)
 
 
 # Active frames and hitboxes
-F10-12:
+F10-14:
 	Vcurrent_lane==0:
 			HitboxRequires(BackLane)
 			Hitbox(1000, 15000, 15000, 25000)
@@ -325,8 +327,8 @@ F10-12:
 	
 endif
 
-F24+:
-	AttackCancel(5C_P2, C)
+F32:
+	Transition(5C_P2)
 endif
 :5C_P2:
 Call(Raise-Lane-Flag)
@@ -334,7 +336,8 @@ AttackRegister(Heavy)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(44)
+AttackDuration(36)
+AttackMomentumHit(2000, 1500)
 # AttackFlag(Low)
 
 # Put your animation here
@@ -342,14 +345,14 @@ Anim(5C_1)
 
 
 # Active frames and hitboxes
-F10-12:
+F6-12:
 	Vcurrent_lane==0:
 			HitboxRequires(BackLane)
 			Hitbox(1000, 15000, 15000, 25000)
 		endif
 		Vcurrent_lane==1:
 			HitboxRequires(MidLane)
-			Hitbox(1000, 15000, 20000, 30000)
+			Hitbox(1000, 23000, 20000, 30000)
 		endif
 		Vcurrent_lane==2:
 			HitboxRequires(FrontLane)

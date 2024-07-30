@@ -188,9 +188,7 @@ AttackDuration(20)
 
 Vcurrent_lane>0:
 	SetColboxPhantom(1)
-	
 
-	
 	Unflag(PF_Airborne)
 	Flag(PF_Grounded)
 	Sub(current_scale, 25)
