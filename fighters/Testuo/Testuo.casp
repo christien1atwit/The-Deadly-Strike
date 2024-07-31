@@ -57,28 +57,28 @@ def GRAPHICS_SPRITE_ANIMATIONS_5A___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Frame int() = 17
+def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Frame int() = 9
 def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Frame int() = 18
+def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Frame int() = 10
 def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Frame int() = 19
+def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Frame int() = 11
 def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Frame int() = 20
-def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Frame int() = 12
+def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Frame int() = 21
-def GRAPHICS_SPRITE_ANIMATIONS_5B___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5B___6_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___6_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___6_Frame int() = 22
-def GRAPHICS_SPRITE_ANIMATIONS_5B___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5B___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5B___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___7_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___7_Frame int() = 23
-def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5B___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Frame int() = 24
+def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Frame int() = 0
@@ -88,28 +88,28 @@ def GRAPHICS_SPRITE_ANIMATIONS_5B___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0 int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Frame int() = 25
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Frame int() = 13
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Frame int() = 26
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Frame int() = 14
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Frame int() = 27
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Frame int() = 15
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Frame int() = 28
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Frame int() = 16
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Frame int() = 29
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Frame int() = 17
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Frame int() = 30
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___7_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___7_Frame int() = 31
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___8_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___8_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___8_Frame int() = 32
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___8_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___9_Frame int() = 0
@@ -117,22 +117,22 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1 int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Duration int() = 10
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Frame int() = 33
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Frame int() = 9
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 11
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 35
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 18
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 36
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 19
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Frame int() = 37
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___6_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___6_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___6_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___7_Duration int() = 0
@@ -150,34 +150,34 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C_1___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 38
-def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 20
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 39
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 21
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 40
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 22
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 41
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 23
 def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Frame int() = 42
+def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Frame int() = 24
 def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Frame int() = 43
-def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Frame int() = 19
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Frame int() = 44
-def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Frame int() = 45
-def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 46
-def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 47
+def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Spritesheet str() = Testuo
@@ -310,6 +310,9 @@ AttackMomentumHit(1000)
 # Put your animation here
 Anim(5C_0)
 
+F2:
+	AddMomentum(900)
+endif
 
 # Active frames and hitboxes
 F10-14:
@@ -360,6 +363,33 @@ F6-12:
 			Hitbox(1500, 16500, 25000, 35000)
 		endif
 	
+endif
+:5D:
+# Simple medium attack template
+AttackRegister(Heavy, 5D)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(28)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(5D)
+
+# Active frames and hitboxes
+F10-12:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(1000, 15000, 15000, 25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(1000, 15000, 20000, 30000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(1500, 16500, 25000, 35000)
+		endif
 endif
 :AnimCrouching:
 CallParent()
