@@ -371,6 +371,7 @@ AttackRegister(Heavy, 5D)
 # Adjust parameters here
 AttackDamage(1000)
 AttackDuration(28)
+AttackMomentumHit(2000, 1500)
 # AttackFlag(Low)
 
 # Put your animation here
