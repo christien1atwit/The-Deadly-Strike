@@ -17,8 +17,8 @@ def GRAPHICS_UseSprites bool() = 1
 def GRAPHICS_Scale int() = 4000
 def GRAPHICS_SPRITESHEET_Testuo int() = 0
 def GRAPHICS_SPRITESHEET_Testuo___Path str() = res://fighters/Testuo/Testuo_DS-Sheet.png
-def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 9
-def GRAPHICS_SPRITESHEET_Testuo___SpritesY int() = 8
+def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 10
+def GRAPHICS_SPRITESHEET_Testuo___SpritesY int() = 9
 def GRAPHICS_SPRITESHEET_Testuo___OriginX int() = 75
 def GRAPHICS_SPRITESHEET_Testuo___OriginY int() = 0
 def GRAPHICS_SPRITESHEET_Testuo___PixelSize int() = 100
@@ -57,16 +57,16 @@ def GRAPHICS_SPRITE_ANIMATIONS_5A___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Frame int() = 9
+def GRAPHICS_SPRITE_ANIMATIONS_5B___1_Frame int() = 10
 def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Frame int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_5B___2_Frame int() = 11
 def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Frame int() = 11
+def GRAPHICS_SPRITE_ANIMATIONS_5B___3_Frame int() = 12
 def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Frame int() = 12
+def GRAPHICS_SPRITE_ANIMATIONS_5B___4_Frame int() = 13
 def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5B___5_Frame int() = 0
@@ -88,19 +88,19 @@ def GRAPHICS_SPRITE_ANIMATIONS_5B___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0 int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Frame int() = 13
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___1_Frame int() = 15
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Frame int() = 14
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___2_Frame int() = 16
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Frame int() = 15
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___3_Frame int() = 17
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Frame int() = 16
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___4_Frame int() = 18
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Frame int() = 17
+def GRAPHICS_SPRITE_ANIMATIONS_5C_0___5_Frame int() = 19
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___6_Frame int() = 0
@@ -117,18 +117,18 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_5C_0___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1 int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Frame int() = 9
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___1_Frame int() = 21
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 11
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___2_Frame int() = 22
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 18
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___3_Frame int() = 23
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 19
+def GRAPHICS_SPRITE_ANIMATIONS_5C_1___4_Frame int() = 24
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5C_1___5_Frame int() = 0
@@ -150,28 +150,28 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C_1___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 20
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 25
 def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 21
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 26
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 22
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 27
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 23
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 28
 def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Frame int() = 24
-def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Frame int() = 29
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Frame int() = 19
-def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Frame int() = 30
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Frame int() = 31
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Frame int() = 32
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 0
@@ -181,16 +181,16 @@ def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Frame int() = 81
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___1_Frame int() = 54
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Frame int() = 82
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___2_Frame int() = 55
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Frame int() = 83
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___3_Frame int() = 56
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Frame int() = 80
+def GRAPHICS_SPRITE_ANIMATIONS_Walk___4_Frame int() = 55
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___5_Frame int() = 0
@@ -240,6 +240,132 @@ def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___1_Frame int() = 79
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Hitstun_Standing___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Frame int() = 56
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Frame int() = 57
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Duration int() = 60
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Frame int() = 58
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Frame int() = 33
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___1_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___10_Frame int() = 0
+:Specs-AudioSFX:
+
 :Specs-AttacksTypes:
 # Automatic creation
 :Specs-AttacksMechanics:
@@ -340,7 +466,7 @@ AttackRegister(Heavy)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(36)
+AttackDuration(20)
 AttackMomentumHit(2000, 1500)
 # AttackFlag(Low)
 
@@ -370,7 +496,7 @@ AttackRegister(Heavy, 5D)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(28)
+AttackDuration(34)
 AttackMomentumHit(2000, 1500)
 # AttackFlag(Low)
 
@@ -392,10 +518,8 @@ F10-12:
 			Hitbox(1500, 16500, 25000, 35000)
 		endif
 endif
-:AnimCrouching:
+:AnimBlockstunStanding:
 CallParent()
-
-Sprite(Testuo, 51)
 :AnimStand:
 CallParent()
 

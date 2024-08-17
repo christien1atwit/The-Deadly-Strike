@@ -28,16 +28,23 @@ def MOVE_Landing_TimeEmpty int() = 2
 def MOVE_Landing_TimeAttack int() = 4
 def MOVE_Jump_JumpF_InitialMomentumX int() = 1500
 def MOVE_Jump_JumpB_InitialMomentumX int() = -1500
-def MOVE_Dashes_CanHighjump bool() = 0
+def MOVE_Dashes_CanHighjump bool() = 1
 def MOVE_StandToCrouch_Time int() = 3
 def MOVE_CrouchToStand_Time int() = 3
 def MOVE_Run_SpeedStart int() = 2100
 def MOVE_Run_StartTime int() = 5
 def MOVE_Backdash_Speed int() = -1900
+def MOVE_Highjump_HighjumpN_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpF_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpB_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpF_InitialMomentumX int() = 1500
+def MOVE_Highjump_HighjumpB_InitialMomentumX int() = -1500
 :Specs-Graphics:
 # Automatic creation
 :Specs-AudioSFX:
-# Automatic creation
+def AUDIO_SFX_Light_Hit int() = 0
+def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
+def AUDIO_SFX_Light_Hit___Volume int() = 1000
 :Specs-AttacksTypes:
 # Automatic creation
 :Specs-AttacksThrows:
@@ -46,7 +53,7 @@ def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
 :Specs-AttacksMechanics:
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
-# Automatic creation
+def ANIMS_UseStandardAnims bool() = 0
 :Variables-System:
 var current_lane int() = 1
 var op_lane int() = 1
@@ -66,6 +73,32 @@ var current_scale int() = 4000
 :Variables:
 ## These variables are common to all characters since it's in the skeleton.
 ##var current_lane int() = 1
+:AnimCrouching:
+CallParent()
+Anim(Crouch)
+:AnimHighjumpB:
+CallParent()
+Anim(Jump)
+:AnimHighjumpF:
+CallParent()
+Anim(Jump)
+:AnimHighjumpN:
+CallParent()
+Anim(Jump)
+:AnimHitstunStanding:
+CallParent()
+PFreeze:
+		AnimFrame(Hitstun_Standing, 0)
+	endif
+:AnimJumpB:
+CallParent()
+Anim(Jump)
+:AnimJumpF:
+CallParent()
+Anim(Jump)
+:AnimJumpN:
+CallParent()
+Anim(Jump)
 :AnimRun:
 CallParent()
 
@@ -103,6 +136,11 @@ Vcurrent_lane==op_lane:
 else
 	SetColboxPhantom(1)
 endif
+:Custom-OnAttackHit:
+CallParent()
+
+Log(_Flags)
+SFXPlay(Light_Hit)
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
@@ -138,6 +176,7 @@ CallParent()
 
 Unflag(FaceTarget)
 
+AttackAddRegisteredCancels(Light)
 AttackCancel(Shift-In-FDash, 6A+B)
 AttackCancel(Shift-Out-FDash, 6C+D)
 :Shift-In-BDash:

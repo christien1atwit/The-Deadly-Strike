@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Light_Hit.mp3-d30e6a53d354658cdb60401e6688bf6c.mp3str"
+
+[deps]
+
+source_file="res://castagne/assets/sfx/Light_Hit.mp3"
+dest_files=[ "res://.import/Light_Hit.mp3-d30e6a53d354658cdb60401e6688bf6c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
