@@ -5,7 +5,12 @@
 ## - Attack types
 ## etc.
 :Specs-PhysicsTeching:
-# Automatic creation
+def ATTACK_Hitstun_CanRecoverInAir bool() = 0
+def ATTACK_Tech_Grounded_CanTechBackward bool() = 0
+def ATTACK_Tech_Grounded_CanTechForward bool() = 0
+def ATTACK_Tech_Grounded_CanTechUp bool() = 0
+def ATTACK_Tech_Grounded_Neutral_MomentumY int() = 0
+def ATTACK_Tech_Knockdown_CanTechUp bool() = 0
 :Specs-PhysicsSystem:
 def PHYSICS_StandardHurtbox_Bottom int() = 0
 def PHYSICS_StandardColbox_Bottom int() = 0
@@ -13,32 +18,33 @@ def PHYSICS_StandardColbox_Width int() = 4000
 def PHYSICS_StandardHurtbox_Use bool() = 1
 def PHYSICS_StandardColbox_Use bool() = 1
 :Specs-PhysicsMovement:
-def MOVE_Dashes_CanRun bool() = 1
-def MOVE_Dashes_CanBackdash bool() = 1
-def MOVE_Landing_RecoverCrouching bool() = 0
-def MOVE_TurnaroundStand_Time int() = 0
-def MOVE_Run_Speed int() = 2100
-def MOVE_Jump_JumpsquatTime int() = 1
-def MOVE_Jump_JumpF_InitialMomentumY int() = 3500
-def MOVE_Jump_JumpB_InitialMomentumY int() = 3500
-def MOVE_Jump_JumpN_InitialMomentumY int() = 3500
-def MOVE_Walk_SpeedF int() = 1500
-def MOVE_Walk_SpeedB int() = -1000
-def MOVE_Landing_TimeEmpty int() = 2
-def MOVE_Landing_TimeAttack int() = 4
-def MOVE_Jump_JumpF_InitialMomentumX int() = 1500
-def MOVE_Jump_JumpB_InitialMomentumX int() = -1500
-def MOVE_Dashes_CanHighjump bool() = 1
-def MOVE_StandToCrouch_Time int() = 3
-def MOVE_CrouchToStand_Time int() = 3
-def MOVE_Run_SpeedStart int() = 2100
-def MOVE_Run_StartTime int() = 5
+def MOVE_AirActionsMax int() = 1
 def MOVE_Backdash_Speed int() = -1900
-def MOVE_Highjump_HighjumpN_InitialMomentumY int() = 4500
-def MOVE_Highjump_HighjumpF_InitialMomentumY int() = 4500
+def MOVE_CrouchToStand_Time int() = 3
+def MOVE_Dashes_CanBackdash bool() = 1
+def MOVE_Dashes_CanHighjump bool() = 1
+def MOVE_Dashes_CanRun bool() = 1
+def MOVE_Highjump_HighjumpB_InitialMomentumX int() = -1500
 def MOVE_Highjump_HighjumpB_InitialMomentumY int() = 4500
 def MOVE_Highjump_HighjumpF_InitialMomentumX int() = 1500
-def MOVE_Highjump_HighjumpB_InitialMomentumX int() = -1500
+def MOVE_Highjump_HighjumpF_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpN_InitialMomentumY int() = 4500
+def MOVE_Jump_JumpB_InitialMomentumX int() = -1500
+def MOVE_Jump_JumpB_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpF_InitialMomentumX int() = 1500
+def MOVE_Jump_JumpF_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpN_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpsquatTime int() = 1
+def MOVE_Landing_RecoverCrouching bool() = 0
+def MOVE_Landing_TimeAttack int() = 4
+def MOVE_Landing_TimeEmpty int() = 2
+def MOVE_Run_Speed int() = 2100
+def MOVE_Run_SpeedStart int() = 2100
+def MOVE_Run_StartTime int() = 5
+def MOVE_StandToCrouch_Time int() = 3
+def MOVE_TurnaroundStand_Time int() = 0
+def MOVE_Walk_SpeedB int() = -1000
+def MOVE_Walk_SpeedF int() = 1500
 :Specs-Graphics:
 # Automatic creation
 :Specs-AudioSFX:
@@ -46,7 +52,22 @@ def AUDIO_SFX_Light_Hit int() = 0
 def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
 def AUDIO_SFX_Light_Hit___Volume int() = 1000
 :Specs-AttacksTypes:
-# Automatic creation
+def ATTACK_EX_CanCancelIntoSuper bool() = 0
+def ATTACK_Heavy_CanCancelIntoHeavies bool() = 0
+def ATTACK_Heavy_CanCancelIntoMediums bool() = 0
+def ATTACK_Heavy_CanCancelIntoSpecials bool() = 0
+def ATTACK_Heavy_CanJumpCancelOnHit bool() = 0
+def ATTACK_Light_CanCancelIntoHeavies bool() = 0
+def ATTACK_Light_CanCancelIntoLights bool() = 0
+def ATTACK_Light_CanCancelIntoMediums bool() = 0
+def ATTACK_Light_CanCancelIntoSpecials bool() = 0
+def ATTACK_Light_CanJumpCancelOnHit bool() = 0
+def ATTACK_Medium_CanCancelIntoHeavies bool() = 0
+def ATTACK_Medium_CanCancelIntoMediums bool() = 0
+def ATTACK_Medium_CanCancelIntoSpecials bool() = 0
+def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
+def ATTACK_Special_CanCancelIntoEX bool() = 0
+def ATTACK_Special_CanCancelIntoSuper bool() = 0
 :Specs-AttacksThrows:
 def ATTACK_Throw_CanAirThrow bool() = 0
 def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
@@ -85,6 +106,27 @@ Anim(Jump)
 :AnimHighjumpN:
 CallParent()
 Anim(Jump)
+:AnimHitstun:
+CallParent()
+## Helper state to select which hitstun animation to play
+_Category(Animations/Reacts/Hitstun)
+_Helper()
+_Overridable(If you want custom logic for how hitstun's animation works)
+
+F1:
+SFXPlay(Light_Hit)
+Log(_Flags)
+endif
+
+LPF_Airborne:
+	Call(AnimHitstunAirborne)
+else
+	LCrouching:
+		Call(AnimHitstunCrouching)
+	else
+		Call(AnimHitstunStanding)
+	endif
+endif
 :AnimHitstunStanding:
 CallParent()
 PFreeze:
@@ -138,9 +180,9 @@ else
 endif
 :Custom-OnAttackHit:
 CallParent()
-
+:Custom-OnBlock:
+CallParent()
 Log(_Flags)
-SFXPlay(Light_Hit)
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
