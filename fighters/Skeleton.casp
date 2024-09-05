@@ -48,6 +48,9 @@ def MOVE_Walk_SpeedF int() = 1500
 :Specs-Graphics:
 # Automatic creation
 :Specs-AudioSFX:
+def AUDIO_SFX_Heavy_Hit int() = 0
+def AUDIO_SFX_Heavy_Hit___Filepath str() = res://castagne/assets/sfx/Heavy_Hit.mp3
+def AUDIO_SFX_Heavy_Hit___Volume int() = 1000
 def AUDIO_SFX_Light_Hit int() = 0
 def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
 def AUDIO_SFX_Light_Hit___Volume int() = 1000
@@ -113,9 +116,16 @@ _Category(Animations/Reacts/Hitstun)
 _Helper()
 _Overridable(If you want custom logic for how hitstun's animation works)
 
+
+#Basic hit sound logic
 F1:
-SFXPlay(Light_Hit)
-Log(_Flags)
+	LAF_Light:
+		SFXPlay(Light_Hit)
+	endif
+	LAF_Heavy:
+		SFXPlay(Heavy_Hit)
+	endif
+
 endif
 
 LPF_Airborne:
@@ -148,6 +158,9 @@ VANIMS_UseStandardAnims:
 	Anim(ANIM_Movement_Dashes_Run)
 	AnimLoop(ANIM_Movement_Dashes_Run_Loop)
 endif
+:AnimStandToCrouch:
+CallParent()
+Anim(Crouch)
 :Correct-Scale:
 Vcurrent_lane==0:
 	Set(current_scale, BAK_SCALE)
@@ -178,11 +191,16 @@ Vcurrent_lane==op_lane:
 else
 	SetColboxPhantom(1)
 endif
+:Custom-OnAttackBlocked:
+CallParent()
+AddMomentum(-950)
 :Custom-OnAttackHit:
 CallParent()
+AddMomentum(-700)
 :Custom-OnBlock:
 CallParent()
 Log(_Flags)
+Move(-100)
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
