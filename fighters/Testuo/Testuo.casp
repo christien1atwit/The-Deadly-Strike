@@ -5,6 +5,8 @@
 Name: Testuo
 EditorName: Testuo
 Skeleton: res://fighters/Skeleton.casp
+:Specs-UI:
+# Automatic creation
 :Specs-PhysicsTeching:
 # Automatic creation
 :Specs-PhysicsSystem:
@@ -15,17 +17,17 @@ def PHYSICS_StandardHurtbox_Width int() = 5500
 :Specs-PhysicsMovement:
 def MOVE_AirActionsMax int() = 1
 :Specs-Graphics:
-def GRAPHICS_UseModel bool() = 0
-def GRAPHICS_UseSprites bool() = 1
-def GRAPHICS_Scale int() = 4000
 def GRAPHICS_SPRITESHEET_Testuo int() = 0
-def GRAPHICS_SPRITESHEET_Testuo___Path str() = res://fighters/Testuo/Testuo_DS-Sheet.png
-def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Testuo___SpritesY int() = 9
 def GRAPHICS_SPRITESHEET_Testuo___OriginX int() = 75
 def GRAPHICS_SPRITESHEET_Testuo___OriginY int() = 0
-def GRAPHICS_SPRITESHEET_Testuo___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Testuo___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_Testuo___Path str() = res://fighters/Testuo/Testuo_DS-Sheet.png
+def GRAPHICS_SPRITESHEET_Testuo___PixelSize int() = 100
+def GRAPHICS_SPRITESHEET_Testuo___SpritesX int() = 10
+def GRAPHICS_SPRITESHEET_Testuo___SpritesY int() = 11
+def GRAPHICS_Scale int() = 4000
+def GRAPHICS_UseModel bool() = 0
+def GRAPHICS_UseSprites bool() = 1
 :Specs-AudioSFX:
 
 :Specs-AttacksTypes:
@@ -124,9 +126,9 @@ def GRAPHICS_SPRITE_ANIMATIONS_2C___7_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_2C___8_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_2C___8_Frame int() = 44
 def GRAPHICS_SPRITE_ANIMATIONS_2C___8_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Frame int() = 42
+def GRAPHICS_SPRITE_ANIMATIONS_2C___9_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_2D int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_2D___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_2D___10_Frame int() = 0
@@ -313,6 +315,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_6B___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_6B___1_Frame int() = 96
+def GRAPHICS_SPRITE_ANIMATIONS_6B___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_6B___2_Frame int() = 97
+def GRAPHICS_SPRITE_ANIMATIONS_6B___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___3_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_6B___3_Frame int() = 98
+def GRAPHICS_SPRITE_ANIMATIONS_6B___3_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_6B___4_Frame int() = 99
+def GRAPHICS_SPRITE_ANIMATIONS_6B___4_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___5_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_6B___5_Frame int() = 100
+def GRAPHICS_SPRITE_ANIMATIONS_6B___5_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___6_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_6B___6_Frame int() = 101
+def GRAPHICS_SPRITE_ANIMATIONS_6B___6_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_6B___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_6B___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___10_Duration int() = 0
@@ -561,37 +594,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___10_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___10_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___10_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___1_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___1_Frame int() = 34
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___1_Spritesheet str() = Testuo
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___2_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___2_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___2_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___3_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___3_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___3_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___4_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___4_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___4_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___5_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___5_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___5_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___6_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___6_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___6_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___7_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___7_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___7_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___8_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___8_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___8_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___9_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___9_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_New_SpriteAnimations___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___1_Frame int() = 81
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___2_Frame int() = 82
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___3_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___3_Frame int() = 83
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___3_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___4_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___4_Frame int() = 84
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___4_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___5_Frame int() = 85
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___5_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___6_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___6_Frame int() = 84
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___6_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
@@ -623,6 +656,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___10_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___10_Frame int() = 32
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___10_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___1_Frame int() = 87
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___2_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___2_Frame int() = 88
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___2_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___3_Frame int() = 89
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___3_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___4_Frame int() = 90
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___4_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___5_Frame int() = 91
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___5_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___6_Frame int() = 92
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___6_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___7_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___7_Frame int() = 93
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___7_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___8_Frame int() = 94
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___8_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___9_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___9_Frame int() = 95
+def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk___9_Spritesheet str() = Testuo
 def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Frame int() = 0
@@ -705,7 +769,83 @@ Anim(2B)
 
 # Active frames and hitboxes
 F4-8:
-	Hitbox(0, 23000, 1000, 12000)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 23000, 1000, 12000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 23000, 1000, 12000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 23000, 1000, 12000)
+		endif
+endif
+
+Flag(Crouching)
+:2C:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(32)
+# AttackFlag(Low)
+# Put your animation here
+Anim(2C)
+
+# Active frames and hitboxes
+F10-12:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 16000, 5000, 43000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 16000, 5000, 43000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 16000, 5000, 43000)
+		endif
+endif
+Flag(Crouching)
+:2D:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(48)
+AttackFlag(Low)
+AttackFlag(Heavy)
+AttackMomentumHit(1000,2000)
+
+# Put your animation here
+Anim(2D)
+
+
+# Active frames and hitboxes
+F8-12:
+	AddMomentum(300)
+endif
+
+F10-12:
+	AttackKnockdown()
+	AttackFlag(ForceLanding)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(-3000, 22000, 5000, 20000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(-3000, 22000, 5000, 20000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(-3000, 22000, 5000, 20000)
+		endif
 endif
 
 Flag(Crouching)
@@ -832,13 +972,15 @@ AttackRegister(Heavy, 5D)
 AttackDamage(1000)
 AttackDuration(34)
 AttackMomentumHit(2000, 1500)
-# AttackFlag(Low)
+
 AttackFlag(Heavy)
 # Put your animation here
 Anim(5D)
 
 # Active frames and hitboxes
 F10-12:
+	AttackKnockdown()
+	AttackFlag(ForceLanding)
 	Vcurrent_lane==0:
 			HitboxRequires(BackLane)
 			Hitbox(1000, 15000, 15000, 25000)
@@ -852,11 +994,36 @@ F10-12:
 			Hitbox(1500, 16500, 25000, 35000)
 		endif
 endif
+:6B:
+# Simple medium attack template
+AttackRegister(Medium)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(36)
+# AttackFlag(Low)
+AttackFlag(Heavy)
+AttackFlag(Overhead)
+AttackMustBlock(Overhead)
+# Put your animation here
+Anim(6B)
+
+# Active frames and hitboxes
+F18-30:
+	Hitbox(0, 15000, 5000, 45000)
+endif
 :AnimBlockstunStanding:
 CallParent()
 :AnimCrouching:
 CallParent()
 Anim(Crouch_Loop)
+:AnimKnockdown:
+CallParent()
+
+F1:
+	Log(_Flags)
+endif
+Anim(Knockdown)
 :AnimStand:
 CallParent()
 
@@ -873,8 +1040,116 @@ Anim(Walk)
 AnimLoop(32)
 :Custom-OnHit:
 CallParent()
-F1:
-	Log(_Flags)
+Log(_Flags)
+:In-Sway-Atk:
+# Simple medium attack template
+AttackRegister(Heavy,5A+C)
+AttackAddNotation(6A+C)
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(40)
+AttackMomentumHit(600,0)
+AttackMomentumBlock(900,0)
+AttackFrameAdvantage(5,-2)
+AttackFlag(Heavy)
+
+# Put your animation here
+Anim(Sway_Atk)
+
+# Active frames and hitboxes
+
+F12-14:
+	AddMomentum(600,0)
+endif
+F14-18:
+	AttackFlag(DragOut)
+		Vcurrent_lane==1:
+			HitboxRequires(BackLane)
+			Hitbox(-8000,15000,17500,32500)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(MidLane)
+			Hitbox(-8000,15000,17500,32500)
+		endif
+
+endif
+F18-22:
+	AttackUnflag(DragOut)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(-1000,22000,15500,30500)
+
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(-1000,22000,15500,30500)
+
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(-1000,22000,15500,30500)
+		endif
+
+
+endif
+
+F28+:
+	AttackAddRegisteredCancels(Light)
+endif
+:Out-Sway-Atk:
+# Simple medium attack template
+AttackRegister(Heavy,5B+D)
+AttackAddNotation(6B+D)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(40)
+AttackFlag(Heavy)
+AttackMomentumHit(600,0)
+AttackMomentumBlock(900,0)
+AttackFrameAdvantage(5,-2)
+# Put your animation here
+Anim(Sway_Atk)
+
+# Active frames and hitboxes
+
+F12-14:
+	AddMomentum(600,0)
+endif
+F14-18:
+	AttackFlag(DragIn)
+		Vcurrent_lane==1:
+			HitboxRequires(FrontLane)
+			Hitbox(-8000,15000,13500,28500)
+		endif
+		Vcurrent_lane==0:
+			HitboxRequires(MidLane)
+			Hitbox(-8000,15000,13500,28500)
+		endif
+
+endif
+F18-22:
+	AttackUnflag(DragIn)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(-1000,22000,15500,30500)
+
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(-1000,22000,15500,30500)
+
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(-1000,22000,15500,30500)
+		endif
+
+
+endif
+
+F28+:
+	AttackAddRegisteredCancels(Light)
 endif
 :j5A:
 # Simple medium attack template
@@ -946,12 +1221,15 @@ AttackDuration(24)
 AttackFlag(Overhead)
 AttackMustBlock(Overhead)
 AttackFlag(Heavy)
+AttackMomentumHit(2800, -3000)
 
 # Put your animation here
 Anim(J.C)
 
 # Active frames and hitboxes
 F10-14:
+	AttackKnockdown(20)
+	#AttackFlag(ForceLanding)
 	Vcurrent_lane==0:
 			HitboxRequires(BackLane)
 			Hitbox(0, 15000, 5000, 35000)

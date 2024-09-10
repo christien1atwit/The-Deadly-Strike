@@ -6,11 +6,20 @@
 ## etc.
 :Specs-PhysicsTeching:
 def ATTACK_Hitstun_CanRecoverInAir bool() = 0
+def ATTACK_Tech_Airborne_CanTechBackward bool() = 0
+def ATTACK_Tech_Airborne_CanTechDown bool() = 0
+def ATTACK_Tech_Airborne_CanTechForward bool() = 0
+def ATTACK_Tech_Airborne_CanTechUp bool() = 0
 def ATTACK_Tech_Grounded_CanTechBackward bool() = 0
 def ATTACK_Tech_Grounded_CanTechForward bool() = 0
 def ATTACK_Tech_Grounded_CanTechUp bool() = 0
 def ATTACK_Tech_Grounded_Neutral_MomentumY int() = 0
+def ATTACK_Tech_Knockdown_Backward_RecoverCrouching bool() = 0
+def ATTACK_Tech_Knockdown_CanTechBackward bool() = 0
+def ATTACK_Tech_Knockdown_CanTechForward bool() = 0
 def ATTACK_Tech_Knockdown_CanTechUp bool() = 0
+def ATTACK_Tech_Knockdown_Forward_RecoverCrouching bool() = 0
+def ATTACK_Tech_Knockdown_Neutral_RecoverCrouching bool() = 0
 :Specs-PhysicsSystem:
 def PHYSICS_StandardHurtbox_Bottom int() = 0
 def PHYSICS_StandardColbox_Bottom int() = 0
@@ -62,12 +71,12 @@ def ATTACK_Heavy_CanCancelIntoSpecials bool() = 0
 def ATTACK_Heavy_CanJumpCancelOnHit bool() = 0
 def ATTACK_Light_CanCancelIntoHeavies bool() = 0
 def ATTACK_Light_CanCancelIntoLights bool() = 0
-def ATTACK_Light_CanCancelIntoMediums bool() = 0
+def ATTACK_Light_CanCancelIntoMediums bool() = 1
 def ATTACK_Light_CanCancelIntoSpecials bool() = 0
 def ATTACK_Light_CanJumpCancelOnHit bool() = 0
 def ATTACK_Medium_CanCancelIntoHeavies bool() = 0
 def ATTACK_Medium_CanCancelIntoMediums bool() = 0
-def ATTACK_Medium_CanCancelIntoSpecials bool() = 0
+def ATTACK_Medium_CanCancelIntoSpecials bool() = 1
 def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
 def ATTACK_Special_CanCancelIntoEX bool() = 0
 def ATTACK_Special_CanCancelIntoSuper bool() = 0
@@ -140,7 +149,9 @@ endif
 :AnimHitstunStanding:
 CallParent()
 PFreeze:
+		
 		AnimFrame(Hitstun_Standing, 0)
+		
 	endif
 :AnimJumpB:
 CallParent()
@@ -151,6 +162,10 @@ Anim(Jump)
 :AnimJumpN:
 CallParent()
 Anim(Jump)
+:AnimKnockdown:
+CallParent()
+
+Anim(Knockdown)
 :AnimRun:
 CallParent()
 
@@ -201,6 +216,32 @@ AddMomentum(-700)
 CallParent()
 Log(_Flags)
 Move(-100)
+:Custom-OnHit:
+CallParent()
+
+#Dragging Logic
+
+LAF_DragIn:
+	Log("Drag In")
+	Sub(current_lane, 1)
+	Vcurrent_lane<0:
+		Set(current_lane, 0)
+	endif
+	SetColboxLayer(current_lane)
+	SpriteOrder(current_lane)
+	Call(Raise-Lane-Flag)
+endif
+
+LAF_DragOut:
+	Log("Drag Out")
+	Add(current_lane, 1)
+	Vcurrent_lane>2:
+		Set(current_lane, 2)
+	endif
+	SetColboxLayer(current_lane)
+	SpriteOrder(current_lane)
+	Call(Raise-Lane-Flag)
+endif
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
@@ -233,6 +274,7 @@ endif
 #LogB(_Flags)
 :Run:
 CallParent()
+
 
 Unflag(FaceTarget)
 
