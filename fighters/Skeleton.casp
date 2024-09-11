@@ -4,6 +4,8 @@
 ## - Movement
 ## - Attack types
 ## etc.
+:Specs-UI:
+# Automatic creation
 :Specs-PhysicsTeching:
 def ATTACK_Hitstun_CanRecoverInAir bool() = 0
 def ATTACK_Tech_Airborne_CanTechBackward bool() = 0
@@ -146,6 +148,10 @@ else
 		Call(AnimHitstunStanding)
 	endif
 endif
+:AnimHitstunCrouching:
+CallParent()
+
+Anim(Hitstun_Crouching)
 :AnimHitstunStanding:
 CallParent()
 PFreeze:
@@ -169,10 +175,8 @@ Anim(Knockdown)
 :AnimRun:
 CallParent()
 
-VANIMS_UseStandardAnims:
-	Anim(ANIM_Movement_Dashes_Run)
-	AnimLoop(ANIM_Movement_Dashes_Run_Loop)
-endif
+Anim(Run)
+AnimLoop(16)
 :AnimStandToCrouch:
 CallParent()
 Anim(Crouch)
@@ -325,6 +329,7 @@ AttackRegister(Light, 6A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
+Anim(Run)
 
 
 Vcurrent_lane>0:
@@ -433,7 +438,7 @@ AttackRegister(Light, 6C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
-
+Anim(Run)
 
 Vcurrent_lane<2:
 	SetColboxPhantom(1)
