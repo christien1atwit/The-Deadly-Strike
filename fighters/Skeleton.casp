@@ -180,6 +180,20 @@ AnimLoop(16)
 :AnimStandToCrouch:
 CallParent()
 Anim(Crouch)
+:Common:
+CallParent()
+
+Call(Raise-Lane-Flag)
+
+LPF_Airborne:
+	Flag(Airborne)
+endif
+
+LPF_Landing:
+	Call(OnLanding)
+endif
+
+Call(DashInputHelper)
 :Correct-Scale:
 Vcurrent_lane==0:
 	Set(current_scale, BAK_SCALE)

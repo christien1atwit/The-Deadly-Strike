@@ -975,12 +975,12 @@ F10-12:
 		HitboxRequires(FrontLane)
 		Hitbox(0, 30000, 12000, 35000)
 	endif
-	
+
 endif
 
 F13:
-	Log(rearm)
-	AttackRearm()
+	#Log(rearm)
+	AttackMultihit()
 endif
 
 F14-15:
@@ -1002,7 +1002,7 @@ F14-15:
 endif
 
 F16:
-	AttackRearm()
+	AttackMultihit()
 endif
 
 F18-22:
@@ -1031,6 +1031,7 @@ AttackRegister(Light)
 # Adjust parameters here
 AttackDamage(400)
 AttackDuration(16)
+AttackFrameAdvantage(16,2)
 #AttackFlag(Low)
 AttackFlag(Light)
 
@@ -1165,6 +1166,7 @@ AttackRegister(Light, 5A)
 # Adjust parameters here
 AttackDamage(450)
 AttackDuration(16)
+AttackFrameAdvantage(26,2)
 AttackFlag(Light)
 
 # Put your animation here
@@ -1332,7 +1334,19 @@ Anim(6B)
 
 # Active frames and hitboxes
 F18-30:
-	Hitbox(0, 15000, 5000, 45000)
+	
+		Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 15000, 5000, 45000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 15000, 5000, 45000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 15000, 5000, 45000)
+		endif
 endif
 :6Throw:
 # Simple medium attack template
