@@ -76,6 +76,8 @@ def ATTACK_Light_CanCancelIntoLights bool() = 0
 def ATTACK_Light_CanCancelIntoMediums bool() = 1
 def ATTACK_Light_CanCancelIntoSpecials bool() = 0
 def ATTACK_Light_CanJumpCancelOnHit bool() = 0
+def ATTACK_Light_ProrationHitstun int() = 950
+def ATTACK_Light_ProrationHitstunStarter int() = 820
 def ATTACK_Medium_CanCancelIntoHeavies bool() = 0
 def ATTACK_Medium_CanCancelIntoMediums bool() = 0
 def ATTACK_Medium_CanCancelIntoSpecials bool() = 1
@@ -226,10 +228,10 @@ else
 endif
 :Custom-OnAttackBlocked:
 CallParent()
-AddMomentum(-950)
+AddMomentum(-1650)
 :Custom-OnAttackHit:
 CallParent()
-AddMomentum(-700)
+AddMomentum(-1200)
 :Custom-OnBlock:
 CallParent()
 Log(_Flags)

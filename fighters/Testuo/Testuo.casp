@@ -1166,7 +1166,7 @@ AttackRegister(Light, 5A)
 # Adjust parameters here
 AttackDamage(450)
 AttackDuration(16)
-AttackFrameAdvantage(26,2)
+AttackFrameAdvantage(10,2)
 AttackFlag(Light)
 
 # Put your animation here
@@ -1362,7 +1362,25 @@ AttackDuration(3)
 
 # Active frames and hitboxes
 F1:
-	Hitbox(0, 15000, 5000, 15000)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(1000, 15000, 15000, 25000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(BackLane)
+		Hitbox(-5000, 5000, 7000, 14000)
+		#HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(0, 10000, 5000, 12000)
+		#HitboxRequires()
+		HitboxRequires(FrontLane)
+		Hitbox(-5000, 5000, -3000, 8000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(1500, 16500, 25000, 35000)
+	endif
+	
 endif
 
 F2:
