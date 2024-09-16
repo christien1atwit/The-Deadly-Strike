@@ -470,6 +470,68 @@ def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___1_Frame int() = 127
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___1_Frame int() = 128
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___1_Spritesheet str() = Testuo
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Guard_Lo___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___10_Frame int() = 0
@@ -1006,6 +1068,98 @@ F16:
 endif
 
 F18-22:
+	SetMomentum(800,-700)
+	AttackFlag(Heavy)
+	AttackMomentumHit(2200,1200)
+	
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+
+endif
+:214D:
+AttackRegister(Special)
+AttackAddNotation(j214D)
+
+# Adjust parameters here
+AttackDamage(510)
+AttackDuration(51)
+AttackMomentumHit(1600,0)
+AttackMomentumBlock(200,0)
+AttackFrameAdvantage(8,-8)
+AttackKnockdown(20,25)
+# AttackFlag(Low)
+
+# Put your animation here
+
+#Anim(Half-Moon-Slash)
+
+
+F15:
+	SetMomentum(0,0)
+	AddMomentum(5000,1500)
+endif
+
+F10+:
+Anim(Half-Moon-Slash)
+endif
+
+# Active frames and hitboxes
+F20-22:
+	AttackFlag(Light)
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+
+endif
+
+F23:
+	#Log(rearm)
+	AttackMultihit()
+endif
+
+F24-25:
+	AttackFlag(Light)
+
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+
+endif
+
+F26:
+	AttackMultihit()
+endif
+
+F28-32:
 	SetMomentum(800,-700)
 	AttackFlag(Heavy)
 	AttackMomentumHit(2200,1200)

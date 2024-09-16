@@ -110,6 +110,14 @@ var current_scale int() = 4000
 :Variables:
 ## These variables are common to all characters since it's in the skeleton.
 ##var current_lane int() = 1
+:AnimBlockstunCrouching:
+CallParent()
+
+Anim(Guard_Lo)
+:AnimBlockstunStanding:
+CallParent()
+
+Anim(Guard_Hi, 0)
 :AnimCrouching:
 CallParent()
 Anim(Crouch)
