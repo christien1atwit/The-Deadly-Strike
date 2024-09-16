@@ -904,6 +904,68 @@ def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___1_Duration int() = 20
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___1_Frame int() = 147
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___2_Frame int() = 148
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___3_Duration int() = 16
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___3_Frame int() = 149
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___4_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___5_Frame int() = 33
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch-Toss___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___1_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___2_Duration int() = 24
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___2_Frame int() = 146
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___3_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___4_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___4_Frame int() = 33
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
@@ -1092,185 +1154,6 @@ def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Spritesheet str() =
 :Variables:
 ## This is the Variables block, where you can store custom variables or overwrite defined ones.You can see all available default variables by activating 'Show All Variables' in the navigation panel.
-:214B:
-AttackRegister(Special)
-AttackAddNotation(j214B)
-
-# Adjust parameters here
-AttackDamage(400)
-AttackDuration(36)
-AttackMomentumHit(1600,0)
-AttackMomentumBlock(200,0)
-AttackFrameAdvantage(6,-8)
-AttackKnockdown(20,25)
-# AttackFlag(Low)
-
-# Put your animation here
-Anim(Half-Moon-Slash)
-
-
-F5:
-	SetMomentum(0,0)
-	AddMomentum(3000,1500)
-endif
-
-# Active frames and hitboxes
-F10-12:
-	AttackFlag(Light)
-	
-	Vcurrent_lane==0:
-			HitboxRequires(BackLane)
-			Hitbox(0, 30000, 12000, 35000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 30000, 12000, 35000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 30000, 12000, 35000)
-	endif
-
-endif
-
-F13:
-	#Log(rearm)
-	AttackMultihit()
-endif
-
-F14-15:
-	AttackFlag(Light)
-
-	Vcurrent_lane==0:
-		HitboxRequires(BackLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-
-endif
-
-F16:
-	AttackMultihit()
-endif
-
-F18-22:
-	SetMomentum(800,-700)
-	AttackFlag(Heavy)
-	AttackMomentumHit(2200,1200)
-	
-	Vcurrent_lane==0:
-		HitboxRequires(BackLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-
-endif
-:214D:
-AttackRegister(Special)
-AttackAddNotation(j214D)
-
-# Adjust parameters here
-AttackDamage(510)
-AttackDuration(51)
-AttackMomentumHit(1600,0)
-AttackMomentumBlock(200,0)
-AttackFrameAdvantage(8,-8)
-AttackKnockdown(20,25)
-# AttackFlag(Low)
-
-# Put your animation here
-
-#Anim(Half-Moon-Slash)
-
-
-F15:
-	SetMomentum(0,0)
-	AddMomentum(5000,1500)
-endif
-
-F10+:
-Anim(Half-Moon-Slash)
-endif
-
-# Active frames and hitboxes
-F20-22:
-	AttackFlag(Light)
-	
-	Vcurrent_lane==0:
-			HitboxRequires(BackLane)
-			Hitbox(0, 30000, 12000, 35000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 30000, 12000, 35000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 30000, 12000, 35000)
-	endif
-
-endif
-
-F23:
-	#Log(rearm)
-	AttackMultihit()
-endif
-
-F24-25:
-	AttackFlag(Light)
-
-	Vcurrent_lane==0:
-		HitboxRequires(BackLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 25000, 5000, 45000)
-	endif
-
-endif
-
-F26:
-	AttackMultihit()
-endif
-
-F28-32:
-	SetMomentum(800,-700)
-	AttackFlag(Heavy)
-	AttackMomentumHit(2200,1200)
-	
-	Vcurrent_lane==0:
-		HitboxRequires(BackLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-	Vcurrent_lane==1:
-		HitboxRequires(MidLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-	Vcurrent_lane==2:
-		HitboxRequires(FrontLane)
-		Hitbox(0, 35000, 5000, 23000)
-	endif
-
-endif
 :2A:
 # Simple medium attack template
 AttackRegister(Light)
@@ -1662,6 +1545,265 @@ AnimLoop(32)
 :Custom-OnHit:
 CallParent()
 Log(_Flags)
+:Flying-High-H:
+# Simple medium attack template
+AttackRegister(Special,[2]8D)
+
+# Adjust parameters here
+AttackDamage(1200)
+AttackDuration(40)
+# AttackFlag(Low)
+AttackFlag(Light)
+AttackKnockdown()
+
+# Put your animation here
+Anim(Flying-High)
+
+# Active frames and hitboxes
+F1:
+	AddMomentum(700, 4500)
+endif
+
+
+F4-18:
+	AttackMomentumHit(1500,4000)
+	AttackMomentumBlock(950,0)
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+	
+endif
+:Flying-High-L:
+# Simple medium attack template
+AttackRegister(Special,[2]8B)
+
+# Adjust parameters here
+AttackDamage(950)
+AttackDuration(30)
+# AttackFlag(Low)
+AttackFlag(Light)
+AttackKnockdown()
+AttackFrameAdvantage(-2,-8)
+AttackMomentumHit(1500,0)
+AttackMomentumBlock(900,0)
+# Put your animation here
+Anim(Flying-High)
+
+# Active frames and hitboxes
+F1:
+	AddMomentum(500, 3200)
+endif
+
+
+F4-18:
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+	
+endif
+:Half-Moon-Slash-H:
+AttackRegister(Special,214D)
+AttackAddNotation(j214D)
+
+# Adjust parameters here
+AttackDamage(510)
+AttackDuration(51)
+AttackMomentumHit(1600,0)
+AttackMomentumBlock(200,0)
+AttackFrameAdvantage(8,-8)
+AttackKnockdown(20,25)
+# AttackFlag(Low)
+
+# Put your animation here
+
+#Anim(Half-Moon-Slash)
+
+
+F15:
+	SetMomentum(0,0)
+	AddMomentum(5000,1500)
+endif
+
+F10+:
+Anim(Half-Moon-Slash)
+endif
+
+# Active frames and hitboxes
+F20-22:
+	AttackFlag(Light)
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+
+endif
+
+F23:
+	#Log(rearm)
+	AttackMultihit()
+endif
+
+F24-25:
+	AttackFlag(Light)
+
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+
+endif
+
+F26:
+	AttackMultihit()
+endif
+
+F28-32:
+	SetMomentum(800,-700)
+	AttackFlag(Heavy)
+	AttackMomentumHit(2200,1200)
+	
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+
+endif
+:Half-Moon-Slash-L:
+AttackRegister(Special,214B)
+AttackAddNotation(j214B)
+
+# Adjust parameters here
+AttackDamage(400)
+AttackDuration(36)
+AttackMomentumHit(1600,0)
+AttackMomentumBlock(200,0)
+AttackFrameAdvantage(6,-8)
+AttackKnockdown(20,25)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(Half-Moon-Slash)
+
+
+F5:
+	SetMomentum(0,0)
+	AddMomentum(3000,1500)
+endif
+
+# Active frames and hitboxes
+F10-12:
+	AttackFlag(Light)
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+
+endif
+
+F13:
+	#Log(rearm)
+	AttackMultihit()
+endif
+
+F14-15:
+	AttackFlag(Light)
+
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 25000, 5000, 45000)
+	endif
+
+endif
+
+F16:
+	AttackMultihit()
+endif
+
+F18-22:
+	SetMomentum(800,-700)
+	AttackFlag(Heavy)
+	AttackMomentumHit(2200,1200)
+	
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 35000, 5000, 23000)
+	endif
+
+endif
 :In-Sway-Atk:
 # Simple medium attack template
 AttackRegister(Heavy,5A+C)
@@ -1794,6 +1936,123 @@ F6-16:
 	Hitbox(-22000, -10000, 5000, 15000)
 	Hitbox(-14000, -3000, 15000, 25000)
 endif
+:Serpent-Catch-H:
+# Simple medium attack template
+AttackRegister(Special, 236C)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(50)
+AttackFlag(Light)
+AttackFlag(Low)
+AttackFrameAdvantage(30,-10)
+
+# Put your animation here
+Anim(Serpent-Catch)
+
+F1:
+	SetMomentum(4500,0)
+endif
+
+F1+:
+	BreakMomentum(100,0)
+endif
+
+F30:
+	SetMomentum(0,0)
+endif
+
+# Active frames and hitboxes
+F6-30:
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 22000, 2000, 15000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 22000, 2000, 15000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 22000, 2000, 15000)
+		endif
+	
+endif
+
+LAttackHasHit:
+	Log(hit)
+	Transition(Serpent-Catch-Toss)
+endif
+:Serpent-Catch-L:
+# Simple medium attack template
+AttackRegister(Special, 236A)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(40)
+AttackFlag(Light)
+AttackFlag(Low)
+AttackFrameAdvantage(30,-8)
+
+# Put your animation here
+Anim(Serpent-Catch)
+
+F1:
+	SetMomentum(3800,0)
+endif
+
+F1+:
+	BreakMomentum(100,0)
+endif
+
+F30:
+	SetMomentum(0,0)
+endif
+
+# Active frames and hitboxes
+F6-30:
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 22000, 2000, 15000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 22000, 2000, 15000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 22000, 2000, 15000)
+		endif
+	
+endif
+
+LAttackHasHit:
+	Log(hit)
+	Transition(Serpent-Catch-Toss)
+endif
+:Serpent-Catch-Toss:
+# Simple medium attack template
+AttackRegister(Special)
+
+# Adjust parameters here
+AttackDamage(1500)
+AttackDuration(44)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(Serpent-Catch-Toss)
+
+# Active frames and hitboxes
+F20:
+	Log(Here)
+	AttackKnockdown(50,50)
+	#Temp Solution
+	AttackMomentum(0,1000) 
+	
+	AttackFlag(ForceLanding)
+	InflictAttack()
+	Hitbox(0,14000,2000,15000)
+endif
 :ThrowF:
 # Override
 CallParent()
@@ -1845,7 +2104,7 @@ F13:
 endif
 
 F13-14:
-	AttackDamage(1300)
+	AttackDamage(1100)
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -1867,7 +2126,7 @@ endif
 
 F15-18:
 	AttackFrameAdvantage(7,-15)
-	AttackDamage(1400)
+	AttackDamage(1200)
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -1889,7 +2148,7 @@ endif
 AttackRegister(Special, 236D)
 
 # Adjust parameters here
-AttackDamage(1200)
+AttackDamage(1100)
 AttackDuration(45)
 AttackKnockdown()
 AttackFlag(Heavy)
@@ -1918,7 +2177,7 @@ F18:
 endif
 
 F18-19:
-	AttackDamage(1500)
+	AttackDamage(1200)
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -1940,7 +2199,7 @@ endif
 
 F20-23:
 	AttackFrameAdvantage(7,-17)
-	AttackDamage(1600)
+	AttackDamage(1300)
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
