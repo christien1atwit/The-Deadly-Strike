@@ -1164,7 +1164,7 @@ AttackDuration(16)
 AttackFrameAdvantage(16,2)
 #AttackFlag(Low)
 AttackFlag(Light)
-
+AttackAddRegisteredCancels(Special)
 # Put your animation here
 Anim(2A)
 
@@ -1184,6 +1184,8 @@ F10-12:
 		endif
 endif
 
+
+
 Flag(Crouching)
 :2B:
 # Simple medium attack template
@@ -1191,12 +1193,12 @@ AttackRegister(Light)
 
 # Adjust parameters here
 AttackDamage(400)
-AttackDuration(10)
+AttackDuration(8)
 AttackFlag(Low)
 AttackMustBlock(Low)
 AttackFlag(Light)
-
-AttackFrameAdvantage(3,-2)
+AttackAddRegisteredCancels(Special)
+AttackFrameAdvantage(5,-2)
 
 
 AttackMomentumHit(1500)
@@ -1221,6 +1223,11 @@ F4-8:
 		endif
 endif
 
+F5+:
+	AttackCancel(2B)
+	AttackCancel(Flying-High-L, 28B)
+endif
+
 Flag(Crouching)
 :2C:
 # Simple medium attack template
@@ -1230,6 +1237,8 @@ AttackRegister(Heavy)
 AttackDamage(600)
 AttackDuration(32)
 AttackFlag(Low)
+AttackFlag(Heavy)
+AttackKnockdown()
 # Put your animation here
 Anim(2C)
 
@@ -1296,7 +1305,7 @@ AttackRegister(Light, 5A)
 # Adjust parameters here
 AttackDamage(450)
 AttackDuration(16)
-AttackFrameAdvantage(10,2)
+AttackFrameAdvantage(5,2)
 AttackFlag(Light)
 
 # Put your animation here
@@ -1329,13 +1338,24 @@ AttackRegister(Light, 5B)
 AttackDamage(400)
 AttackDuration(24)
 AttackFlag(Light)
-
+AttackAddRegisteredCancels(Special)
 # Put your animation here
 Anim(5B)
 
 # Active frames and hitboxes
 F3-15:
-	Hitbox(4000, 19000, 10000, 24000)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+				Hitbox(4000, 19000, 10000, 24000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+				Hitbox(4000, 19000, 10000, 24000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+				Hitbox(4000, 19000, 10000, 24000)
+		endif
 endif
 :5C_P1:
 Call(Raise-Lane-Flag)
@@ -1561,7 +1581,7 @@ Anim(Flying-High)
 
 # Active frames and hitboxes
 F1:
-	AddMomentum(700, 4500)
+	AddMomentum(1300, 4500)
 endif
 
 
@@ -1603,7 +1623,7 @@ Anim(Flying-High)
 
 # Active frames and hitboxes
 F1:
-	AddMomentum(500, 3200)
+	AddMomentum(1000, 3200)
 endif
 
 
@@ -2038,13 +2058,14 @@ AttackRegister(Special)
 AttackDamage(1500)
 AttackDuration(44)
 # AttackFlag(Low)
+AttackFlag(Heavy)
 
 # Put your animation here
 Anim(Serpent-Catch-Toss)
 
 # Active frames and hitboxes
 F20:
-	Log(Here)
+
 	AttackKnockdown(50,50)
 	#Temp Solution
 	AttackMomentum(0,1000) 
@@ -2157,7 +2178,7 @@ AttackFrameAdvantage(5,-15)
 
 # Put your animation here
 F1-5:
-	AnimFrame(Tryant-Kick,0)
+	AnimFrame(Tyrant-Kick,0)
 endif
 
 F5+:
