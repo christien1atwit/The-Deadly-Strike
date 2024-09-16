@@ -24,7 +24,7 @@ def GRAPHICS_SPRITESHEET_Haley___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Haley___Path str() = res://fighters/Haley/Haley_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Haley___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Haley___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 13
+def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 15
 def GRAPHICS_Scale int() = 4000
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
@@ -470,6 +470,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___1_Frame int() = 142
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___2_Frame int() = 143
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___3_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___3_Frame int() = 144
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___4_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___4_Frame int() = 145
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___5_Frame int() = 53
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Guard_Hi___10_Frame int() = 0
@@ -811,6 +842,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___1_Frame int() = 129
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___2_Frame int() = 130
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Frame int() = 131
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Frame int() = 132
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Run int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Frame int() = 0
@@ -966,6 +1028,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Throw___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Frame int() = 133
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Frame int() = 134
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Frame int() = 135
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Frame int() = 136
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Frame int() = 137
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Frame int() = 138
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Frame int() = 139
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Frame int() = 140
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Frame int() = 141
+def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Frame int() = 0
@@ -1678,6 +1771,27 @@ endif
 
 F28+:
 	AttackAddRegisteredCancels(Light)
+endif
+:Rev-Kick:
+# Simple medium attack template
+AttackRegister(Medium, j4B)
+Unflag(FaceTarget)
+# Adjust parameters here
+AttackDamage(400)
+AttackDuration(26)
+AttackFlag(Heavy)
+AttackFlag(Overhead)
+AttackMustBlock(Overhead)
+AttackFrameAdvantage(10,-8)
+
+
+# Put your animation here
+Anim(Rev-Kick)
+
+# Active frames and hitboxes
+F6-16:
+	Hitbox(-22000, -10000, 5000, 15000)
+	Hitbox(-14000, -3000, 15000, 25000)
 endif
 :ThrowF:
 # Override
