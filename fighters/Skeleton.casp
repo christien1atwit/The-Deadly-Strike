@@ -4,8 +4,24 @@
 ## - Movement
 ## - Attack types
 ## etc.
-:Specs-PhysicsTeching:
+:Specs-UI:
 # Automatic creation
+:Specs-PhysicsTeching:
+def ATTACK_Hitstun_CanRecoverInAir bool() = 0
+def ATTACK_Tech_Airborne_CanTechBackward bool() = 0
+def ATTACK_Tech_Airborne_CanTechDown bool() = 0
+def ATTACK_Tech_Airborne_CanTechForward bool() = 0
+def ATTACK_Tech_Airborne_CanTechUp bool() = 0
+def ATTACK_Tech_Grounded_CanTechBackward bool() = 0
+def ATTACK_Tech_Grounded_CanTechForward bool() = 0
+def ATTACK_Tech_Grounded_CanTechUp bool() = 0
+def ATTACK_Tech_Grounded_Neutral_MomentumY int() = 0
+def ATTACK_Tech_Knockdown_Backward_RecoverCrouching bool() = 0
+def ATTACK_Tech_Knockdown_CanTechBackward bool() = 0
+def ATTACK_Tech_Knockdown_CanTechForward bool() = 0
+def ATTACK_Tech_Knockdown_CanTechUp bool() = 0
+def ATTACK_Tech_Knockdown_Forward_RecoverCrouching bool() = 0
+def ATTACK_Tech_Knockdown_Neutral_RecoverCrouching bool() = 0
 :Specs-PhysicsSystem:
 def PHYSICS_StandardHurtbox_Bottom int() = 0
 def PHYSICS_StandardColbox_Bottom int() = 0
@@ -13,22 +29,68 @@ def PHYSICS_StandardColbox_Width int() = 4000
 def PHYSICS_StandardHurtbox_Use bool() = 1
 def PHYSICS_StandardColbox_Use bool() = 1
 :Specs-PhysicsMovement:
-def MOVE_Dashes_CanRun bool() = 1
+def MOVE_AirActionsMax int() = 1
+def MOVE_Backdash_Speed int() = -1900
+def MOVE_CrouchToStand_Time int() = 3
 def MOVE_Dashes_CanBackdash bool() = 1
+def MOVE_Dashes_CanHighjump bool() = 1
+def MOVE_Dashes_CanRun bool() = 1
+def MOVE_Highjump_HighjumpB_InitialMomentumX int() = -1500
+def MOVE_Highjump_HighjumpB_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpF_InitialMomentumX int() = 1500
+def MOVE_Highjump_HighjumpF_InitialMomentumY int() = 4500
+def MOVE_Highjump_HighjumpN_InitialMomentumY int() = 4500
+def MOVE_Jump_JumpB_InitialMomentumX int() = -1500
+def MOVE_Jump_JumpB_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpF_InitialMomentumX int() = 1500
+def MOVE_Jump_JumpF_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpN_InitialMomentumY int() = 3500
+def MOVE_Jump_JumpsquatTime int() = 1
 def MOVE_Landing_RecoverCrouching bool() = 0
+def MOVE_Landing_TimeAttack int() = 4
+def MOVE_Landing_TimeEmpty int() = 2
+def MOVE_Run_Speed int() = 2100
+def MOVE_Run_SpeedStart int() = 2100
+def MOVE_Run_StartTime int() = 5
+def MOVE_StandToCrouch_Time int() = 3
+def MOVE_TurnaroundStand_Time int() = 0
+def MOVE_Walk_SpeedB int() = -1000
+def MOVE_Walk_SpeedF int() = 1500
 :Specs-Graphics:
 # Automatic creation
 :Specs-AudioSFX:
-# Automatic creation
+def AUDIO_SFX_Heavy_Hit int() = 0
+def AUDIO_SFX_Heavy_Hit___Filepath str() = res://castagne/assets/sfx/Heavy_Hit.mp3
+def AUDIO_SFX_Heavy_Hit___Volume int() = 1000
+def AUDIO_SFX_Light_Hit int() = 0
+def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
+def AUDIO_SFX_Light_Hit___Volume int() = 1000
 :Specs-AttacksTypes:
-# Automatic creation
+def ATTACK_EX_CanCancelIntoSuper bool() = 0
+def ATTACK_Heavy_CanCancelIntoHeavies bool() = 0
+def ATTACK_Heavy_CanCancelIntoMediums bool() = 0
+def ATTACK_Heavy_CanCancelIntoSpecials bool() = 0
+def ATTACK_Heavy_CanJumpCancelOnHit bool() = 0
+def ATTACK_Light_CanCancelIntoHeavies bool() = 0
+def ATTACK_Light_CanCancelIntoLights bool() = 0
+def ATTACK_Light_CanCancelIntoMediums bool() = 1
+def ATTACK_Light_CanCancelIntoSpecials bool() = 0
+def ATTACK_Light_CanJumpCancelOnHit bool() = 0
+def ATTACK_Light_ProrationHitstun int() = 950
+def ATTACK_Light_ProrationHitstunStarter int() = 820
+def ATTACK_Medium_CanCancelIntoHeavies bool() = 0
+def ATTACK_Medium_CanCancelIntoMediums bool() = 0
+def ATTACK_Medium_CanCancelIntoSpecials bool() = 1
+def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
+def ATTACK_Special_CanCancelIntoEX bool() = 0
+def ATTACK_Special_CanCancelIntoSuper bool() = 0
 :Specs-AttacksThrows:
 def ATTACK_Throw_CanAirThrow bool() = 0
 def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
 :Specs-AttacksMechanics:
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
-# Automatic creation
+def ANIMS_UseStandardAnims bool() = 0
 :Variables-System:
 var current_lane int() = 1
 var op_lane int() = 1
@@ -36,18 +98,124 @@ var op_lane int() = 1
 var my_id int() = 0
 var opponent_id int() = 1
 
-def DEF_SCALE int() = 3000
-def BAK_SCALE int() = 2625
-def FRN_SCALE int() = 3375
-def SCALING_AMOUNT int() = 375
+def DEF_SCALE int() = 4000
+def BAK_SCALE int() = 3500
+def FRN_SCALE int() = 4500
+def SCALING_AMOUNT int() = 500
 
 def DEF_ORIGIN_X int() = 75
 def DEF_ORIGIN_Y int() = 0
 def ORIGIN_AMOUNT=20
-var current_scale int() = 3000
+var current_scale int() = 4000
 :Variables:
 ## These variables are common to all characters since it's in the skeleton.
 ##var current_lane int() = 1
+:AnimBlockstunCrouching:
+CallParent()
+
+Anim(Guard_Lo)
+:AnimBlockstunStanding:
+CallParent()
+
+Anim(Guard_Hi, 0)
+:AnimCrouching:
+CallParent()
+Anim(Crouch)
+:AnimHighjumpB:
+CallParent()
+Anim(Jump)
+:AnimHighjumpF:
+CallParent()
+Anim(Jump)
+:AnimHighjumpN:
+CallParent()
+Anim(Jump)
+:AnimHitstun:
+CallParent()
+## Helper state to select which hitstun animation to play
+_Category(Animations/Reacts/Hitstun)
+_Helper()
+_Overridable(If you want custom logic for how hitstun's animation works)
+
+
+#Basic hit sound logic
+F1:
+	LAF_Light:
+		SFXPlay(Light_Hit)
+	endif
+	LAF_Heavy:
+		SFXPlay(Heavy_Hit)
+	endif
+
+endif
+
+LPF_Airborne:
+	Call(AnimHitstunAirborne)
+else
+	LCrouching:
+		Call(AnimHitstunCrouching)
+	else
+		Call(AnimHitstunStanding)
+	endif
+endif
+:AnimHitstunCrouching:
+CallParent()
+
+Anim(Hitstun_Crouching)
+:AnimHitstunStanding:
+CallParent()
+PFreeze:
+		
+		AnimFrame(Hitstun_Standing, 0)
+		
+	endif
+:AnimJumpB:
+CallParent()
+Anim(Jump)
+:AnimJumpF:
+CallParent()
+Anim(Jump)
+:AnimJumpN:
+CallParent()
+Anim(Jump)
+:AnimKnockdown:
+CallParent()
+
+Anim(Knockdown)
+:AnimRun:
+CallParent()
+
+Anim(Run)
+AnimLoop(16)
+:AnimStandToCrouch:
+CallParent()
+Anim(Crouch)
+:Common:
+CallParent()
+
+Call(Raise-Lane-Flag)
+
+LPF_Airborne:
+	Flag(Airborne)
+endif
+
+LPF_Landing:
+	Call(OnLanding)
+endif
+
+Call(DashInputHelper)
+:Correct-Scale:
+Vcurrent_lane==0:
+	Set(current_scale, BAK_SCALE)
+endif
+
+Vcurrent_lane==1:
+	Set(current_scale, DEF_SCALE)
+endif
+
+Vcurrent_lane==2:
+	Set(current_scale, FRN_SCALE)
+endif
 :Custom-NeutralStateCommon:
 CallParent()
 Call(Raise-Lane-Flag)
@@ -66,6 +234,46 @@ Vcurrent_lane==op_lane:
 else
 	SetColboxPhantom(1)
 endif
+:Custom-OnAttackBlocked:
+CallParent()
+AddMomentum(-1650)
+:Custom-OnAttackHit:
+CallParent()
+AddMomentum(-1200)
+:Custom-OnBlock:
+CallParent()
+Log(_Flags)
+Move(-100)
+:Custom-OnHit:
+CallParent()
+
+#Dragging Logic
+
+LAF_DragIn:
+	Log("Drag In")
+	Sub(current_lane, 1)
+	Vcurrent_lane<0:
+		Set(current_lane, 0)
+	endif
+	SetColboxLayer(current_lane)
+	SpriteOrder(current_lane)
+	Call(Raise-Lane-Flag)
+endif
+
+LAF_DragOut:
+	Log("Drag Out")
+	Add(current_lane, 1)
+	Vcurrent_lane>2:
+		Set(current_lane, 2)
+	endif
+	SetColboxLayer(current_lane)
+	SpriteOrder(current_lane)
+	Call(Raise-Lane-Flag)
+endif
+:Custom-OnReturnToNeutral:
+CallParent()
+BreakMomentumX(1000)
+Call(Correct-Scale)
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
@@ -75,20 +283,109 @@ endif
 Vcurrent_lane==0:
 	Flag(BackLane)
 	ModelScale(BAK_SCALE)
+	#Set(current_scale, BAK_SCALE)
 endif
 
 Vcurrent_lane==1:
 	Flag(MidLane)
 	ModelScale(DEF_SCALE)
+	#Set(current_scale, DEF_SCALE)
 endif
 
 Vcurrent_lane==2:
 	Flag(FrontLane)
 	ModelScale(FRN_SCALE)
+	#Set(current_scale, FRN_SCALE)
 endif
 
 
 #LogB(_Flags)
+:Run:
+CallParent()
+
+
+Unflag(FaceTarget)
+
+AttackAddRegisteredCancels(Light)
+AttackCancel(Shift-In-FDash, 6A+B)
+AttackCancel(Shift-Out-FDash, 6C+D)
+:Shift-In-BDash:
+AttackRegister(Light, 4A+B)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	F1:
+		SetMomentum(-3000, 0)
+	endif
+
+	F3+:
+		AttackCancel(Shift-Out-FDash, 6C+D)
+	endif	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-In-FDash:
+AttackRegister(Light, 6A+B)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+Anim(Run)
+
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	F1:
+		SetMomentum(3000, 0)
+	endif
+
+	F3+:
+		AttackCancel(Shift-Out-FDash, 6C+D)
+	endif	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
 :Shift-In-Stand:
 AttackRegister(Light, 5A+B)
 Call(Raise-Lane-Flag)
@@ -97,9 +394,13 @@ AttackDuration(20)
 
 
 Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	
 	Unflag(PF_Airborne)
 	Flag(PF_Grounded)
-	Sub(current_scale, 18)
+	Sub(current_scale, 25)
 	ModelScale(current_scale)
 
 	
@@ -107,6 +408,84 @@ Vcurrent_lane>0:
 	
 	F15:
 		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Out-BDash:
+AttackRegister(Light, 4C+D)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	
+	F1:
+		SetMomentum(-3000, 0)
+	endif
+
+	
+	F16+:
+		AttackCancel(Shift-In-FDash, 6A+B)
+	endif	
+	
+	F15:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Out-FDash:
+AttackRegister(Light, 6C+D)
+Call(Raise-Lane-Flag)
+AttackDuration(20)
+
+Anim(Run)
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	
+	F1:
+		SetMomentum(3000, 0)
+	endif
+
+	
+	F16+:
+		AttackCancel(Shift-In-FDash, 6A+B)
+	endif	
+	
+	F15:
+		Add(current_lane, 1)
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
@@ -125,8 +504,14 @@ AttackDuration(20)
 
 
 Vcurrent_lane<2:
-	Add(current_scale, 18)
+	SetColboxPhantom(1)
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
 	ModelScale(current_scale)
+	
+	
 	
 	F14:
 		Add(current_lane, 1)

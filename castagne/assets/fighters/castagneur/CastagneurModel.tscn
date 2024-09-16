@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://castagne/assets/fighters/castagneur/Castagneur.dae" type="PackedScene" id=1]
-[ext_resource path="res://castagne/assets/fighters/castagneur/CastagneurPalette01.tres" type="Material" id=2]
+[ext_resource path="res://castagne/assets/fighters/baston/model/CastagneurPalette01.tres" type="Material" id=2]
 
 [node name="Castagneur" instance=ExtResource( 1 )]
 
