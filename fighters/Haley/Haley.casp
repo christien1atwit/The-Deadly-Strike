@@ -1028,37 +1028,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Throw___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___9_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___10_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Frame int() = 133
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___1_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Frame int() = 134
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___2_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Frame int() = 135
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___3_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Frame int() = 136
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___4_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Frame int() = 137
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___5_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Duration int() = 6
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Frame int() = 138
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___6_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Frame int() = 139
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___7_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Frame int() = 140
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___8_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Frame int() = 141
-def GRAPHICS_SPRITE_ANIMATIONS_Tryant-Kick___9_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___1_Frame int() = 133
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___2_Frame int() = 134
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___3_Frame int() = 135
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___4_Frame int() = 136
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___5_Frame int() = 137
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___6_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___6_Frame int() = 138
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___7_Frame int() = 139
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___7_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___8_Frame int() = 140
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___8_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___9_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___9_Frame int() = 141
+def GRAPHICS_SPRITE_ANIMATIONS_Tyrant-Kick___9_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Walk int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___10_Frame int() = 0
@@ -1775,6 +1775,7 @@ endif
 :Rev-Kick:
 # Simple medium attack template
 AttackRegister(Medium, j4B)
+AttackAddNotation(j1B)
 Unflag(FaceTarget)
 # Adjust parameters here
 AttackDamage(400)
@@ -1817,6 +1818,145 @@ F8:
 endif
 
 InflictAttack()
+:Tryant-Kick-L:
+# Simple medium attack template
+AttackRegister(Special, 236B)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(30)
+AttackKnockdown()
+AttackFlag(Heavy)
+AttackFrameAdvantage(5,-12)
+
+
+# Put your animation here
+Anim(Tyrant-Kick)
+
+# Active frames and hitboxes
+F10-12:
+	AttackMomentumHit(1900, 2500)
+	AttackMomentumBlock(1700,0)
+	Hitbox(-16000, 14000, -2000, 17000)
+endif
+
+F13:
+	AddMomentum(1300,0)
+endif
+
+F13-14:
+	AttackDamage(1300)
+	AttackMomentumHit(1000, 2500)
+	AttackFloat(100)
+	AttackCancel(JumpF, 9)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+	
+	
+endif
+
+F15-18:
+	AttackFrameAdvantage(7,-15)
+	AttackDamage(1400)
+	AttackMomentumHit(1000, 2500)
+	AttackFloat(100)
+	AttackCancel(JumpF, 9)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+endif
+:Tyrant-Kick-H:
+# Simple medium attack template
+AttackRegister(Special, 236D)
+
+# Adjust parameters here
+AttackDamage(1200)
+AttackDuration(45)
+AttackKnockdown()
+AttackFlag(Heavy)
+AttackFrameAdvantage(5,-15)
+
+
+# Put your animation here
+F1-5:
+	AnimFrame(Tryant-Kick,0)
+endif
+
+F5+:
+	Anim(Tyrant-Kick)
+endif
+
+# Active frames and hitboxes
+F15-17:
+	SetMomentum(400,0)
+	AttackMomentumHit(1900, 2500)
+	AttackMomentumBlock(1700,0)
+	Hitbox(-16000, 14000, -2000, 17000)
+endif
+
+F18:
+	AddMomentum(2000,0)
+endif
+
+F18-19:
+	AttackDamage(1500)
+	AttackMomentumHit(1000, 2500)
+	AttackFloat(100)
+	AttackCancel(JumpF, 9)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+	
+	
+endif
+
+F20-23:
+	AttackFrameAdvantage(7,-17)
+	AttackDamage(1600)
+	AttackMomentumHit(1000, 2500)
+	AttackFloat(100)
+	AttackCancel(JumpF, 9)
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(0, 25000, 10000, 29000)
+		endif
+endif
 :j2B:
 AttackRegister(Medium)
 
