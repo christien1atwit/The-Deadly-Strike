@@ -190,6 +190,18 @@ AnimLoop(16)
 :AnimStandToCrouch:
 CallParent()
 Anim(Crouch)
+:Bring-To-Floor:
+Vcurrent_lane=0:
+	SetWorldPositionY(5000)
+endif
+
+Vcurrent_lane=1:
+	SetWorldPositionY(1)
+endif
+
+Vcurrent_lane=2:
+	SetWorldPositionY(-5000)
+endif
 :Common:
 CallParent()
 
@@ -274,6 +286,23 @@ endif
 CallParent()
 BreakMomentumX(1000)
 Call(Correct-Scale)
+:FDash-Atk:
+# Simple medium attack template
+_Overridable()
+AttackRegister(Medium)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(60)
+# AttackFlag(Low)
+
+# Put your animation here
+#Anim(5B)
+
+# Active frames and hitboxes
+F10-12:
+	Hitbox(0, 15000, 5000, 15000)
+endif
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
@@ -311,6 +340,7 @@ AttackCancel(Shift-In-FDash, 6A+B)
 AttackCancel(Shift-Out-FDash, 6C+D)
 :Shift-In-BDash:
 AttackRegister(Light, 4A+B)
+_Overridable()
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -352,9 +382,11 @@ endif
 AttackRegister(Light, 6A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
-
+_Overridable()
 Anim(Run)
 
+Unflag(PF_Airborne)
+Flag(PF_Grounded)
 
 Vcurrent_lane>0:
 	SetColboxPhantom(1)
@@ -369,9 +401,6 @@ Vcurrent_lane>0:
 		SetMomentum(3000, 0)
 	endif
 
-	F3+:
-		AttackCancel(Shift-Out-FDash, 6C+D)
-	endif	
 	
 	
 	F15:
@@ -379,7 +408,19 @@ Vcurrent_lane>0:
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		IC:
+			Log(HELLO)
+			Unflag(PF_Airborne)
+			Flag(PF_Grounded)
+			Transition(FDash-Atk)
+		endif	
 	endif
+	
+	
+	
+
+	
+	
 	
 	F20:
 		Transition(AnimStand)
@@ -387,6 +428,7 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-In-Stand:
+_Overridable()
 AttackRegister(Light, 5A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
@@ -409,7 +451,6 @@ Vcurrent_lane>0:
 	F15:
 		Sub(current_lane, 1)
 		SetColboxLayer(current_lane)
-		#Log(current_lane)
 		Call(Raise-Lane-Flag)
 	endif
 	
@@ -419,6 +460,7 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-Out-BDash:
+_Overridable()
 AttackRegister(Light, 4C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
@@ -458,6 +500,7 @@ Vcurrent_lane<2:
 	
 endif
 :Shift-Out-FDash:
+_Overridable()
 AttackRegister(Light, 6C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
@@ -476,20 +519,26 @@ Vcurrent_lane<2:
 	
 	
 	F1:
-		SetMomentum(3000, 0)
+		SetMomentum(3000,0)
 	endif
 
 	
-	F16+:
-		AttackCancel(Shift-In-FDash, 6A+B)
-	endif	
-	
+
 	F15:
 		Add(current_lane, 1)
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		IC:
+			Log(HELLO)
+			Unflag(PF_Airborne)
+			Flag(PF_Grounded)
+			Transition(FDash-Atk,20)
+		endif	
 	endif
+
+	
+
 	
 	F20:
 		Transition(AnimStand)
@@ -497,6 +546,7 @@ Vcurrent_lane<2:
 	
 endif
 :Shift-Out-Stand:
+_Overridable()
 AttackRegister(Light, 5C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)

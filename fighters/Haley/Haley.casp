@@ -1565,6 +1565,15 @@ AnimLoop(32)
 :Custom-OnHit:
 CallParent()
 Log(_Flags)
+:FDash-Atk:
+AttackRegister(Heavy)
+
+AttackDuration(30)
+AttackDamage(700)
+
+AttackFlag(Heavy)
+
+Anim(J.D)
 :Flying-High-H:
 # Simple medium attack template
 AttackRegister(Special,[2]8D)
