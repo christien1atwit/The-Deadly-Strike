@@ -1568,10 +1568,15 @@ Log(_Flags)
 :FDash-Atk:
 AttackRegister(Heavy)
 
+Log(Doing Dash ATK)
+Unflag(PF_Airborne)
+Flag(PF_Grounded)
+
 AttackDuration(30)
 AttackDamage(700)
 
 AttackFlag(Heavy)
+
 
 Anim(J.D)
 :Flying-High-H:

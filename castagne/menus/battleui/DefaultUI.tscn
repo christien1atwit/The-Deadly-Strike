@@ -29,9 +29,6 @@ anchor_bottom = 1.0
 margin_right = 8.0
 margin_bottom = 8.0
 color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HandleRed" type="Control" parent="R/HPBar"]
 anchor_right = 1.0

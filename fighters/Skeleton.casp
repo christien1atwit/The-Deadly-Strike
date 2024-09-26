@@ -5,7 +5,19 @@
 ## - Attack types
 ## etc.
 :Specs-UI:
-# Automatic creation
+def UI_Widgets_HPBar int() = 0
+def UI_Widgets_HPBar___Asset1 str() = 
+def UI_Widgets_HPBar___Asset2 str() = 
+def UI_Widgets_HPBar___Asset3 str() = 
+def UI_Widgets_HPBar___DefaultColor int() = 1
+def UI_Widgets_HPBar___Direction int() = 0
+def UI_Widgets_HPBar___HookPoint str() = HP
+def UI_Widgets_HPBar___ScenePath str() = res://castagne/helpers/ui/widgets/Custom/HealthBar.tscn
+def UI_Widgets_HPBar___Type int() = 0
+def UI_Widgets_HPBar___UseWidget bool() = 1
+def UI_Widgets_HPBar___Variable1 str() = HP
+def UI_Widgets_HPBar___Variable2 str() = 
+def UI_Widgets_HPBar___Variable3 str() = HPMax
 :Specs-PhysicsTeching:
 def ATTACK_Hitstun_CanRecoverInAir bool() = 0
 def ATTACK_Tech_Airborne_CanTechBackward bool() = 0
@@ -412,7 +424,7 @@ Vcurrent_lane>0:
 			Log(HELLO)
 			Unflag(PF_Airborne)
 			Flag(PF_Grounded)
-			Transition(FDash-Atk)
+			TransitionBuffer(FDash-Atk)
 		endif	
 	endif
 	
@@ -533,7 +545,7 @@ Vcurrent_lane<2:
 			Log(HELLO)
 			Unflag(PF_Airborne)
 			Flag(PF_Grounded)
-			Transition(FDash-Atk,20)
+			TransitionBuffer(FDash-Atk)
 		endif	
 	endif
 
