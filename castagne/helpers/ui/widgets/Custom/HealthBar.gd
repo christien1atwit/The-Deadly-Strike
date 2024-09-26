@@ -17,7 +17,7 @@ func WidgetInitialize(stateHandle, battleInitData = null, caspData = null):
 func WidgetUpdate(stateHandle):
 	.WidgetUpdate(stateHandle)
 	var viewportHeight=playerRoot.rect_size.y
-	var scalingFactor=float(viewportHeight/240)
+	var scalingFactor=float(viewportHeight/240)#240 is the height of the screen that this was drawn for
 	self.rect_scale=Vector2(scalingFactor,scalingFactor)
 	
 	
