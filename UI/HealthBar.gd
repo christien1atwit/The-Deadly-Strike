@@ -1,9 +1,9 @@
 extends "res://castagne/helpers/ui/widgets/CUIWidget_Bar.gd"
 
 
-onready var flipProg = preload("res://castagne/assets/ui/widgets/HealthBarF.png")
-onready var flipUnder = preload("res://castagne/assets/ui/widgets/HealthBarUnderF.png")
-onready var flipOver= preload("res://castagne/assets/ui/widgets/HealthBarBoarderF.png")
+onready var flipProg = preload("res://Assets/HealthBarF.png")
+onready var flipUnder = preload("res://Assets/HealthBarUnderF.png")
+onready var flipOver= preload("res://Assets/HealthBarBoarderF.png")
 onready var playerRoot= get_parent().get_parent()
 
 func WidgetInitialize(stateHandle, battleInitData = null, caspData = null):
