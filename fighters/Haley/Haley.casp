@@ -2,11 +2,23 @@
 ## This is the Character block, where you add some basic information about your character that can be accessed from outside, like their name or place on the select screen.
 ## You can also add another file to this with the Skeleton: property.
 
-Name: Haley
+Name: Haley Ortega
 EditorName: Haley
 Skeleton: res://fighters/Skeleton.casp
 :Specs-UI:
-# Automatic creation
+def UI_Widgets_HPBar int() = 0
+def UI_Widgets_HPBar___Asset1 str() = res://Assets/Test-Port2.png
+def UI_Widgets_HPBar___Asset2 str() = 
+def UI_Widgets_HPBar___Asset3 str() = 
+def UI_Widgets_HPBar___DefaultColor int() = 1
+def UI_Widgets_HPBar___Direction int() = 0
+def UI_Widgets_HPBar___HookPoint str() = HP
+def UI_Widgets_HPBar___ScenePath str() = res://UI/HealthBar.tscn
+def UI_Widgets_HPBar___Type int() = 0
+def UI_Widgets_HPBar___UseWidget bool() = 1
+def UI_Widgets_HPBar___Variable1 str() = HP
+def UI_Widgets_HPBar___Variable2 str() = 
+def UI_Widgets_HPBar___Variable3 str() = HPMax
 :Specs-PhysicsTeching:
 # Automatic creation
 :Specs-PhysicsSystem:
@@ -346,6 +358,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_6B___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_6B___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___1_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___1_Frame int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Backstep___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch_Loop___10_Duration int() = 0
@@ -470,6 +513,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Dive_45___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___1_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___1_Frame int() = 153
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___2_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___2_Frame int() = 154
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Escape___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Flying-High int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Flying-High___10_Frame int() = 0
@@ -1371,6 +1445,7 @@ AttackFrameAdvantage(5,2)
 AttackFlag(Light)
 AttackFlag(Mid)
 
+
 # Put your animation here
 Anim(5A)
 
@@ -1583,13 +1658,13 @@ F1:
 		Hitbox(1000, 15000, 15000, 25000)
 	endif
 	Vcurrent_lane==1:
-		HitboxRequires(BackLane)
+		#HitboxRequires(BackLane)
 		Hitbox(-5000, 5000, 7000, 14000)
 		#HitboxRequires()
 		HitboxRequires(MidLane)
 		Hitbox(0, 10000, 5000, 12000)
 		#HitboxRequires()
-		HitboxRequires(FrontLane)
+		#HitboxRequires(FrontLane)
 		Hitbox(-5000, 5000, -3000, 8000)
 	endif
 	Vcurrent_lane==2:
@@ -1602,11 +1677,20 @@ endif
 F2:
 	Transition(5C_P1)
 endif
+:AnimBackdash:
+CallParent()
+Anim(Backstep)
 :AnimBlockstunStanding:
 CallParent()
 :AnimCrouching:
 CallParent()
 Anim(Crouch_Loop)
+:AnimGroundThrowTeched:
+CallParent()
+Anim(Escape)
+:AnimGroundThrowTeching:
+CallParent()
+Anim(Escape)
 :AnimKnockdown:
 CallParent()
 
@@ -1616,6 +1700,7 @@ endif
 Anim(Knockdown)
 :AnimStand:
 CallParent()
+
 
 Anim(Stand)
 AnimLoop(36)
@@ -2083,7 +2168,8 @@ AttackFrameAdvantage(30,-10)
 
 # Put your animation here
 Anim(Serpent-Catch)
-
+Hurtbox(-15000, 9000, 4000, 18000)
+Hurtbox(9000, 19000, 4000, 12000)
 F1:
 	SetMomentum(4500,0)
 endif
@@ -2130,6 +2216,9 @@ AttackFrameAdvantage(30,-8)
 
 # Put your animation here
 Anim(Serpent-Catch)
+
+Hurtbox(-15000, 9000, 4000, 18000)
+Hurtbox(9000, 19000, 4000, 12000)
 
 F1:
 	SetMomentum(3800,0)
