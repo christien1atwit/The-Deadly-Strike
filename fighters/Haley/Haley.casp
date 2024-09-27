@@ -1224,7 +1224,7 @@ AttackRegister(Light)
 AttackDamage(400)
 AttackDuration(16)
 AttackFrameAdvantage(16,2)
-#AttackFlag(Low)
+AttackFlag(Mid)
 AttackFlag(Light)
 AttackAddRegisteredCancels(Special)
 # Put your animation here
@@ -1298,7 +1298,7 @@ AttackRegister(Heavy)
 # Adjust parameters here
 AttackDamage(600)
 AttackDuration(32)
-AttackFlag(Low)
+AttackFlag(Mid)
 AttackFlag(Heavy)
 AttackKnockdown()
 # Put your animation here
@@ -1369,6 +1369,7 @@ AttackDamage(450)
 AttackDuration(16)
 AttackFrameAdvantage(5,2)
 AttackFlag(Light)
+AttackFlag(Mid)
 
 # Put your animation here
 Anim(5A)
@@ -1400,6 +1401,7 @@ AttackRegister(Light, 5B)
 AttackDamage(400)
 AttackDuration(24)
 AttackFlag(Light)
+AttackFlag(Mid)
 AttackAddRegisteredCancels(Special)
 # Put your animation here
 Anim(5B)
@@ -1430,8 +1432,8 @@ AttackMomentumHit(1000)
 
 AttackFrameAdvantage(6,-12)
 
-# AttackFlag(Low)
 AttackFlag(Heavy)
+AttackFlag(Mid)
 # Put your animation here
 
 Anim(5C_0)
@@ -1474,8 +1476,9 @@ AttackDamage(700)
 AttackDuration(20)
 AttackMomentumHit(2000, 1500)
 AttackFrameAdvantage(4, -13)
-# AttackFlag(Low)
+
 AttackFlag(Heavy)
+AttackFlag(Mid)
 # Put your animation here
 Anim(5C_1)
 
@@ -1507,6 +1510,7 @@ AttackDuration(34)
 AttackMomentumHit(2000, 1500)
 AttackMomentumBlock(700,0)
 AttackFrameAdvantage(4, 0)
+AttackFlag(Mid)
 
 AttackFlag(Heavy)
 # Put your animation here
@@ -1641,7 +1645,7 @@ AttackMomentumBlock(1400,0)
 AttackHitstop(4)
 AttackKnockdown(50,50)
 AttackFlag(Heavy)
-
+AttackFlag(Mid)
 
 Anim(J.D)
 
@@ -1680,6 +1684,7 @@ AttackDamage(1200)
 AttackDuration(40)
 # AttackFlag(Low)
 AttackFlag(Light)
+AttackFlag(Mid)
 AttackKnockdown()
 
 # Put your animation here
@@ -1720,6 +1725,7 @@ AttackDamage(950)
 AttackDuration(30)
 # AttackFlag(Low)
 AttackFlag(Light)
+AttackFlag(Mid)
 AttackKnockdown()
 AttackFrameAdvantage(-2,-8)
 AttackMomentumHit(1500,0)
@@ -1941,6 +1947,7 @@ AttackMomentumHit(600,0)
 AttackMomentumBlock(900,0)
 AttackFrameAdvantage(5,-2)
 AttackFlag(Heavy)
+AttackFlag(Mid)
 
 # Put your animation here
 Anim(Sway_Atk)
@@ -1997,6 +2004,7 @@ AttackFlag(Heavy)
 AttackMomentumHit(600,0)
 AttackMomentumBlock(900,0)
 AttackFrameAdvantage(5,-2)
+AttackFlag(Mid)
 # Put your animation here
 Anim(Sway_Atk)
 
@@ -2180,6 +2188,14 @@ F20:
 	InflictAttack()
 	Hitbox(0,14000,2000,15000)
 endif
+:Shift-Roll-In:
+# Override
+CallParent()
+Hurtbox(-8000,8000,3000,16000)
+:Shift-Roll-Out:
+# Override
+CallParent()
+Hurtbox(-8000,8000,3000,16000)
 :ThrowF:
 # Override
 CallParent()
@@ -2350,6 +2366,7 @@ AttackRegister(Medium)
 AttackDamage(450)
 AttackDuration(26)
 AttackFlag(Light)
+AttackFlag(Mid)
 
 # Put your animation here
 Anim(Dive_30)
@@ -2382,6 +2399,7 @@ AttackRegister(Medium)
 AttackDamage(450)
 AttackDuration(26)
 AttackFlag(Light)
+AttackFlag(Mid)
 
 # Put your animation here
 Anim(Dive_45)

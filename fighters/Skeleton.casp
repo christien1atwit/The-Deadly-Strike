@@ -602,8 +602,7 @@ AttackDuration(25)
 Anim(Roll-In)
 
 F1-10:
-	Flag(Invul-High)
-	Flag(Invul-Mid)
+	Flag(Invul-AF_Mid)
 endif
 
 Vcurrent_lane>0:
@@ -639,8 +638,7 @@ AttackDuration(25)
 Anim(Roll-Out)
 
 F1-10:
-	Flag(Invul-High)
-	Flag(Invul-Mid)
+	Flag(Invul-AF_Mid)
 endif
 
 
