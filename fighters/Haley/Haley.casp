@@ -24,7 +24,7 @@ def GRAPHICS_SPRITESHEET_Haley___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Haley___Path str() = res://fighters/Haley/Haley_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Haley___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Haley___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 15
+def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 16
 def GRAPHICS_Scale int() = 4000
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
@@ -873,6 +873,68 @@ def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___1_Frame int() = 150
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___2_Frame int() = 151
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___3_Frame int() = 152
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___4_Frame int() = 150
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___5_Frame int() = 151
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___6_Frame int() = 152
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-In___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___1_Frame int() = 152
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___2_Frame int() = 151
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___3_Frame int() = 150
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___4_Frame int() = 152
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___5_Frame int() = 151
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___6_Frame int() = 150
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Roll-Out___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Run int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Frame int() = 0
@@ -1568,17 +1630,47 @@ Log(_Flags)
 :FDash-Atk:
 AttackRegister(Heavy)
 
-Log(Doing Dash ATK)
-Unflag(PF_Airborne)
-Flag(PF_Grounded)
+#Log(Doing Dash ATK)
+#Unflag(PF_Airborne)
+#Flag(PF_Grounded)
 
 AttackDuration(30)
 AttackDamage(700)
-
+AttackMomentumHit(4500,2500)
+AttackMomentumBlock(1400,0)
+AttackHitstop(4)
+AttackKnockdown(50,50)
 AttackFlag(Heavy)
 
 
 Anim(J.D)
+
+F12-24:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
+
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
+
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
+
+		endif
+endif
+
+LAttackHasHit:
+	F20+:
+		Transition(JumpB)
+	endif
+endif
 :Flying-High-H:
 # Simple medium attack template
 AttackRegister(Special,[2]8D)
@@ -2014,7 +2106,7 @@ F6-30:
 endif
 
 LAttackHasHit:
-	Log(hit)
+	SetMomentum(0,0)
 	Transition(Serpent-Catch-Toss)
 endif
 :Serpent-Catch-L:
@@ -2061,7 +2153,7 @@ F6-30:
 endif
 
 LAttackHasHit:
-	Log(hit)
+	SetMomentum(0,0)
 	Transition(Serpent-Catch-Toss)
 endif
 :Serpent-Catch-Toss:
@@ -2442,20 +2534,20 @@ Anim(J.D)
 F10-24:
 	Vcurrent_lane==0:
 			HitboxRequires(BackLane)
-			Hitbox(0, 15000, 5000, 35000)
-			Hitbox(-10000, 10000, 35500, 45000)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
 
 		endif
 		Vcurrent_lane==1:
 			HitboxRequires(MidLane)
-			Hitbox(0, 15000, 5000, 35000)
-			Hitbox(-10000, 10000, 35500, 45000)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
 
 		endif
 		Vcurrent_lane==2:
 			HitboxRequires(FrontLane)
-			Hitbox(0, 15000, 5000, 35000)
-			Hitbox(-10000, 10000, 35500, 45000)
+			Hitbox(-9500, 2000,13000,25000)
+			Hitbox(0, 23000, 20000,35000)
 
 		endif
 endif

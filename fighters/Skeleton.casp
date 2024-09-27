@@ -351,7 +351,7 @@ AttackAddRegisteredCancels(Light)
 AttackCancel(Shift-In-FDash, 6A+B)
 AttackCancel(Shift-Out-FDash, 6C+D)
 :Shift-In-BDash:
-AttackRegister(Light, 4A+B)
+AttackRegister(Light, 4C+D)
 _Overridable()
 Call(Raise-Lane-Flag)
 AttackDuration(20)
@@ -391,7 +391,7 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-In-FDash:
-AttackRegister(Light, 6A+B)
+AttackRegister(Light, 6C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 _Overridable()
@@ -441,7 +441,7 @@ Vcurrent_lane>0:
 endif
 :Shift-In-Stand:
 _Overridable()
-AttackRegister(Light, 5A+B)
+AttackRegister(Light, 5C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -473,7 +473,7 @@ Vcurrent_lane>0:
 endif
 :Shift-Out-BDash:
 _Overridable()
-AttackRegister(Light, 4C+D)
+AttackRegister(Light, 4A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -513,7 +513,7 @@ Vcurrent_lane<2:
 endif
 :Shift-Out-FDash:
 _Overridable()
-AttackRegister(Light, 6C+D)
+AttackRegister(Light, 6A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -559,7 +559,7 @@ Vcurrent_lane<2:
 endif
 :Shift-Out-Stand:
 _Overridable()
-AttackRegister(Light, 5C+D)
+AttackRegister(Light, 5A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -584,6 +584,85 @@ Vcurrent_lane<2:
 	endif
 	
 	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+
+PReaction:
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+endif
+:Shift-Roll-In:
+_Overridable()
+AttackRegister(Light, 2C+D)
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Roll-In)
+
+F1-10:
+	Flag(Invul-High)
+	Flag(Invul-Mid)
+endif
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Roll-Out:
+_Overridable()
+AttackRegister(Light, 2A+B)
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Roll-Out)
+
+F1-10:
+	Flag(Invul-High)
+	Flag(Invul-Mid)
+endif
+
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	
+	F14:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		SpriteOrder(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
 		Transition(AnimStand)
 	endif
 	
