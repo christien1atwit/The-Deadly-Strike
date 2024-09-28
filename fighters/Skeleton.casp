@@ -23,7 +23,7 @@ def UI_Widgets_Meter___Asset1 str() =
 def UI_Widgets_Meter___Asset2 str() = 
 def UI_Widgets_Meter___Asset3 str() = 
 def UI_Widgets_Meter___DefaultColor int() = 3
-def UI_Widgets_Meter___Direction int() = 1
+def UI_Widgets_Meter___Direction int() = 0
 def UI_Widgets_Meter___HookPoint str() = Meter
 def UI_Widgets_Meter___ScenePath str() = res://UI/MeterBar.tscn
 def UI_Widgets_Meter___Type int() = 0
@@ -277,6 +277,8 @@ AddMomentum(-1650)
 :Custom-OnAttackHit:
 CallParent()
 AddMomentum(-1200)
+
+Add(Meter, 5, Meter)
 :Custom-OnBlock:
 CallParent()
 Log(_Flags)
