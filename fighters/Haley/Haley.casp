@@ -36,7 +36,7 @@ def GRAPHICS_SPRITESHEET_Haley___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Haley___Path str() = res://fighters/Haley/Haley_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Haley___PixelSize int() = 1000
 def GRAPHICS_SPRITESHEET_Haley___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 16
+def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 17
 def GRAPHICS_Scale int() = 4000
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
@@ -916,6 +916,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___1_Frame int() = 155
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___2_Frame int() = 156
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___3_Duration int() = 7
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___3_Frame int() = 157
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___4_Frame int() = 158
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___5_Duration int() = 15
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___5_Frame int() = 159
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___6_Frame int() = 160
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___7_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___7_Frame int() = 161
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___7_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___10_Frame int() = 0
@@ -1701,7 +1732,6 @@ Anim(Knockdown)
 :AnimStand:
 CallParent()
 
-
 Anim(Stand)
 AnimLoop(36)
 :AnimWalkB:
@@ -2132,6 +2162,60 @@ endif
 
 F28+:
 	AttackAddRegisteredCancels(Light)
+endif
+:Regicide-Thrust:
+AttackRegister(Super,22B)
+AttackAddNotation(236236D)
+
+# Adjust parameters here
+AttackDamage(2000)
+AttackDuration(46)
+AttackMomentumHit(1600,0)
+AttackMomentumBlock(200,0)
+AttackFrameAdvantage(20,-15)
+AttackKnockdown(50,50)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(Regicide-Thrust)
+
+
+
+
+# Active frames and hitboxes
+F15-19:
+	AttackFlag(Light)
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+
+endif
+
+
+F20-35:
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 30000, 12000, 35000)
+	endif
+
 endif
 :Rev-Kick:
 # Simple medium attack template
