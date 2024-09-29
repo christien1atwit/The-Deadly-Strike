@@ -1354,9 +1354,7 @@ F10-12:
 endif
 
 
-LAttackHasHit:
-	FlagNext(MeterLHit)
-endif
+FlagNext(MeterLHit)
 
 
 
@@ -1402,10 +1400,7 @@ F5+:
 	AttackCancel(Flying-High-L, 28B)
 endif
 
-
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 
 
 Flag(Crouching)
@@ -1439,9 +1434,7 @@ F10-12:
 endif
 Flag(Crouching)
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :2D:
 # Simple medium attack template
 AttackRegister(Heavy)
@@ -1483,16 +1476,14 @@ F10-12:
 endif
 
 Flag(Crouching)
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :5A:
 AttackRegister(Light, 5A)
 
 # Adjust parameters here
 AttackDamage(450)
 AttackDuration(16)
-AttackFrameAdvantage(5,2)
+AttackFrameAdvantage(6,2)
 AttackFlag(Light)
 AttackFlag(Mid)
 
@@ -1521,9 +1512,7 @@ F3+:
 	AttackCancel(5A, 5A,  7)
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :5B:
 AttackRegister(Light, 5B)
 
@@ -1552,9 +1541,7 @@ F3-15:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :5C_P1:
 Call(Raise-Lane-Flag)
 AttackRegister(Heavy, 5C)
@@ -1602,9 +1589,7 @@ F14-30:
 	AttackCancel(6B)
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :5C_P2:
 Call(Raise-Lane-Flag)
 AttackRegister(Heavy)
@@ -1638,6 +1623,7 @@ F6-12:
 		endif
 	
 endif
+FlagNext(MeterLHit)
 :5D:
 # Simple medium attack template
 AttackRegister(Heavy, 5D)
@@ -1672,9 +1658,7 @@ F10-12:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :6B:
 # Simple medium attack template
 AttackRegister(Medium)
@@ -1707,9 +1691,7 @@ F18-30:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :6Throw:
 # Simple medium attack template
 AttackRegister(Throw, 6C)
@@ -1785,7 +1767,7 @@ Anim(Walk)
 AnimLoop(32)
 :Custom-OnHit:
 CallParent()
-Log(_Flags)
+#Log(_Flags)
 :FDash-Atk:
 AttackRegister(Heavy)
 
@@ -1831,9 +1813,7 @@ LAttackHasHit:
 	endif
 endif
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :Flying-High-H:
 # Simple medium attack template
 AttackRegister(Special,[2]8D)
@@ -1875,6 +1855,8 @@ F4-18:
 			endif
 	
 endif
+
+FlagNext(Flying-High)
 :Flying-High-L:
 # Simple medium attack template
 AttackRegister(Special,[2]8B)
@@ -1916,6 +1898,8 @@ F4-18:
 			endif
 	
 endif
+
+FlagNext(Flying-High)
 :Half-Moon-Slash-H:
 AttackRegister(Special,214D)
 AttackAddNotation(j214D)
@@ -2008,6 +1992,8 @@ F28-32:
 	endif
 
 endif
+
+FlagNext(Half-Moon-Slash)
 :Half-Moon-Slash-L:
 AttackRegister(Special,214B)
 AttackAddNotation(j214B)
@@ -2095,6 +2081,8 @@ F18-22:
 	endif
 
 endif
+
+FlagNext(Half-Moon-Slash)
 :In-Sway-Atk:
 # Simple medium attack template
 AttackRegister(Heavy,5A+C)
@@ -2212,9 +2200,7 @@ F28+:
 	AttackAddRegisteredCancels(Light)
 endif
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :Regicide-Thrust:
 AttackRegister(Super,2141236B)
 AttackAddNotation(2141236D)
@@ -2228,10 +2214,13 @@ AttackAddNotation(2141236D)
 	AttackFrameAdvantage(20,-15)
 	AttackKnockdown(50,50)
 	AttackMomentumHit(1200, 4500, 600, 5000 )
+	AttackHitstop(15)
 	# AttackFlag(Low)
 	Flag(Regicide-Thrust)
 	# Put your animation here
 	Anim(Regicide-Thrust)
+
+	#HaltPhase()
 
 	F1-20:
 		Sub(Meter, 10, Meter)
@@ -2241,7 +2230,7 @@ AttackAddNotation(2141236D)
 	endif
 
 	# Active frames and hitboxes
-	F15-19:
+	F16-20:
 		AttackFlag(Light)
 		
 		Vcurrent_lane==0:
@@ -2272,7 +2261,7 @@ AttackAddNotation(2141236D)
 	endif
 
 
-	F20-35:
+	F21-36:
 		Vcurrent_lane==0:
 				HitboxRequires(BackLane)
 				Hitbox(-12000, 20000, 4000, 25000)
@@ -2302,6 +2291,7 @@ endif
 LAttackHasHit:		
 		AttackCancel(JumpF, 9)
 endif
+FlagNext(Regicide-Thrust)
 :Rev-Kick:
 # Simple medium attack template
 AttackRegister(Medium, j4B)
@@ -2325,9 +2315,8 @@ F6-16:
 	Hitbox(-14000, -3000, 15000, 25000)
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+
+FlagNext(MeterLHit)
 :Serpent-Catch-H:
 # Simple medium attack template
 AttackRegister(Special, 236C)
@@ -2376,6 +2365,8 @@ LAttackHasHit:
 	SetMomentum(0,0)
 	Transition(Serpent-Catch-Toss)
 endif
+
+FlagNext(Serpent-Catch)
 :Serpent-Catch-L:
 # Simple medium attack template
 AttackRegister(Special, 236A)
@@ -2426,6 +2417,8 @@ LAttackHasHit:
 	SetMomentum(0,0)
 	Transition(Serpent-Catch-Toss)
 endif
+
+FlagNext(Serpent-Catch)
 :Serpent-Catch-Toss:
 # Simple medium attack template
 AttackRegister(Special)
@@ -2482,9 +2475,8 @@ F8:
 endif
 
 InflictAttack()
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+
+FlagNext(MeterHHit)
 :Tryant-Kick-L:
 # Simple medium attack template
 AttackRegister(Special, 236B)
@@ -2551,6 +2543,8 @@ F15-18:
 			Hitbox(0, 25000, 10000, 29000)
 		endif
 endif
+
+FlagNext(Tyrant-Kick)
 :Tyrant-Kick-H:
 # Simple medium attack template
 AttackRegister(Special, 236D)
@@ -2624,6 +2618,31 @@ F20-23:
 			Hitbox(0, 25000, 10000, 29000)
 		endif
 endif
+
+FlagNext(Tyrant-Kick)
+:Unique-Move-Meter-Gain:
+# Override
+CallParent()
+
+LFlying-High:
+	Add(Meter, 15)
+endif
+
+LHalf-Moon-Slash:
+	Add(Meter, 3)
+endif
+
+LTyrant-Kick:
+	Add(Meter, 18)
+endif
+
+LSerpent-Catch:
+	Add(Meter, 15)
+endif
+
+LRegicide-Thrust:
+	Add(Meter, 20)
+endif
 :j2B:
 AttackRegister(Medium)
 
@@ -2658,9 +2677,7 @@ F8+:
 	
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :j2D:
 AttackRegister(Medium)
 
@@ -2696,9 +2713,8 @@ F8+:
 	
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+
+FlagNext(MeterLHit)
 :j5A:
 # Simple medium attack template
 AttackRegister(AirLight)
@@ -2732,6 +2748,8 @@ F10-12:
 			Hitbox(-3000,10000, 30000, 43000)
 		endif
 endif
+
+FlagNext(MeterLHit)
 :j5B:
 # Simple medium attack template
 AttackRegister(AirLight)
@@ -2767,9 +2785,7 @@ Vcurrent_lane==0:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterLHit)
-endif
+FlagNext(MeterLHit)
 :j5C:
 # Simple medium attack template
 AttackRegister(AirHeavy)
@@ -2811,9 +2827,7 @@ F10-14:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
 :j5D:
 # Simple medium attack template
 AttackRegister(AirHeavy)
@@ -2851,6 +2865,4 @@ F10-24:
 		endif
 endif
 
-LAttackHasHit:
-	Flag(MeterHHit)
-endif
+FlagNext(MeterHHit)
