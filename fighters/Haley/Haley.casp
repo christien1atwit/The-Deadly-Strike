@@ -916,6 +916,68 @@ def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Knockdown___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1 int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___1_Frame int() = 133
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___2_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___2_Frame int() = 134
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___3_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___3_Frame int() = 135
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___4_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___4_Frame int() = 136
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___5_Frame int() = 137
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___6_Frame int() = 138
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___7_Frame int() = 139
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___7_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___8_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___8_Frame int() = 140
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___8_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___9_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___9_Frame int() = 141
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-1___9_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2 int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___1_Frame int() = 25
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___1_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___2_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___2_Frame int() = 26
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___2_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___3_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___3_Frame int() = 27
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___3_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___4_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___4_Frame int() = 28
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___4_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___5_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___5_Frame int() = 29
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___6_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___6_Frame int() = 30
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___7_Frame int() = 31
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___7_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___8_Frame int() = 32
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___8_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Rapid-Phoenix-2___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Regicide-Thrust___10_Frame int() = 0
@@ -1765,6 +1827,14 @@ CallParent()
 
 Anim(Walk)
 AnimLoop(32)
+:Custom-OnAttackHit:
+CallParent()
+
+LRapid-Phoenix-Last:
+	SetMomentum(0,0)
+	Log(This)	
+	AddMomentum(-2000,4200)
+endif
 :Custom-OnHit:
 CallParent()
 #Log(_Flags)
@@ -2201,6 +2271,221 @@ F28+:
 endif
 
 FlagNext(MeterHHit)
+:Rapid-Phoenix-1:
+AttackRegister(Super,4123641236B)
+AttackAddNotation(4123641236D)
+
+
+	# Adjust parameters here
+	AttackDamage(700)
+	AttackDuration(71)
+	AttackMomentumHit(1600,0)
+	AttackMomentumBlock(200,0)
+	AttackFrameAdvantage(20,-15)
+	AttackKnockdown(50,50)
+	#AttackMomentumHit(1200, 4500, 600, 5000 )
+	AttackHitstop(10)
+	# Put your animation here
+	
+	F1:
+		HaltFrames(30)
+		Anim(Rapid-Phoenix-1)
+	endif
+	
+	F1-20:
+		Sub(Meter, 10, Meter)
+	endif
+	F21:
+		Set(Meter,-50)
+	endif
+	VMeter<0:
+		Set(Meter,-50)
+	endif
+	
+	F31+:
+	Anim(Rapid-Phoenix-1)
+	AnimLoop(17)
+
+	AttackFlag(Light)	
+
+	
+
+
+	SetMomentum(2500,0)
+
+
+
+F35-38:
+	Hitbox(-16000, 14000, -2000, 17000)
+endif
+
+F39:
+	AttackMultihit()
+endif
+
+F52-55:
+	Hitbox(-16000, 14000, -2000, 17000)
+endif
+
+F56:
+	AttackMultihit()
+endif
+
+F69-72:
+	AttackFrameAdvantage(60,-10)
+	Hitbox(-16000, 14000, -2000, 17000)
+endif
+
+F70:
+	Transition(Rapid-Phoenix-2)
+endif
+
+FlagNext(Rapid-Phoenix)
+endif
+:Rapid-Phoenix-2:
+AttackRegister(Super)
+
+
+	# Adjust parameters here
+	AttackDamage(1000)
+	AttackMinDamage(500)
+	AttackDuration(34)
+	AttackMomentumHit(1600,0)
+	AttackMomentumBlock(200,0)
+	AttackFrameAdvantage(20,-15)
+	#AttackKnockdown(50,50)
+	#AttackMomentumHit(1200, 4500, 600, 5000 )
+	AttackHitstop(5)
+	# Put your animation here
+	Anim(Rapid-Phoenix-2)
+	AnimLoop(18)
+	AttackFlag(Light)
+	
+	SetMomentum(1500,0)
+	
+	F3-10:
+		Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+	endif
+	
+	F11:
+		AttackMultihit()
+	endif
+	
+	F20-27:
+		Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(5000, 23000, 20000, 42000)
+			Hitbox(-10000,15000,5000,25000)
+		endif
+	endif
+	
+	F33:
+		Transition(Rapid-Phoenix-3)
+	endif
+	
+	FlagNext(Rapid-Phoenix)
+:Rapid-Phoenix-3:
+# Simple medium attack template
+AttackRegister(Super)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackMinDamage(800)
+AttackDuration(54)
+# AttackFlag(Low)
+AttackFlag(Light)
+AttackFlag(Mid)
+AttackKnockdown()
+AttackFrameAdvantage(20,-10)
+
+# Put your animation here
+Anim(Flying-High)
+AnimLoop(28)
+AttackHitstop(10)
+
+# Active frames and hitboxes
+F1:
+	AddMomentum(1300, 4500)
+endif
+
+
+F4-18:
+	AttackMomentumHit(1500,4000)
+	AttackMomentumBlock(950,0)
+	AttackFloat(100)
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+	
+endif
+
+F29:
+	AttackMultihit()
+	AddMomentum(1300, 4500)
+endif
+
+F33-47:
+	AttackMomentumHit(1500,4000)
+	AttackMomentumBlock(950,0)
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(0, 17000, 5000, 35000)
+				Hitbox(-13000, 13000, 35000, 50000)
+			endif
+endif
+
+
+F29+:
+	FlagNext(Rapid-Phoenix-Last)
+endif
+
+FlagNext(Rapid-Phoenix)
 :Regicide-Thrust:
 AttackRegister(Super,2141236B)
 AttackAddNotation(2141236D)
@@ -2220,7 +2505,7 @@ AttackAddNotation(2141236D)
 	# Put your animation here
 	Anim(Regicide-Thrust)
 
-	#HaltPhase()
+	
 
 	F1-20:
 		Sub(Meter, 10, Meter)

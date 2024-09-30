@@ -11,6 +11,7 @@ onready var timer = 1
 func WidgetInitialize(stateHandle, battleInitData = null, caspData = null):
 	.WidgetInitialize(stateHandle, battleInitData, caspData)
 	if(isMirrored):
+		$CrashText.rect_position.x=53
 		self.texture_under=flipUnder
 		self.texture_progress=flipProg
 		self.texture_over=flipFlash
@@ -20,10 +21,27 @@ func WidgetUpdate(stateHandle):
 	var viewportHeight=playerRoot.rect_size.y
 	var scalingFactor=float(viewportHeight/240)#240 is the height of the screen that this was drawn for
 	self.rect_scale=Vector2(scalingFactor,scalingFactor)
+	var flashing = false
 	if(self.value==self.max_value):
 		Flash()
+		flashing=true
 	else:
 		self.tint_over.a=0
+	
+	var v = _FetchValuesFromState(stateHandle)
+	var meter=v["Main"]
+	if (meter<0):
+		$CrashText.visible=true
+		self.tint_under.r=1
+		self.tint_under.g=0.1
+		self.tint_under.b=0.1
+	else:
+		$CrashText.visible=false
+		self.tint_under.r=1
+		self.tint_under.g=1
+		self.tint_under.b=1
+			
+	
 	
 	
 func Flash():
