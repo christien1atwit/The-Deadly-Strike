@@ -21,6 +21,7 @@ __meta__ = {
 }
 
 [node name="CrashText" type="TextureRect" parent="."]
+visible = false
 margin_right = 58.0
 margin_bottom = 15.0
 texture = ExtResource( 5 )

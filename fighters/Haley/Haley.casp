@@ -1393,10 +1393,11 @@ AttackDuration(16)
 AttackFrameAdvantage(16,2)
 AttackFlag(Mid)
 AttackFlag(Light)
+FlagNext(Low)
 AttackAddRegisteredCancels(Special)
 # Put your animation here
 Anim(2A)
-
+VFXPosition(15000,19000)
 
 
 # Active frames and hitboxes
@@ -1431,9 +1432,10 @@ AttackDuration(8)
 AttackFlag(Low)
 AttackMustBlock(Low)
 AttackFlag(Light)
+FlagNext(Low)
 AttackAddRegisteredCancels(Special)
 AttackFrameAdvantage(5,-2)
-
+VFXPosition(15000,10000)
 
 AttackMomentumHit(1500)
 AttackMomentumHit(1000)
@@ -1549,9 +1551,9 @@ AttackFrameAdvantage(6,2)
 AttackFlag(Light)
 AttackFlag(Mid)
 
-
 # Put your animation here
 Anim(5A)
+VFXPosition(16000,32000)
 
 # Active frames and hitboxes
 F3-8:
@@ -1574,6 +1576,7 @@ F3+:
 	AttackCancel(5A, 5A,  7)
 endif
 
+FlagNext(5A)
 FlagNext(MeterLHit)
 :5B:
 AttackRegister(Light, 5B)
@@ -1586,6 +1589,8 @@ AttackFlag(Mid)
 AttackAddRegisteredCancels(Special)
 # Put your animation here
 Anim(5B)
+
+VFXPosition(15000,19000)
 
 # Active frames and hitboxes
 F3-15:
@@ -1620,7 +1625,7 @@ AttackFlag(Mid)
 # Put your animation here
 
 Anim(5C_0)
-
+VFXPosition(16000,32000)
 
 F2:
 	AddMomentum(900)
@@ -1667,7 +1672,7 @@ AttackFlag(Mid)
 # Put your animation here
 Anim(5C_1)
 
-
+VFXPosition(21000,25000)
 
 # Active frames and hitboxes
 F6-12:
@@ -1701,7 +1706,7 @@ AttackFlag(Mid)
 AttackFlag(Heavy)
 # Put your animation here
 Anim(5D)
-
+VFXPosition(22000,32000)
 # Active frames and hitboxes
 F10-12:
 	AttackKnockdown()
@@ -1735,7 +1740,7 @@ AttackMustBlock(Overhead)
 AttackFrameAdvantage(6,-9)
 # Put your animation here
 Anim(6B)
-
+VFXPosition(15000,19000)
 # Active frames and hitboxes
 F18-30:
 	
@@ -1830,6 +1835,10 @@ AnimLoop(32)
 :Custom-OnAttackHit:
 CallParent()
 
+
+
+
+	#Anim(Norm-Spark)
 LRapid-Phoenix-Last:
 	SetMomentum(0,0)
 	Log(This)	
@@ -1855,6 +1864,7 @@ AttackFlag(Heavy)
 AttackFlag(Mid)
 
 Anim(J.D)
+VFXPosition(22000,24000)
 
 F12-24:
 	Vcurrent_lane==0:
@@ -2589,7 +2599,7 @@ AttackFlag(Heavy)
 AttackFlag(Overhead)
 AttackMustBlock(Overhead)
 AttackFrameAdvantage(10,-8)
-
+VFXPosition(-10000,10000)
 
 # Put your animation here
 Anim(Rev-Kick)
@@ -2943,7 +2953,7 @@ Anim(Dive_30)
 F0-7:
 	SetMomentum(0,0)
 endif
-
+VFXPosition(15000,19000)
 # Active frames and hitboxes
 F8+:
 	SetMomentum(2598,-1500)
@@ -2975,7 +2985,7 @@ AttackFlag(Mid)
 # Put your animation here
 Anim(Dive_45)
 Flag(ForceLanding)
-
+VFXPosition(15000,19000)
 F0-7:
 	SetMomentum(0,0)
 endif

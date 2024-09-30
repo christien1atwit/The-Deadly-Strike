@@ -82,7 +82,15 @@ def MOVE_TurnaroundStand_Time int() = 0
 def MOVE_Walk_SpeedB int() = -1000
 def MOVE_Walk_SpeedF int() = 1500
 :Specs-Graphics:
-# Automatic creation
+def GRAPHICS_SPRITESHEET_HitSpark int() = 0
+def GRAPHICS_SPRITESHEET_HitSpark___OriginX int() = 21
+def GRAPHICS_SPRITESHEET_HitSpark___OriginY int() = 21
+def GRAPHICS_SPRITESHEET_HitSpark___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_HitSpark___Path str() = res://Assets/HitEffect-Sheet.png
+def GRAPHICS_SPRITESHEET_HitSpark___PixelSize int() = 1000
+def GRAPHICS_SPRITESHEET_HitSpark___SpritesX int() = 3
+def GRAPHICS_SPRITESHEET_HitSpark___SpritesY int() = 1
+def GRAPHICS_Scale int() = 4000
 :Specs-AudioSFX:
 def AUDIO_SFX_Heavy_Hit int() = 0
 def AUDIO_SFX_Heavy_Hit___Filepath str() = res://castagne/assets/sfx/Heavy_Hit.mp3
@@ -116,6 +124,37 @@ def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
 def ANIMS_UseStandardAnims bool() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Frame int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Spritesheet str() =
 :Variables-System:
 var current_lane int() = 1
 var op_lane int() = 1
@@ -270,6 +309,7 @@ CallParent()
 Log(_Flags)
 AddMomentum(-1200)
 
+#####Meter Management#####
 LMeterLHit:
 	Add(Meter, 5)
 endif
@@ -283,6 +323,16 @@ Call(Unique-Move-Meter-Gain)
 VMeter>MeterMax:
 	Set(Meter,MeterMax)
 endif
+
+#####Hitspark Management#####
+LSpecialSpark:
+	Call(Hit-Spark-Manager)
+else
+	VFXSprite(Norm-Spark)
+	VFXTime(6)
+endif
+VFXScale(4000)
+VFXCreate()
 :Custom-OnBlock:
 CallParent()
 #Log(_Flags)
@@ -354,6 +404,8 @@ AttackDuration(60)
 F10-12:
 	Hitbox(0, 15000, 5000, 15000)
 endif
+:Hit-Spark-Manager:
+_Overridable()
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
