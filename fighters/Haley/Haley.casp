@@ -2294,7 +2294,7 @@ AttackAddNotation(4123641236D)
 	AttackFrameAdvantage(20,-15)
 	AttackKnockdown(50,50)
 	#AttackMomentumHit(1200, 4500, 600, 5000 )
-	AttackHitstop(10)
+	AttackHitstop(3)
 	# Put your animation here
 	
 	F1:
@@ -2365,7 +2365,7 @@ AttackRegister(Super)
 	AttackFrameAdvantage(20,-15)
 	#AttackKnockdown(50,50)
 	#AttackMomentumHit(1200, 4500, 600, 5000 )
-	AttackHitstop(5)
+	AttackHitstop(3)
 	# Put your animation here
 	Anim(Rapid-Phoenix-2)
 	AnimLoop(18)
