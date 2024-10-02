@@ -1196,7 +1196,7 @@ def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Serpent-Catch___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___1_Duration int() = 8
@@ -1209,21 +1209,21 @@ def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Frame int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Duration int() = 8
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Frame int() = 1
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Sway_Atk int() = 0
@@ -1822,7 +1822,7 @@ Anim(Knockdown)
 CallParent()
 
 Anim(Stand)
-AnimLoop(36)
+AnimLoop(40, 0)
 :AnimWalkB:
 CallParent()
 Anim(Walk)
