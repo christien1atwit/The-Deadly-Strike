@@ -7,7 +7,7 @@ EditorName: Haley
 Skeleton: res://fighters/Skeleton.casp
 :Specs-UI:
 def UI_Widgets_HPBar int() = 0
-def UI_Widgets_HPBar___Asset1 str() = res://Assets/Test-Port2.png
+def UI_Widgets_HPBar___Asset1 str() = res://fighters/Haley/Haley_Portrait.png
 def UI_Widgets_HPBar___Asset2 str() = 
 def UI_Widgets_HPBar___Asset3 str() = 
 def UI_Widgets_HPBar___DefaultColor int() = 1
