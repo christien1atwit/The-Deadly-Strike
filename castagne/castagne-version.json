@@ -1,8 +1,8 @@
 {
-"version":"2024-08-24",
-"version-name":"Castagne v0.54.20",
-"tldr":"User Interface system",
-"warnings":"Need to manually move sprite animations into a Specs-Anims block in your fav text editor.",
-"changelog":"New UI system, some QoL, motion input alias. See website for full detail.",
+"version":"2024-10-05 r2",
+"version-name":"Castagne v0.54.21r2",
+"tldr":"Hotfix for windows",
+"warnings":"",
+"changelog":"Hotfix.",
 "branch":"Main"
 }

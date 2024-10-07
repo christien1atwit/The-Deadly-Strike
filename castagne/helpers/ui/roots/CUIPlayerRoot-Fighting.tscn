@@ -14,9 +14,6 @@ anchor_left = 0.1
 anchor_top = 0.05
 anchor_right = 0.92
 anchor_bottom = 0.125
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="Rounds" type="Control" parent="."]
 anchor_left = 0.7
@@ -57,10 +54,9 @@ margin_bottom = 4.0
 [node name="Meter" type="Control" parent="."]
 anchor_left = 0.05
 anchor_top = 0.875
-anchor_right = 0.487
+anchor_right = 0.5
 anchor_bottom = 0.95
-margin_top = -6.10352e-05
-margin_right = 0.319977
+margin_right = -8.0
 
 [node name="MeterSub" type="Control" parent="."]
 anchor_left = 0.05

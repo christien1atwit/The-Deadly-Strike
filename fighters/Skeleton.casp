@@ -81,6 +81,8 @@ def MOVE_StandToCrouch_Time int() = 3
 def MOVE_TurnaroundStand_Time int() = 0
 def MOVE_Walk_SpeedB int() = -1000
 def MOVE_Walk_SpeedF int() = 1500
+:Specs-MenuData:
+# Automatic creation
 :Specs-Graphics:
 def GRAPHICS_SPRITESHEET_HitSpark int() = 0
 def GRAPHICS_SPRITESHEET_HitSpark___OriginX int() = 21
@@ -93,10 +95,10 @@ def GRAPHICS_SPRITESHEET_HitSpark___SpritesY int() = 1
 def GRAPHICS_Scale int() = 4000
 :Specs-AudioSFX:
 def AUDIO_SFX_Heavy_Hit int() = 0
-def AUDIO_SFX_Heavy_Hit___Filepath str() = res://castagne/assets/sfx/Heavy_Hit.mp3
+def AUDIO_SFX_Heavy_Hit___Filepath str() = res://Assets/SFX/Heavy-Hit.wav
 def AUDIO_SFX_Heavy_Hit___Volume int() = 1000
 def AUDIO_SFX_Light_Hit int() = 0
-def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
+def AUDIO_SFX_Light_Hit___Filepath str() = res://Assets/SFX/Light-Hit.wav
 def AUDIO_SFX_Light_Hit___Volume int() = 1000
 :Specs-AttacksTypes:
 def ATTACK_EX_CanCancelIntoSuper bool() = 0

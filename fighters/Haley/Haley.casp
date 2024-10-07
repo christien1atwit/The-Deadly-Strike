@@ -28,6 +28,11 @@ def PHYSICS_StandardHurtbox_Top int() = 43000
 def PHYSICS_StandardHurtbox_Width int() = 5500
 :Specs-PhysicsMovement:
 def MOVE_AirActionsMax int() = 1
+def MOVE_Backdash_Speed int() = -2900
+def MOVE_Backdash_Time int() = 12
+def MOVE_Run_Speed int() = 2600
+def MOVE_Walk_SpeedB int() = -1200
+def MOVE_Walk_SpeedF int() = 1700
 :Specs-Graphics:
 def GRAPHICS_SPRITESHEET_Haley int() = 0
 def GRAPHICS_SPRITESHEET_Haley___OriginX int() = 75
