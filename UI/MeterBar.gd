@@ -1,9 +1,9 @@
 extends "res://castagne/helpers/ui/widgets/CUIWidget_Bar.gd"
 
 
-onready var flipProg = preload("res://Assets/MeterProgressF.png")
-onready var flipUnder = preload("res://Assets/MeterUnderF.png")
-onready var flipFlash = preload("res://Assets/MeterFlashF.png")
+onready var flipProg = preload("res://Assets/UI/MeterProgressF.png")
+onready var flipUnder = preload("res://Assets/UI/MeterUnderF.png")
+onready var flipFlash = preload("res://Assets/UI/MeterFlashF.png")
 onready var playerRoot= get_parent().get_parent()
 onready var flashDown= true
 onready var timer = 1

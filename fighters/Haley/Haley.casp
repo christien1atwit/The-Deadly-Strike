@@ -7,7 +7,7 @@ EditorName: Haley
 Skeleton: res://fighters/Skeleton.casp
 :Specs-UI:
 def UI_Widgets_HPBar int() = 0
-def UI_Widgets_HPBar___Asset1 str() = res://fighters/Haley/Haley_Portrait.png
+def UI_Widgets_HPBar___Asset1 str() = res://fighters/Haley/Graphics/Haley_Portrait.png
 def UI_Widgets_HPBar___Asset2 str() = 
 def UI_Widgets_HPBar___Asset3 str() = 
 def UI_Widgets_HPBar___DefaultColor int() = 1
@@ -33,12 +33,14 @@ def MOVE_Backdash_Time int() = 12
 def MOVE_Run_Speed int() = 2600
 def MOVE_Walk_SpeedB int() = -1200
 def MOVE_Walk_SpeedF int() = 1700
+:Specs-MenuData:
+
 :Specs-Graphics:
 def GRAPHICS_SPRITESHEET_Haley int() = 0
 def GRAPHICS_SPRITESHEET_Haley___OriginX int() = 75
 def GRAPHICS_SPRITESHEET_Haley___OriginY int() = 0
 def GRAPHICS_SPRITESHEET_Haley___PaletteMode int() = 0
-def GRAPHICS_SPRITESHEET_Haley___Path str() = res://fighters/Haley/Haley_DS-Sheet.png
+def GRAPHICS_SPRITESHEET_Haley___Path str() = res://fighters/Haley/Graphics/Haley_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Haley___PixelSize int() = 1000
 def GRAPHICS_SPRITESHEET_Haley___SpritesX int() = 10
 def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 17
@@ -1776,25 +1778,33 @@ AttackDuration(3)
 #Anim(ThrowWhiff)
 
 
+
 # Active frames and hitboxes
 F1:
 	Vcurrent_lane==0:
 		HitboxRequires(BackLane)
-		Hitbox(1000, 15000, 15000, 25000)
+		Hitbox(0, 10000, 5000, 12000)
+		HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(-5000, 5000, -3000, 8000)
+		AttackUnflag(DragIn)
 	endif
 	Vcurrent_lane==1:
-		#HitboxRequires(BackLane)
+		HitboxRequires(BackLane)
 		Hitbox(-5000, 5000, 7000, 14000)
-		#HitboxRequires()
+		HitboxRequires()
 		HitboxRequires(MidLane)
 		Hitbox(0, 10000, 5000, 12000)
-		#HitboxRequires()
-		#HitboxRequires(FrontLane)
+		HitboxRequires()
+		HitboxRequires(FrontLane)
 		Hitbox(-5000, 5000, -3000, 8000)
 	endif
 	Vcurrent_lane==2:
 		HitboxRequires(FrontLane)
-		Hitbox(1500, 16500, 25000, 35000)
+		Hitbox(0, 10000, 5000, 12000)
+		HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(-5000, 5000, 7000, 14000)
 	endif
 	
 endif
@@ -2762,6 +2772,16 @@ AttackDamage(1000)
 AttackDuration(30)
 AttackKnockdown(50,50)
 AttackMomentum(100,100)
+
+##Drags Oppenent to the your current lane##
+CopyFromTarget(op_lane, current_lane)
+Vop_lane>current_lane:
+	AttackFlag(DragIn)
+endif
+Vop_lane<current_lane:
+	AttackFlag(DragOut)
+endif
+####
 
 Anim(Throw)
 F1:

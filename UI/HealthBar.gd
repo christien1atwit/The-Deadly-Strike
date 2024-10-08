@@ -1,9 +1,9 @@
 extends "res://castagne/helpers/ui/widgets/CUIWidget_Bar.gd"
 
 
-onready var flipProg = preload("res://Assets/HealthBarF.png")
-onready var flipUnder = preload("res://Assets/HealthBarUnderF.png")
-onready var flipOver= preload("res://Assets/HealthBarBoarderF.png")
+onready var flipProg = preload("res://Assets/UI/HealthBarF.png")
+onready var flipUnder = preload("res://Assets/UI/HealthBarUnderF.png")
+onready var flipOver= preload("res://Assets/UI/HealthBarBoarderF.png")
 onready var playerRoot= get_parent().get_parent()
 onready var portrait = $Portrait
 onready var flashDown = true

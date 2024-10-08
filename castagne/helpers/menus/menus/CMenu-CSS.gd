@@ -208,15 +208,7 @@ func CreateCSSGridRow():
 	return nRow
 
 func CreateCharacterIcon(gridSlot):
-<<<<<<< HEAD
-	var n = Castagne.Loader.Load("res://castagne/helpers/menus/aux/css/default/CMenu-CSS-Icon.tscn").instance()
-=======
-<<<<<<< HEAD
-	var n = Castagne.Loader.Load("res://castagne/helpers/menus/aux/css/default/CMenu-CSS-Icon.tscn").instance()
-=======
 	var n = Castagne.Loader.Load("res://castagne/helpers/menus/helpers/css/default/CMenu-CSS-Icon.tscn").instance()
->>>>>>> dev
->>>>>>> unstable
 	n.InitIcon(gridSlot[0], self, gridSlot[1])
 	return n
 
