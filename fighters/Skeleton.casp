@@ -443,6 +443,86 @@ Unflag(FaceTarget)
 AttackAddRegisteredCancels(Light)
 AttackCancel(Shift-In-FDash, 6A+B)
 AttackCancel(Shift-Out-FDash, 6C+D)
+:Shift-Hop-In:
+_Overridable()
+AttackRegister(Light, 236C+D)
+
+
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Jump)
+
+F1-20:
+	Flag(Invul-Low)
+	Flag(Invul-Grab)
+endif
+
+F2:
+	AddMomentum(0,2500)
+endif
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Hop-Out:
+_Overridable()
+AttackRegister(Light, 236A+B)
+
+
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Jump)
+
+F1-20:
+	Flag(Invul-Low)
+	Flag(Invul-Grab)
+endif
+
+F2:
+	AddMomentum(0,2500)
+endif
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
 :Shift-In-BDash:
 AttackRegister(Light, 4C+D)
 _Overridable()
@@ -694,8 +774,9 @@ AttackDuration(25)
 
 Anim(Roll-In)
 
-F1-10:
-	Flag(Invul-AF_Mid)
+F1-15:
+	Flag(Invul-Mid)
+	Flag(Invul-High)
 endif
 
 Vcurrent_lane>0:
@@ -730,8 +811,9 @@ AttackDuration(25)
 
 Anim(Roll-Out)
 
-F1-10:
-	Flag(Invul-AF_Mid)
+F1-15:
+	Flag(Invul-Mid)
+	Flag(Invul-High)
 endif
 
 
