@@ -45,12 +45,11 @@ def GRAPHICS_SPRITESHEET_Haley___PixelSize int() = 1000
 def GRAPHICS_SPRITESHEET_Haley___SpritesX int() = 10
 def GRAPHICS_SPRITESHEET_Haley___SpritesY int() = 17
 def GRAPHICS_SPRITE_PALETTE_0 int() = 0
-def GRAPHICS_SPRITE_PALETTE_0___DisplayName str() = Default
 def GRAPHICS_SPRITE_PALETTE_0___Extra int() = 0
 def GRAPHICS_SPRITE_PALETTE_0___ModelPath str() = res://castagne/assets/fighters/baston/model/BastonModel.tscn
-def GRAPHICS_SPRITE_PALETTE_0___SpritePalettePath str() = res://fighters/Haley/Graphics/Haley15Color.png
+def GRAPHICS_SPRITE_PALETTE_0___SpritePalettePath str() = res://castagne/assets/helpers/palette/PaletteManual01.png
 def GRAPHICS_Scale int() = 4000
-def GRAPHICS_SpritePalette str() = res://fighters/Haley/Graphics/Haley15Color.png
+def GRAPHICS_SpritePalette str() = res://fighters/Haley/Graphics/HaleyPallet.png
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AudioSFX:
@@ -871,18 +870,18 @@ def GRAPHICS_SPRITE_ANIMATIONS_Jump int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Duration int() = 8
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Frame int() = 56
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Duration int() = 16
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Frame int() = 57
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Duration int() = 10
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Frame int() = 57
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Frame int() = 58
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Duration int() = 60
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Frame int() = 58
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Frame int() = 59
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Duration int() = 60
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Frame int() = 60
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Spritesheet str() = 
@@ -1533,7 +1532,7 @@ AttackDuration(48)
 AttackFlag(Low)
 AttackMustBlock(Low)
 AttackFlag(Heavy)
-AttackMomentumHit(1000,2000)
+AttackMomentumHit(2000,0)
 AttackMomentumBlock(500,0)
 AttackFrameAdvantage(5,-10)
 
