@@ -1528,7 +1528,7 @@ AttackRegister(Heavy)
 
 # Adjust parameters here
 AttackDamage(700)
-AttackDuration(48)
+AttackDuration(46)
 AttackFlag(Low)
 AttackMustBlock(Low)
 AttackFlag(Heavy)
@@ -2633,7 +2633,7 @@ AttackDuration(26)
 AttackFlag(Heavy)
 AttackFlag(Overhead)
 AttackMustBlock(Overhead)
-AttackFrameAdvantage(10,-8)
+AttackFrameAdvantage(18,-12)
 VFXPosition(-10000,10000)
 
 # Put your animation here
