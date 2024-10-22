@@ -120,8 +120,11 @@ def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
 def ATTACK_Special_CanCancelIntoEX bool() = 0
 def ATTACK_Special_CanCancelIntoSuper bool() = 1
 :Specs-AttacksThrows:
-def ATTACK_Throw_CanAirThrow bool() = 0
 def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
+def ATTACK_Throw_CanAirThrow bool() = 0
+def ATTACK_Throw_Ground_TimeHold int() = 15
+def ATTACK_Throw_Tech_ActiveTime int() = 5
+def ATTACK_Throw_Tech_LockoutTime int() = 10
 :Specs-AttacksMechanics:
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:

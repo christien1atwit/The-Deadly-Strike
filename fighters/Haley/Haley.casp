@@ -1791,7 +1791,7 @@ AttackDuration(3)
 
 
 # Put your animation here
-#Anim(ThrowWhiff)
+Anim(ThrowWhiff)
 VFXPosition(12000,32000)
 
 
