@@ -175,8 +175,8 @@ def GRAPHICS_SPRITE_ANIMATIONS_2D___5_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_2D___6_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_2D___6_Frame int() = 53
 def GRAPHICS_SPRITE_ANIMATIONS_2D___6_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_2D___7_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_2D___7_Frame int() = 48
+def GRAPHICS_SPRITE_ANIMATIONS_2D___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_2D___7_Frame int() = 53
 def GRAPHICS_SPRITE_ANIMATIONS_2D___7_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_2D___8_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_2D___8_Frame int() = 0
@@ -1528,7 +1528,7 @@ AttackRegister(Heavy)
 
 # Adjust parameters here
 AttackDamage(700)
-AttackDuration(46)
+AttackDuration(40)
 AttackFlag(Low)
 AttackMustBlock(Low)
 AttackFlag(Heavy)
