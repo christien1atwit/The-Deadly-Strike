@@ -789,12 +789,12 @@ def GRAPHICS_SPRITE_ANIMATIONS_J.B___3_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___4_Frame int() = 67
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___4_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_J.B___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_J.B___5_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___5_Frame int() = 68
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___5_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Frame int() = 65
-def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Spritesheet str() = Haley
+def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_J.B___6_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___7_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_J.B___7_Spritesheet str() = 
@@ -1789,9 +1789,14 @@ AttackFlag(Light)
 # Adjust parameters here
 AttackDuration(3)
 
-
-# Put your animation here
 Anim(ThrowWhiff)
+# Put your animation here
+LAttackHasHit:
+else
+		Transition(5C_P1)
+endif
+
+
 VFXPosition(12000,32000)
 
 
@@ -1823,10 +1828,6 @@ F1:
 		Hitbox(-5000, 5000, 7000, 14000)
 	endif
 	
-endif
-
-F2:
-	Transition(5C_P1)
 endif
 :AnimBackdash:
 CallParent()
@@ -3105,27 +3106,42 @@ AttackFlag(Overhead)
 AttackMustBlock(Overhead)
 AttackFrameAdvantage(6,2)
 
+VFXPosition(16000,12000)
+
 # Put your animation here
 Anim(J.B)
 
 # Active frames and hitboxes
-F8-18:
+F8-12:
 Vcurrent_lane==0:
 			HitboxRequires(BackLane)
-			Hitbox(3000, 19500, 30000, 42000)
-			Hitbox(-3000,10000, 23000, 32000)
+			Hitbox(-100,20000, 13000, 32000)
 		endif
 		Vcurrent_lane==1:
 			HitboxRequires(MidLane)
-			Hitbox(3000, 19500, 30000, 42000)
-			Hitbox(-3000,10000, 23000, 32000)
+			Hitbox(-100,20000, 13000, 32000)
 		endif
 		Vcurrent_lane==2:
 			HitboxRequires(FrontLane)
-			Hitbox(3000, 19500, 30000, 42000)
-			Hitbox(-3000,10000, 23000, 32000)
+			Hitbox(-100,20000, 13000, 32000)
 		endif
 endif
+
+F13-16:
+Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(6000,24000, 32000, 59000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(6000,24000, 32000, 59000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(6000,24000, 32000, 59000)
+		endif
+endif
+
 
 FlagNext(MeterLHit)
 :j5C:

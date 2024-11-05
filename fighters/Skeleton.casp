@@ -680,6 +680,7 @@ Vcurrent_lane<2:
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 	endif
 	
 	F20:
@@ -717,6 +718,7 @@ Vcurrent_lane<2:
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 		IC:
 			Log(HELLO)
 			Unflag(PF_Airborne)
@@ -739,8 +741,8 @@ AttackRegister(Light, 5A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
-
-
+Anim(Stand)
+AnimLoop(8)
 Vcurrent_lane<2:
 	SetColboxPhantom(1)
 	
@@ -757,6 +759,7 @@ Vcurrent_lane<2:
 		SpriteOrder(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 	endif
 	
 	F20:
@@ -836,6 +839,7 @@ Vcurrent_lane<2:
 		SpriteOrder(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 	endif
 	
 	F25:
