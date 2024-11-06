@@ -1305,16 +1305,16 @@ def GRAPHICS_SPRITE_ANIMATIONS_Throw___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___10_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___1_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___1_Frame int() = 115
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___1_Frame int() = 28
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___1_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Duration int() = 8
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Frame int() = 116
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Frame int() = 29
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Frame int() = 117
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Frame int() = 30
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Duration int() = 4
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Frame int() = 118
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Frame int() = 31
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Frame int() = 0
@@ -1837,6 +1837,10 @@ CallParent()
 :AnimCrouching:
 CallParent()
 Anim(Crouch_Loop)
+:AnimGroundThrowHeld:
+CallParent()
+
+Anim(Hitstun_Standing)
 :AnimGroundThrowTeched:
 CallParent()
 Anim(Escape)
@@ -2791,7 +2795,7 @@ AttackRegister(ThrowFollowup)
 
 
 AttackDamage(1000)
-AttackDuration(30)
+AttackDuration(16)
 AttackKnockdown(50,50)
 AttackMomentum(100,100)
 
