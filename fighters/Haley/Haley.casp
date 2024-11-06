@@ -1034,12 +1034,12 @@ def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___2_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Frame int() = 131
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___3_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Frame int() = 132
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___4_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Frame int() = 129
+def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___5_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Rev-Kick___6_Spritesheet str() = 
@@ -1313,14 +1313,14 @@ def GRAPHICS_SPRITE_ANIMATIONS_Throw___2_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Duration int() = 8
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Frame int() = 30
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___3_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Duration int() = 2
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Frame int() = 31
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Frame int() = 145
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___4_Spritesheet str() = Haley
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Frame int() = 53
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___5_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___6_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Throw___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Throw___6_Frame int() = 53
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___6_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___7_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Throw___7_Frame int() = 0
@@ -2795,7 +2795,7 @@ AttackRegister(ThrowFollowup)
 
 
 AttackDamage(1000)
-AttackDuration(16)
+AttackDuration(22)
 AttackKnockdown(50,50)
 AttackMomentum(100,100)
 
@@ -2811,8 +2811,9 @@ endif
 
 Anim(Throw)
 VFXPosition(12000,18000)
-F1:
+F4:
 	SetMomentum(2000,0)
+	InflictAttack()
 	SFXPlay(Heavy_Hit)
 endif
 
@@ -2821,7 +2822,15 @@ F8:
     Hitbox(0, 20000, 0, 20000)
 endif
 
-InflictAttack()
+F6:
+	AddMomentum(-2000,3500)
+endif
+
+F7-16:
+	AddMomentum(-50)
+endif
+
+
 
 FlagNext(MeterHHit)
 :Tryant-Kick-L:
