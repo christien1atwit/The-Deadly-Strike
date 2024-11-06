@@ -94,6 +94,9 @@ def GRAPHICS_SPRITESHEET_HitSpark___SpritesX int() = 3
 def GRAPHICS_SPRITESHEET_HitSpark___SpritesY int() = 1
 def GRAPHICS_Scale int() = 4000
 :Specs-AudioSFX:
+def AUDIO_SFX_Block int() = 0
+def AUDIO_SFX_Block___Filepath str() = res://Assets/SFX/AttackBlock.wav
+def AUDIO_SFX_Block___Volume int() = 1000
 def AUDIO_SFX_Heavy_Hit int() = 0
 def AUDIO_SFX_Heavy_Hit___Filepath str() = res://Assets/SFX/Heavy-Hit.wav
 def AUDIO_SFX_Heavy_Hit___Volume int() = 1000
@@ -342,6 +345,8 @@ VFXCreate()
 CallParent()
 #Log(_Flags)
 Move(-100)
+
+SFXPlay(Block)
 
 LAF_Heavy:
 	Add(Meter, 3)
