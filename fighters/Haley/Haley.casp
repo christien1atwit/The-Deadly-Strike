@@ -1688,6 +1688,7 @@ AttackRegister(Heavy)
 AttackDamage(700)
 AttackDuration(20)
 AttackMomentumHit(2000, 1500)
+AttackMomentumBlock(500, 0)
 AttackFrameAdvantage(4, -13)
 
 AttackFlag(Heavy)
@@ -2555,7 +2556,11 @@ AttackAddNotation(2141236D)
 	# Put your animation here
 	Anim(Regicide-Thrust)
 VFXPosition(16000,32000)	
-	
+AttackFlag(Juggle)
+CopyFromTarget(op_juggle_count, juggle_count)
+Vop_juggle_count>0:
+	AttackDamage(1250)
+endif
 
 	F1-20:
 		Sub(Meter, 10, Meter)
@@ -2650,6 +2655,9 @@ F6-16:
 	Hitbox(-14000, -3000, 15000, 25000)
 endif
 
+LPF_Grounded:
+	Anim(Stand)
+endif
 
 FlagNext(MeterLHit)
 :Serpent-Catch-H:
@@ -2839,11 +2847,12 @@ AttackRegister(Special, 236B)
 
 # Adjust parameters here
 AttackDamage(1000)
-AttackDuration(30)
+AttackDuration(40)
 AttackKnockdown()
 AttackFlag(Heavy)
-AttackFrameAdvantage(5,-12)
-
+AttackFlag(Juggle)
+AttackFrameAdvantage(4,-12)
+CopyFromTarget(op_juggle_count, juggle_count)
 
 # Put your animation here
 Anim(Tyrant-Kick)
@@ -2861,6 +2870,9 @@ endif
 
 F13-14:
 	AttackDamage(1100)
+	Vop_juggle_count>0:
+		AttackDamage(400)
+	endif
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -2881,8 +2893,11 @@ F13-14:
 endif
 
 F15-18:
-	AttackFrameAdvantage(7,-15)
+	AttackFrameAdvantage(5,-15)
 	AttackDamage(1200)
+	Vop_juggle_count>0:
+		AttackDamage(450)
+	endif
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -2900,6 +2915,8 @@ F15-18:
 		endif
 endif
 
+
+
 FlagNext(Tyrant-Kick)
 :Tyrant-Kick-H:
 # Simple medium attack template
@@ -2910,8 +2927,11 @@ AttackDamage(1100)
 AttackDuration(45)
 AttackKnockdown()
 AttackFlag(Heavy)
+AttackFlag(Juggle)
 AttackFrameAdvantage(5,-15)
 VFXPosition(23000,14000)
+
+CopyFromTarget(op_juggle_count, juggle_count)
 
 # Put your animation here
 F1-5:
@@ -2936,6 +2956,9 @@ endif
 
 F18-19:
 	AttackDamage(1200)
+	Vop_juggle_count>0:
+		AttackDamage(450)
+	endif
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -2958,6 +2981,9 @@ endif
 F20-23:
 	AttackFrameAdvantage(7,-17)
 	AttackDamage(1300)
+	Vop_juggle_count>0:
+		AttackDamage(500)
+	endif
 	AttackMomentumHit(1000, 2500)
 	AttackFloat(100)
 	AttackCancel(JumpF, 9)
@@ -2974,6 +3000,8 @@ F20-23:
 			Hitbox(0, 25000, 10000, 29000)
 		endif
 endif
+
+
 
 FlagNext(Tyrant-Kick)
 :Unique-Move-Meter-Gain:
