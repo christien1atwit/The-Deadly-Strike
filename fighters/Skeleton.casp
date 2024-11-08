@@ -170,6 +170,8 @@ var op_lane int() = 1
 var my_id int() = 0
 var opponent_id int() = 1
 
+var frame_count int() = 0
+
 var juggle_count int() = 0
 var op_juggle_count int() = 0
 
@@ -271,6 +273,31 @@ endif
 :Common:
 CallParent()
 
+# Frame Count Logic #
+
+Add(frame_count, 1)
+Vframe_count>256:
+	Set(frame_count, 0)
+endif
+
+##
+
+# Crash Logic #
+
+VMeter<0:	
+	
+	Vframe_count>245:
+		Sub(HP,25)
+		VHP<0:
+			Set(HP,0)
+		endif
+		
+	endif
+
+endif
+
+##
+
 Call(Raise-Lane-Flag)
 
 LPF_Airborne:
@@ -327,6 +354,8 @@ endif
 :Custom-OnAttackBlocked:
 CallParent()
 AddMomentum(-1650)
+
+Add(Meter,1)
 :Custom-OnAttackHit:
 CallParent()
 Log(_Flags)

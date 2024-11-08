@@ -675,8 +675,8 @@ def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___7_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___7_Frame int() = 125
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___7_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___8_Duration int() = 10
-def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___8_Frame int() = 125
-def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___8_Frame int() = 126
+def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___8_Spritesheet str() = Haley
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Half-Moon-Slash___9_Spritesheet str() = 
@@ -1897,11 +1897,16 @@ AttackMomentumHit(4500,2500)
 AttackMomentumBlock(1400,0)
 AttackHitstop(4)
 AttackKnockdown(50,50)
+AttackFrameAdvantage(4, -6)
 AttackFlag(Heavy)
 AttackFlag(Mid)
 
 Anim(J.D)
 VFXPosition(22000,24000)
+F1-12:
+	AddMomentum(250,0)
+endif
+
 
 F12-24:
 	Vcurrent_lane==0:
@@ -2324,6 +2329,7 @@ FlagNext(MeterHHit)
 AttackRegister(Super,4123641236B)
 AttackAddNotation(4123641236D)
 
+Set(frame_count, 0)
 
 	# Adjust parameters here
 	AttackDamage(700)
@@ -2394,6 +2400,7 @@ endif
 :Rapid-Phoenix-2:
 AttackRegister(Super)
 
+Set(frame_count, 0)
 
 	# Adjust parameters here
 	AttackDamage(1000)
@@ -2461,6 +2468,8 @@ AttackRegister(Super)
 :Rapid-Phoenix-3:
 # Simple medium attack template
 AttackRegister(Super)
+
+Set(frame_count, 0)
 
 # Adjust parameters here
 AttackDamage(1000)
