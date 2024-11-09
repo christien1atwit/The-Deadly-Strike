@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LetsGetSerious.ogg-211e8334e5d87ab58250866cd521c326.oggstr"
+
+[deps]
+
+source_file="res://Assets/OST/LetsGetSerious.ogg"
+dest_files=[ "res://.import/LetsGetSerious.ogg-211e8334e5d87ab58250866cd521c326.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
