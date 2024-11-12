@@ -122,6 +122,7 @@ def ATTACK_Medium_CanCancelIntoSpecials bool() = 1
 def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
 def ATTACK_Special_CanCancelIntoEX bool() = 0
 def ATTACK_Special_CanCancelIntoSuper bool() = 1
+def ATTACK_Super_MeterCost int() = 99
 :Specs-AttacksThrows:
 def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
 def ATTACK_Throw_CanAirThrow bool() = 0
