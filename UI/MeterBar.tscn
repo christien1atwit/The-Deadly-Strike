@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/MeterBar.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/MeterProgress.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/MeterUnder.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/MeterFlash.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/Crash.png" type="Texture" id=5]
+
+[node name="MeterBar" type="TextureProgress"]
+margin_right = 111.0
+margin_bottom = 38.0
+size_flags_vertical = 13
+value = 50.0
+texture_under = ExtResource( 3 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 2 )
+tint_over = Color( 1, 1, 1, 0 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CrashText" type="TextureRect" parent="."]
+visible = false
+margin_right = 58.0
+margin_bottom = 15.0
+texture = ExtResource( 5 )

@@ -5,7 +5,32 @@
 ## - Attack types
 ## etc.
 :Specs-UI:
-# Automatic creation
+def UI_Widgets_HPBar int() = 0
+def UI_Widgets_HPBar___Asset1 str() = 
+def UI_Widgets_HPBar___Asset2 str() = 
+def UI_Widgets_HPBar___Asset3 str() = 
+def UI_Widgets_HPBar___DefaultColor int() = 1
+def UI_Widgets_HPBar___Direction int() = 0
+def UI_Widgets_HPBar___HookPoint str() = HP
+def UI_Widgets_HPBar___ScenePath str() = res://UI/HealthBar.tscn
+def UI_Widgets_HPBar___Type int() = 0
+def UI_Widgets_HPBar___UseWidget bool() = 1
+def UI_Widgets_HPBar___Variable1 str() = HP
+def UI_Widgets_HPBar___Variable2 str() = 
+def UI_Widgets_HPBar___Variable3 str() = HPMax
+def UI_Widgets_Meter int() = 0
+def UI_Widgets_Meter___Asset1 str() = 
+def UI_Widgets_Meter___Asset2 str() = 
+def UI_Widgets_Meter___Asset3 str() = 
+def UI_Widgets_Meter___DefaultColor int() = 3
+def UI_Widgets_Meter___Direction int() = 0
+def UI_Widgets_Meter___HookPoint str() = Meter
+def UI_Widgets_Meter___ScenePath str() = res://UI/MeterBar.tscn
+def UI_Widgets_Meter___Type int() = 0
+def UI_Widgets_Meter___UseWidget bool() = 1
+def UI_Widgets_Meter___Variable1 str() = Meter
+def UI_Widgets_Meter___Variable2 str() = 
+def UI_Widgets_Meter___Variable3 str() = MeterMax
 :Specs-PhysicsTeching:
 def ATTACK_Hitstun_CanRecoverInAir bool() = 0
 def ATTACK_Tech_Airborne_CanTechBackward bool() = 0
@@ -56,14 +81,27 @@ def MOVE_StandToCrouch_Time int() = 3
 def MOVE_TurnaroundStand_Time int() = 0
 def MOVE_Walk_SpeedB int() = -1000
 def MOVE_Walk_SpeedF int() = 1500
-:Specs-Graphics:
+:Specs-MenuData:
 # Automatic creation
+:Specs-Graphics:
+def GRAPHICS_SPRITESHEET_HitSpark int() = 0
+def GRAPHICS_SPRITESHEET_HitSpark___OriginX int() = 21
+def GRAPHICS_SPRITESHEET_HitSpark___OriginY int() = 21
+def GRAPHICS_SPRITESHEET_HitSpark___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_HitSpark___Path str() = res://Assets/Effects/HitEffect-Sheet.png
+def GRAPHICS_SPRITESHEET_HitSpark___PixelSize int() = 1000
+def GRAPHICS_SPRITESHEET_HitSpark___SpritesX int() = 3
+def GRAPHICS_SPRITESHEET_HitSpark___SpritesY int() = 1
+def GRAPHICS_Scale int() = 4000
 :Specs-AudioSFX:
+def AUDIO_SFX_Block int() = 0
+def AUDIO_SFX_Block___Filepath str() = res://Assets/SFX/AttackBlock.wav
+def AUDIO_SFX_Block___Volume int() = 1000
 def AUDIO_SFX_Heavy_Hit int() = 0
-def AUDIO_SFX_Heavy_Hit___Filepath str() = res://castagne/assets/sfx/Heavy_Hit.mp3
+def AUDIO_SFX_Heavy_Hit___Filepath str() = res://Assets/SFX/Heavy-Hit.wav
 def AUDIO_SFX_Heavy_Hit___Volume int() = 1000
 def AUDIO_SFX_Light_Hit int() = 0
-def AUDIO_SFX_Light_Hit___Filepath str() = res://castagne/assets/sfx/Light_Hit.mp3
+def AUDIO_SFX_Light_Hit___Filepath str() = res://Assets/SFX/Light-Hit.wav
 def AUDIO_SFX_Light_Hit___Volume int() = 1000
 :Specs-AttacksTypes:
 def ATTACK_EX_CanCancelIntoSuper bool() = 0
@@ -83,20 +121,60 @@ def ATTACK_Medium_CanCancelIntoMediums bool() = 0
 def ATTACK_Medium_CanCancelIntoSpecials bool() = 1
 def ATTACK_Medium_CanJumpCancelOnHit bool() = 0
 def ATTACK_Special_CanCancelIntoEX bool() = 0
-def ATTACK_Special_CanCancelIntoSuper bool() = 0
+def ATTACK_Special_CanCancelIntoSuper bool() = 1
+def ATTACK_Super_MeterCost int() = 99
 :Specs-AttacksThrows:
-def ATTACK_Throw_CanAirThrow bool() = 0
 def ATTACK_Throw_Air_ThrowBAutoFlip bool() = 0
+def ATTACK_Throw_CanAirThrow bool() = 0
+def ATTACK_Throw_Ground_TimeHold int() = 15
+def ATTACK_Throw_Tech_ActiveTime int() = 5
+def ATTACK_Throw_Tech_LockoutTime int() = 10
 :Specs-AttacksMechanics:
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
 def ANIMS_UseStandardAnims bool() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___1_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Frame int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___2_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___3_Spritesheet str() = HitSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___9_Spritesheet str() =
 :Variables-System:
 var current_lane int() = 1
 var op_lane int() = 1
 
 var my_id int() = 0
 var opponent_id int() = 1
+
+var frame_count int() = 0
+
+var juggle_count int() = 0
+var op_juggle_count int() = 0
 
 def DEF_SCALE int() = 4000
 def BAK_SCALE int() = 3500
@@ -138,16 +216,7 @@ _Helper()
 _Overridable(If you want custom logic for how hitstun's animation works)
 
 
-#Basic hit sound logic
-F1:
-	LAF_Light:
-		SFXPlay(Light_Hit)
-	endif
-	LAF_Heavy:
-		SFXPlay(Heavy_Hit)
-	endif
 
-endif
 
 LPF_Airborne:
 	Call(AnimHitstunAirborne)
@@ -190,8 +259,45 @@ AnimLoop(16)
 :AnimStandToCrouch:
 CallParent()
 Anim(Crouch)
+:Bring-To-Floor:
+Vcurrent_lane=0:
+	SetWorldPositionY(5000)
+endif
+
+Vcurrent_lane=1:
+	SetWorldPositionY(1)
+endif
+
+Vcurrent_lane=2:
+	SetWorldPositionY(-5000)
+endif
 :Common:
 CallParent()
+
+# Frame Count Logic #
+
+Add(frame_count, 1)
+Vframe_count>256:
+	Set(frame_count, 0)
+endif
+
+##
+
+# Crash Logic #
+
+VMeter<0:	
+	
+	Vframe_count>245:
+		Sub(HP,25)
+		VHP<0:
+			Set(HP,0)
+		endif
+		
+	endif
+
+endif
+
+##
 
 Call(Raise-Lane-Flag)
 
@@ -202,6 +308,18 @@ endif
 LPF_Landing:
 	Call(OnLanding)
 endif
+
+
+
+### Juggle Logic ###
+
+	Vjuggle_count>2:
+		#FlagNext(Invul-All)
+		#Log(Should be unjuggle)
+		HurtboxAvoids(Juggle)
+	endif
+
+######
 
 Call(DashInputHelper)
 :Correct-Scale:
@@ -237,18 +355,59 @@ endif
 :Custom-OnAttackBlocked:
 CallParent()
 AddMomentum(-1650)
+
+Add(Meter,1)
 :Custom-OnAttackHit:
 CallParent()
+Log(_Flags)
 AddMomentum(-1200)
+
+#####Meter Management#####
+LMeterLHit:
+	Add(Meter, 5)
+endif
+
+LMeterHHit:
+	Add(Meter, 10)
+endif
+
+Call(Unique-Move-Meter-Gain)
+
+VMeter>MeterMax:
+	Set(Meter,MeterMax)
+endif
+
+#####Hitspark Management#####
+LSpecialSpark:
+	Call(Hit-Spark-Manager)
+else
+	VFXSprite(Norm-Spark)
+	VFXTime(6)
+endif
+VFXScale(4000)
+VFXCreate()
 :Custom-OnBlock:
 CallParent()
-Log(_Flags)
+#Log(_Flags)
 Move(-100)
+
+SFXPlay(Block)
+
+LAF_Heavy:
+	Add(Meter, 3)
+endif
+
+LAF_Light:
+	Add(Meter, 1)
+endif
+
+VMeter>MeterMax:
+	Set(Meter,MeterMax)
+endif
 :Custom-OnHit:
 CallParent()
 
-#Dragging Logic
-
+### Dragging Logic ###
 LAF_DragIn:
 	Log("Drag In")
 	Sub(current_lane, 1)
@@ -270,10 +429,58 @@ LAF_DragOut:
 	SpriteOrder(current_lane)
 	Call(Raise-Lane-Flag)
 endif
+#######
+
+
+### Sound Logic ###
+LAF_Light:
+	SFXPlay(Light_Hit)
+endif
+
+LAF_Heavy:
+	SFXPlay(Heavy_Hit)
+endif
+######
+
+### Juggle Logic ###
+LAF_Juggle:
+	Add(juggle_count, 1)
+endif
+######
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
 Call(Correct-Scale)
+
+### Reset Juggle ###
+
+	Vjuggle_count>2:
+		Log(Resetting Juggle)
+		Unflag(Invul-All)
+	endif
+
+Set(juggle_count, 0)
+
+######
+:FDash-Atk:
+# Simple medium attack template
+_Overridable()
+AttackRegister(Medium)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(60)
+# AttackFlag(Low)
+
+# Put your animation here
+#Anim(5B)
+
+# Active frames and hitboxes
+F10-12:
+	Hitbox(0, 15000, 5000, 15000)
+endif
+:Hit-Spark-Manager:
+_Overridable()
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
@@ -309,8 +516,89 @@ Unflag(FaceTarget)
 AttackAddRegisteredCancels(Light)
 AttackCancel(Shift-In-FDash, 6A+B)
 AttackCancel(Shift-Out-FDash, 6C+D)
+:Shift-Hop-In:
+_Overridable()
+AttackRegister(Light, 236C+D)
+
+
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Jump)
+
+F1-20:
+	Flag(Invul-Low)
+	Flag(Invul-Grab)
+endif
+
+F2:
+	AddMomentum(0,2500)
+endif
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Hop-Out:
+_Overridable()
+AttackRegister(Light, 236A+B)
+
+
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Jump)
+
+F1-20:
+	Flag(Invul-Low)
+	Flag(Invul-Grab)
+endif
+
+F2:
+	AddMomentum(0,2500)
+endif
+
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
 :Shift-In-BDash:
-AttackRegister(Light, 4A+B)
+AttackRegister(Light, 4C+D)
+_Overridable()
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -349,12 +637,14 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-In-FDash:
-AttackRegister(Light, 6A+B)
+AttackRegister(Light, 6C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
-
+_Overridable()
 Anim(Run)
 
+Unflag(PF_Airborne)
+Flag(PF_Grounded)
 
 Vcurrent_lane>0:
 	SetColboxPhantom(1)
@@ -369,9 +659,6 @@ Vcurrent_lane>0:
 		SetMomentum(3000, 0)
 	endif
 
-	F3+:
-		AttackCancel(Shift-Out-FDash, 6C+D)
-	endif	
 	
 	
 	F15:
@@ -379,7 +666,19 @@ Vcurrent_lane>0:
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		IC:
+			Log(HELLO)
+			Unflag(PF_Airborne)
+			Flag(PF_Grounded)
+			TransitionBuffer(FDash-Atk)
+		endif	
 	endif
+	
+	
+	
+
+	
+	
 	
 	F20:
 		Transition(AnimStand)
@@ -387,7 +686,8 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-In-Stand:
-AttackRegister(Light, 5A+B)
+_Overridable()
+AttackRegister(Light, 5C+D)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -409,7 +709,6 @@ Vcurrent_lane>0:
 	F15:
 		Sub(current_lane, 1)
 		SetColboxLayer(current_lane)
-		#Log(current_lane)
 		Call(Raise-Lane-Flag)
 	endif
 	
@@ -419,7 +718,8 @@ Vcurrent_lane>0:
 	
 endif
 :Shift-Out-BDash:
-AttackRegister(Light, 4C+D)
+_Overridable()
+AttackRegister(Light, 4A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -450,6 +750,7 @@ Vcurrent_lane<2:
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 	endif
 	
 	F20:
@@ -458,7 +759,8 @@ Vcurrent_lane<2:
 	
 endif
 :Shift-Out-FDash:
-AttackRegister(Light, 6C+D)
+_Overridable()
+AttackRegister(Light, 6A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
@@ -476,20 +778,27 @@ Vcurrent_lane<2:
 	
 	
 	F1:
-		SetMomentum(3000, 0)
+		SetMomentum(3000,0)
 	endif
 
 	
-	F16+:
-		AttackCancel(Shift-In-FDash, 6A+B)
-	endif	
-	
+
 	F15:
 		Add(current_lane, 1)
 		SetColboxLayer(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
+		IC:
+			Log(HELLO)
+			Unflag(PF_Airborne)
+			Flag(PF_Grounded)
+			TransitionBuffer(FDash-Atk)
+		endif	
 	endif
+
+	
+
 	
 	F20:
 		Transition(AnimStand)
@@ -497,10 +806,91 @@ Vcurrent_lane<2:
 	
 endif
 :Shift-Out-Stand:
-AttackRegister(Light, 5C+D)
+_Overridable()
+AttackRegister(Light, 5A+B)
 Call(Raise-Lane-Flag)
 AttackDuration(20)
 
+Anim(Stand)
+AnimLoop(8)
+Vcurrent_lane<2:
+	SetColboxPhantom(1)
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Add(current_scale, 25)
+	ModelScale(current_scale)
+	
+	
+	
+	F14:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		SpriteOrder(current_lane)
+		#Log(current_lane)
+		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
+	endif
+	
+	F20:
+		Transition(AnimStand)
+	endif
+	
+endif
+
+PReaction:
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+endif
+:Shift-Roll-In:
+_Overridable()
+AttackRegister(Light, 2C+D)
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Roll-In)
+
+F1-15:
+	Flag(Invul-Mid)
+	Flag(Invul-High)
+endif
+
+Vcurrent_lane>0:
+	SetColboxPhantom(1)
+	
+
+	
+	Unflag(PF_Airborne)
+	Flag(PF_Grounded)
+	Sub(current_scale, 25)
+	ModelScale(current_scale)
+
+	
+	
+	
+	F15:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+	
+	F25:
+		Transition(AnimStand)
+	endif
+	
+endif
+:Shift-Roll-Out:
+_Overridable()
+AttackRegister(Light, 2A+B)
+Call(Raise-Lane-Flag)
+AttackDuration(25)
+
+Anim(Roll-Out)
+
+F1-15:
+	Flag(Invul-Mid)
+	Flag(Invul-High)
+endif
 
 
 Vcurrent_lane<2:
@@ -519,9 +909,10 @@ Vcurrent_lane<2:
 		SpriteOrder(current_lane)
 		#Log(current_lane)
 		Call(Raise-Lane-Flag)
+		Call(Bring-To-Floor)
 	endif
 	
-	F20:
+	F25:
 		Transition(AnimStand)
 	endif
 	
@@ -575,6 +966,8 @@ F10-12:
 		endif
 	
 endif
+:Unique-Move-Meter-Gain:
+
 :Current-Lane---Subentity:
 # Autogenerated
 :Current-Lane---Variables:

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/FlameBurst.ogg-961da0ffd65ed30750bc0cb68de1f4d0.oggstr"
+
+[deps]
+
+source_file="res://Assets/OST/FlameBurst.ogg"
+dest_files=[ "res://.import/FlameBurst.ogg-961da0ffd65ed30750bc0cb68de1f4d0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
