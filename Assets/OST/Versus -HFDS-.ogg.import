@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Versus -HFDS-.ogg-bf39bd804a78ccce3692f5ab97632162.oggstr"
+
+[deps]
+
+source_file="res://Assets/OST/Versus -HFDS-.ogg"
+dest_files=[ "res://.import/Versus -HFDS-.ogg-bf39bd804a78ccce3692f5ab97632162.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
