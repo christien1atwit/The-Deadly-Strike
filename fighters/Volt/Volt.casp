@@ -5,5 +5,61 @@
 Name: Volt Tribune
 EditorName: Volt
 Skeleton: res://fighters/Skeleton.casp
+:Specs-PhysicsMovement:
+def MOVE_Run_Speed int() = 2500
+def MOVE_Run_SpeedStart int() = 2500
+def MOVE_Run_SpeedStop int() = 200
+def MOVE_Walk_SpeedB int() = -1600
+def MOVE_Walk_SpeedF int() = 1900
+:Specs-Graphics:
+def GRAPHICS_SPRITESHEET_Volt int() = 0
+def GRAPHICS_SPRITESHEET_Volt___OriginX int() = 75
+def GRAPHICS_SPRITESHEET_Volt___OriginY int() = 0
+def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
+def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
+def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 1
+def GRAPHICS_UseModel bool() = 0
+def GRAPHICS_UseSprites bool() = 1
+:Specs-AttacksTypes:
+# Automatic creation
+:Specs-Anims:
+def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___1_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___2_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Duration int() = 8
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Frame int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Stand___9_Spritesheet str() =
 :Variables:
 ## This is the Variables block, where you can store custom variables or overwrite defined ones.You can see all available default variables by activating 'Show All Variables' in the navigation panel.
+:AnimStand:
+CallParent()
+
+Anim(Stand)
+AnimLoop(23, 0)
