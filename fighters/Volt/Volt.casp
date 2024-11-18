@@ -224,7 +224,6 @@ endif
 F10:
 	LAttackHasHit:
 		AddMomentum(200)
-		Log(lol)
 	endif
 endif
 :5B:
