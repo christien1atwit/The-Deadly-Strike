@@ -29,7 +29,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 2
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 3
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
