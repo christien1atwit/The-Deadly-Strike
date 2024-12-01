@@ -29,7 +29,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 3
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 5
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
@@ -97,6 +97,99 @@ def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___1_Frame int() = 30
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___2_Frame int() = 31
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___3_Frame int() = 32
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___4_Frame int() = 33
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___5_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___5_Frame int() = 34
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___6_Frame int() = 35
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___1_Frame int() = 36
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___2_Frame int() = 37
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___3_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___3_Frame int() = 38
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___4_Frame int() = 39
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___5_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___5_Frame int() = 40
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___6_Frame int() = 41
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___7_Frame int() = 42
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___8_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___8_Frame int() = 43
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___9_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___9_Frame int() = 44
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Slam___9_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___10_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___10_Frame int() = 48
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___10_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___1_Frame int() = 26
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___2_Frame int() = 27
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___3_Frame int() = 28
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___4_Frame int() = 29
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___5_Frame int() = 45
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___6_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___6_Frame int() = 46
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___7_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___7_Frame int() = 47
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___8_Frame int() = 48
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Frame int() = 49
+def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Spritesheet str() = Volt
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
@@ -276,3 +369,91 @@ CallParent()
 
 Anim(Walk)
 AnimLoop(25)
+:Covalent-Suplex-Shock:
+# Simple medium attack template
+AttackRegister(Special)
+
+# Adjust parameters here
+AttackDamage(100)
+AttackDuration(16)
+AttackFlag(Light)
+# Put your animation here
+Anim(Covalent-Suplex-Shock)
+AttackMomentum(0,0)
+SetMomentum(0,0)
+AttackFA(60,1)
+SpriteOrderOffset(1)
+AttackHitstop(0)
+VFXPosition(15000, 20000)
+# Active frames and hitboxes
+F1%4:
+	InflictAttack()
+	AttackMultihit()
+endif
+F15:
+	Transition(Covalent-Suplex-Slam)
+endif
+:Covalent-Suplex-Slam:
+# Simple medium attack template
+AttackRegister(Special)
+
+# Adjust parameters here
+AttackDamage(2500)
+AttackDuration(36)
+AttackFlag(Heavy)
+
+Unflag(FaceTarget)
+# Put your animation here
+Anim(Covalent-Suplex-Slam)
+AttackHitstop(3)
+AttackFA(10,0)
+AttackMomentum(0,-900)
+AttackKnockdown(80,80)
+
+# Active frames and hitboxes
+F10-16:
+	Log(Lol)
+	SetTargetPosition(7000,10000)
+endif
+F17:
+	SetTargetPosition(0,33000)
+endif
+F18:	
+	SetTargetPosition(-15000,26000)
+endif
+F19:
+	SetTargetPosition(-18000,20000)
+endif
+F25:
+	InflictAttack()
+endif
+SetMomentum(0,0)
+:Covalent-Suplex-Start:
+# Simple medium attack template
+AttackRegister(Special, 236A)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(28)
+ #For Grab Sound Effect
+AttackFlag(Grab)
+AttackFlag(PhaseBlock)
+AttackUnblockable(PF_Grounded)
+AttackMomentum(0,0)
+SetMomentum(0,0)
+AttackFA(10,0)
+AttackHitstop(5)
+# Put your animation here
+Anim(Covalent-Suplex-Start)
+
+# Active frames and hitboxes
+F4-6:
+	HitboxRequires(PF_Grounded)
+	Hitbox(0, 15000, 5000, 15000)
+endif
+
+LAttackHasHit:
+	SetMomentum(0,0)
+	Transition(Covalent-Suplex-Shock)
+	
+endif
