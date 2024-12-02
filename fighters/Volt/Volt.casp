@@ -97,6 +97,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_5B___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5B___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5C int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5C___1_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_5C___1_Frame int() = 15
+def GRAPHICS_SPRITE_ANIMATIONS_5C___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___2_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5C___2_Frame int() = 16
+def GRAPHICS_SPRITE_ANIMATIONS_5C___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___3_Duration int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_5C___3_Frame int() = 17
+def GRAPHICS_SPRITE_ANIMATIONS_5C___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5C___4_Frame int() = 18
+def GRAPHICS_SPRITE_ANIMATIONS_5C___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5C___5_Frame int() = 19
+def GRAPHICS_SPRITE_ANIMATIONS_5C___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5C___6_Frame int() = 20
+def GRAPHICS_SPRITE_ANIMATIONS_5C___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5C___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5C___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Frame int() = 0
@@ -354,6 +385,30 @@ F3-8:
 				Hitbox(0, 15000, 5000, 15000)
 			endif
 	
+endif
+:5C:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(500)
+AttackDuration(21)
+AttackFlag(Heavy)
+AttackFA(2,-6)
+# Put your animation here
+Anim(5C)
+
+# Active frames and hitboxes
+F5-12:
+	Hitbox(0, 15000, 5000, 15000)
+endif
+
+F14:
+	AttackMultihit()
+endif
+
+F15-19:
+	Hitbox(0, 15000, 5000, 15000)
 endif
 :AnimStand:
 CallParent()
