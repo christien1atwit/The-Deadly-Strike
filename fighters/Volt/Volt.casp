@@ -221,6 +221,99 @@ def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___8_Spritesheet str() = Vol
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Duration int() = 2
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Frame int() = 49
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Start___9_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Jump___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Frame int() = 5
+def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
@@ -316,7 +409,11 @@ def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Spritesheet str() =
 :Variables:
 ## This is the Variables block, where you can store custom variables or overwrite defined ones.You can see all available default variables by activating 'Show All Variables' in the navigation panel.
+
+def Win_Quote_0 str() = "Pathetic, not even worth remembering... Who are you again?"
+def Win_Quote_1 str() = "Next time, get a body that can stand a few thousand volts!"
 :5A:
+##Linear; Pulls Enemy closer on hit
 # Simple medium attack template
 AttackRegister(Light)
 AttackFlag(Light)
@@ -351,6 +448,7 @@ F10:
 	endif
 endif
 :5B:
+##Linear; Low
 # Simple medium attack template
 AttackRegister(Light)
 AttackFlag(Light)
@@ -387,20 +485,40 @@ F3-8:
 	
 endif
 :5C:
+##Linear; Hits overhead; Iif the opponent is crouching then causes a knockdown
+
 # Simple medium attack template
 AttackRegister(Heavy)
+
+
 
 # Adjust parameters here
 AttackDamage(500)
 AttackDuration(21)
 AttackFlag(Heavy)
-AttackFA(2,-6)
+AttackFlag(Overhead)
+AttackMustBlock(Overhead)
+AttackFA(3,-6)
+AttackKnockdown(30,30)
+
 # Put your animation here
 Anim(5C)
 
 # Active frames and hitboxes
 F5-12:
-	Hitbox(0, 15000, 5000, 15000)
+	VFXPosition(18000,21000)
+		Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(4500, 24000, 15000, 28000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(4500, 24000, 15000, 28000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(4500, 24000, 15000, 28000)
+			endif
 endif
 
 F14:
@@ -408,7 +526,21 @@ F14:
 endif
 
 F15-19:
-	Hitbox(0, 15000, 5000, 15000)
+	AttackFA(2,-6)
+	AttackDamage(300)
+	VFXPosition(17000,5000)
+		Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(8000, 27000, 3000, 15000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(8000, 27000, 3000, 15000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(8000, 27000, 3000, 15000)
+			endif
 endif
 :AnimStand:
 CallParent()
@@ -440,10 +572,16 @@ AttackFA(60,1)
 SpriteOrderOffset(1)
 AttackHitstop(0)
 VFXPosition(15000, 20000)
+
+
+
 # Active frames and hitboxes
 F1%4:
 	InflictAttack()
 	AttackMultihit()
+endif
+F2:
+	Log(Volt: 'Covalent...')
 endif
 F15:
 	Transition(Covalent-Suplex-Slam)
@@ -467,7 +605,6 @@ AttackKnockdown(80,80)
 
 # Active frames and hitboxes
 F10-16:
-	Log(Lol)
 	SetTargetPosition(7000,10000)
 endif
 F17:
@@ -478,18 +615,22 @@ F18:
 endif
 F19:
 	SetTargetPosition(-18000,20000)
+	#Voice Line
+	Log(Volt: '...SUPLEX!!')
 endif
 F25:
 	InflictAttack()
+	SpriteOrderOffset(0)
 endif
 SetMomentum(0,0)
 :Covalent-Suplex-Start:
+##Command Grab Starter; Linear; Short Range
 # Simple medium attack template
 AttackRegister(Special, 236A)
 
 # Adjust parameters here
 AttackDamage(0)
-AttackDuration(28)
+AttackDuration(32)
  #For Grab Sound Effect
 AttackFlag(Grab)
 AttackFlag(PhaseBlock)
@@ -497,15 +638,43 @@ AttackUnblockable(PF_Grounded)
 AttackMomentum(0,0)
 SetMomentum(0,0)
 AttackFA(10,0)
-AttackHitstop(5)
+AttackHitstop(15)
 # Put your animation here
 Anim(Covalent-Suplex-Start)
 
 # Active frames and hitboxes
-F4-6:
+F5-6:
 	HitboxRequires(PF_Grounded)
-	Hitbox(0, 15000, 5000, 15000)
+		Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+					Hitbox(0, 15000, 5000, 15000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+					Hitbox(0, 15000, 5000, 15000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+					Hitbox(0, 15000, 5000, 15000)
+			endif
 endif
+
+# Sound
+
+#Start Sound
+F1:
+	Log(Volt: 'Get ready...')
+endif
+
+#Whiff Sound
+F8:
+	Vframe_count>=155:
+		Log(Volt: 'No way!')
+	else
+		Log(Volt: 'Huh?!')
+	endif
+endif
+
 
 LAttackHasHit:
 	SetMomentum(0,0)
