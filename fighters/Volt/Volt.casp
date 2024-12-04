@@ -628,6 +628,9 @@ SetMomentum(0,0)
 # Simple medium attack template
 AttackRegister(Special, 236A)
 
+
+
+
 # Adjust parameters here
 AttackDamage(0)
 AttackDuration(32)
@@ -641,6 +644,9 @@ AttackFA(10,0)
 AttackHitstop(15)
 # Put your animation here
 Anim(Covalent-Suplex-Start)
+Flag(SpecialSpark)
+Flag(Grab-Move)
+VFXPosition(12000, 22000)
 
 # Active frames and hitboxes
 F5-6:
