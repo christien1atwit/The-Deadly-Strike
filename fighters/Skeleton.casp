@@ -84,6 +84,22 @@ def MOVE_Walk_SpeedF int() = 1500
 :Specs-MenuData:
 # Automatic creation
 :Specs-Graphics:
+def GRAPHICS_SPRITESHEET_BlockSpark int() = 0
+def GRAPHICS_SPRITESHEET_BlockSpark___OriginX int() = 21
+def GRAPHICS_SPRITESHEET_BlockSpark___OriginY int() = 21
+def GRAPHICS_SPRITESHEET_BlockSpark___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_BlockSpark___Path str() = res://Assets/Effects/BlockSpark-Sheet.png
+def GRAPHICS_SPRITESHEET_BlockSpark___PixelSize int() = 100
+def GRAPHICS_SPRITESHEET_BlockSpark___SpritesX int() = 4
+def GRAPHICS_SPRITESHEET_BlockSpark___SpritesY int() = 1
+def GRAPHICS_SPRITESHEET_GrabSpark int() = 0
+def GRAPHICS_SPRITESHEET_GrabSpark___OriginX int() = 21
+def GRAPHICS_SPRITESHEET_GrabSpark___OriginY int() = 21
+def GRAPHICS_SPRITESHEET_GrabSpark___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_GrabSpark___Path str() = res://Assets/Effects/CommandSpark-Sheet.png
+def GRAPHICS_SPRITESHEET_GrabSpark___PixelSize int() = 100
+def GRAPHICS_SPRITESHEET_GrabSpark___SpritesX int() = 6
+def GRAPHICS_SPRITESHEET_GrabSpark___SpritesY int() = 1
 def GRAPHICS_SPRITESHEET_HitSpark int() = 0
 def GRAPHICS_SPRITESHEET_HitSpark___OriginX int() = 21
 def GRAPHICS_SPRITESHEET_HitSpark___OriginY int() = 21
@@ -133,6 +149,68 @@ def ATTACK_Throw_Tech_LockoutTime int() = 10
 def ATTACK_CanBlockInAir bool() = 0
 :Specs-Anims:
 def ANIMS_UseStandardAnims bool() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___1_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___1_Spritesheet str() = BlockSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___2_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___2_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___2_Spritesheet str() = BlockSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___3_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___3_Frame int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___3_Spritesheet str() = BlockSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___4_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___4_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___4_Spritesheet str() = BlockSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Block-Spark___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___1_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___1_Frame int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___1_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___2_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___2_Frame int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___2_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___3_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___3_Frame int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___3_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___4_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___4_Frame int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___4_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___5_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___5_Frame int() = 5
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___5_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___6_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___6_Frame int() = 6
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___6_Spritesheet str() = GrabSpark
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Grab-Spark___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Norm-Spark___10_Frame int() = 0
@@ -357,6 +435,12 @@ CallParent()
 AddMomentum(-1650)
 
 Add(Meter,1)
+
+#####Hitspark Management#####
+VFXSprite(Block-Spark)
+VFXTime(6)
+VFXScale(4000)
+VFXCreate()
 :Custom-OnAttackHit:
 CallParent()
 Log(_Flags)
@@ -481,6 +565,11 @@ F10-12:
 endif
 :Hit-Spark-Manager:
 _Overridable()
+
+LGrab-Move:
+	VFXSprite(Grab-Spark)
+	VFXTime(6)
+endif
 :Raise-Lane-Flag:
 ##Will set the appropriate lane flag when called
 
