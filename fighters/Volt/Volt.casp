@@ -7,6 +7,8 @@ EditorName: Volt
 Skeleton: res://fighters/Skeleton.casp
 :Specs-UI:
 # Automatic creation
+:Specs-PhysicsSystem:
+def PHYSICS_StandardHurtbox_Top int() = 32000
 :Specs-PhysicsMovement:
 def MOVE_Backdash_Speed int() = -2500
 def MOVE_Jump_JumpB_InitialMomentumY int() = 3000
@@ -22,6 +24,14 @@ def MOVE_Walk_SpeedF int() = 1900
 :Specs-MenuData:
 def MENU_Name str() = Volt Tribune
 :Specs-Graphics:
+def GRAPHICS_SPRITESHEET_Flash int() = 0
+def GRAPHICS_SPRITESHEET_Flash___OriginX int() = 8
+def GRAPHICS_SPRITESHEET_Flash___OriginY int() = 8
+def GRAPHICS_SPRITESHEET_Flash___PaletteMode int() = 0
+def GRAPHICS_SPRITESHEET_Flash___Path str() = res://fighters/Volt/Graphics/FlashGraphic.png
+def GRAPHICS_SPRITESHEET_Flash___PixelSize int() = 100
+def GRAPHICS_SPRITESHEET_Flash___SpritesX int() = 1
+def GRAPHICS_SPRITESHEET_Flash___SpritesY int() = 1
 def GRAPHICS_SPRITESHEET_Volt int() = 0
 def GRAPHICS_SPRITESHEET_Volt___OriginX int() = 75
 def GRAPHICS_SPRITESHEET_Volt___OriginY int() = 0
@@ -29,10 +39,12 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 5
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 8
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
+# Automatic creation
+:Specs-AttacksThrows:
 # Automatic creation
 :Specs-Anims:
 def GRAPHICS_SPRITE_ANIMATIONS_5A int() = 0
@@ -128,6 +140,130 @@ def GRAPHICS_SPRITE_ANIMATIONS_5C___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5C___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5D int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 21
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 22
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 23
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 24
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Frame int() = 25
+def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_5D___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___1_Frame int() = 50
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___2_Frame int() = 51
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___3_Frame int() = 52
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___4_Frame int() = 53
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___5_Frame int() = 54
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___6_Frame int() = 55
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___7_Frame int() = 56
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___8_Duration int() = 12
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___8_Frame int() = 57
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Linear___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1 int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___10_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___10_Frame int() = 67
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___10_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___1_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___1_Frame int() = 58
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___2_Frame int() = 59
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___3_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___3_Frame int() = 60
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___4_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___4_Frame int() = 61
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___5_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___5_Frame int() = 62
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___6_Frame int() = 63
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___7_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___7_Frame int() = 64
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___8_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___8_Frame int() = 65
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___9_Duration int() = 1
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___9_Frame int() = 66
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-1___9_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2 int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___1_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___1_Frame int() = 68
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___1_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___2_Frame int() = 69
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___3_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___3_Frame int() = 70
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___4_Duration int() = 15
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___4_Frame int() = 71
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___5_Duration int() = 10
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___5_Frame int() = 72
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___6_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___6_Frame int() = 73
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___7_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___7_Frame int() = 74
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___8_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___8_Frame int() = 75
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___9_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___9_Frame int() = 76
+def GRAPHICS_SPRITE_ANIMATIONS_Arc-Phalanx-Toss-2___9_Spritesheet str() = Volt
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Covalent-Suplex-Shock___10_Frame int() = 0
@@ -252,6 +388,37 @@ def GRAPHICS_SPRITE_ANIMATIONS_Crouch___8_Spritesheet str() =
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Crouch___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___10_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___10_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___10_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___1_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___1_Spritesheet str() = Flash
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___2_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___2_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___2_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___3_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___3_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___3_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___4_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___4_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___4_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___5_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___5_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___5_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___6_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___6_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___6_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___7_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___7_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___7_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___8_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___8_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___8_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___9_Duration int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___9_Frame int() = 0
+def GRAPHICS_SPRITE_ANIMATIONS_Flash___9_Spritesheet str() = 
 def GRAPHICS_SPRITE_ANIMATIONS_Jump int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Jump___10_Frame int() = 0
@@ -542,6 +709,22 @@ F15-19:
 				Hitbox(8000, 27000, 3000, 15000)
 			endif
 endif
+:5D:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(1000)
+AttackDuration(16)
+# AttackFlag(Low)
+
+# Put your animation here
+Anim(5D)
+
+# Active frames and hitboxes
+F10-12:
+	Hitbox(0, 15000, 5000, 15000)
+endif
 :AnimStand:
 CallParent()
 
@@ -556,6 +739,163 @@ CallParent()
 
 Anim(Walk)
 AnimLoop(25)
+:Arc-Phalanx-Linear-H:
+##Linear, Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
+AttackRegister(Special, 623C)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(48)
+AttackUnblockable(PF_Grounded)
+AttackFlag(Light)
+AttackHitstop(15)
+AttackFA(77,-13)
+AttackMinHitstun(77)
+# Put your animation here
+Anim(Arc-Phalanx-Linear)
+Flag(SpecialSpark)
+Flag(Grab-Move)
+VFXPosition(16500, 16000)
+
+F1:
+AddMomentum(3000,3000)
+endif
+
+# Active frames and hitboxes
+F22-27:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		#Hitbox(7000, 26000, 8000, 24000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		#Hitbox(7000, 26000, 8000, 24000)
+	endif
+endif
+
+LAttackHasHit:
+	SetMomentum(0,0)
+	Transition(Arc-Phalanx-Toss-1)
+	
+endif
+F5+:
+	LPF_Grounded:
+		BreakMomentum(160)
+	endif
+endif
+:Arc-Phalanx-Linear-L:
+##Linear, Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
+AttackRegister(Special, 623A)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(43)
+AttackUnblockable(PF_Grounded)
+AttackFlag(Light)
+AttackHitstop(15)
+AttackFA(77,-13)
+AttackMinHitstun(77)
+# Put your animation here
+Anim(Arc-Phalanx-Linear)
+Flag(SpecialSpark)
+Flag(Grab-Move)
+VFXPosition(16500, 16000)
+
+
+F1:
+AddMomentum(2200,3500)
+endif
+
+# Active frames and hitboxes
+F22-27:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		#Hitbox(7000, 26000, 8000, 24000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		#Hitbox(7000, 26000, 8000, 24000)
+	endif
+endif
+
+LAttackHasHit:
+	SetMomentum(0,0)
+	Transition(Arc-Phalanx-Toss-1)
+	
+endif
+F5+:
+	LPF_Grounded:
+		BreakMomentum(160)
+	endif
+endif
+:Arc-Phalanx-Toss-1:
+#Animation Helper State; Just a transition to the final part
+AttackRegister(Special)
+SetMomentum(0,0)
+# Adjust parameters here
+AttackDuration(24)
+# Put your animation here
+#24 frames long
+Anim(Arc-Phalanx-Toss-1)
+SpriteOrderOffset(1)
+
+
+SetPositionRelativeToTarget(0,24000)
+F23:
+	Transition(Arc-Phalanx-Toss-2)
+endif
+:Arc-Phalanx-Toss-2:
+# Simple medium attack template
+AttackRegister(Special)
+
+# Adjust parameters here
+AttackDuration(47)
+
+AttackKnockdown(180,180)
+
+# Put your animation here
+Anim(Arc-Phalanx-Toss-2)
+
+
+# Active frames and hitboxes
+F1-35:
+SetPositionRelativeToTarget(0,24000)
+endif
+
+F4:
+VFXPosition(0, 14000)
+AttackMomentum(0)
+AttackHitstop(5)
+AttackFlag(Light)
+AttackDamage(500)
+InflictAttack()
+
+endif
+
+F5:
+AttackMultihit()
+endif
+
+F36:
+VFXPosition(0,-90000)
+SetPositionRelativeToTarget(-5000,10000)
+SetTargetPosition(5000,45000)
+AddMomentum(3200,1200)
+AttackHitstop(5)
+AttackMomentum(3500,1500,3500,1500)
+AttackFlag(Heavy)
+AttackDamage(1900)
+InflictAttack()
+SpriteOrderOffset(0)
+endif
 :Covalent-Suplex-Shock:
 # Simple medium attack template
 AttackRegister(Special)
@@ -564,6 +904,7 @@ AttackRegister(Special)
 AttackDamage(100)
 AttackDuration(16)
 AttackFlag(Light)
+
 # Put your animation here
 Anim(Covalent-Suplex-Shock)
 AttackMomentum(0,0)
@@ -619,6 +960,7 @@ F19:
 	Log(Volt: '...SUPLEX!!')
 endif
 F25:
+	VFXPosition(-23000,0)
 	InflictAttack()
 	SpriteOrderOffset(0)
 endif
@@ -627,7 +969,7 @@ SetMomentum(0,0)
 ##Command Grab Starter; Linear; Short Range
 # Simple medium attack template
 AttackRegister(Special, 236A)
-
+AttackAddNotation(236C)
 
 
 
@@ -687,3 +1029,9 @@ LAttackHasHit:
 	Transition(Covalent-Suplex-Shock)
 	
 endif
+:Create-Screen-Flash:
+VFXSprite(Flash)
+VFXTime(2)
+VFXPosition(0,0)
+VFXScale(999999)
+VFXCreate()
