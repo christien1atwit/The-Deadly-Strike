@@ -1,9 +1,10 @@
 extends "res://castagne/helpers/ui/widgets/CUIWidget_Bar.gd"
 
-
+#This loads the graphics for the P2 version of the bar. Since the Bar is not symetrical
 onready var flipProg = preload("res://Assets/UI/HealthBarF.png")
 onready var flipUnder = preload("res://Assets/UI/HealthBarUnderF.png")
 onready var flipOver= preload("res://Assets/UI/HealthBarBoarderF.png")
+
 onready var playerRoot= get_parent().get_parent()
 onready var portrait = $Portrait
 onready var flashDown = true
@@ -33,7 +34,7 @@ func WidgetInitialize(stateHandle, battleInitData = null, caspData = null):
 				if(rootSub != null):
 					rootSub.set_fill_mode(fillMode)
 	
-	if(_HasAsset(caspData, "Asset1")):#Asset 1 is the portrait, (32x32)
+	if(_HasAsset(caspData, "Asset1")):#Asset 1 is the portrait, (32x32), This is a path to the graphic
 		var t = _LoadAsset(caspData, "Asset1")
 		if(t != null):
 			portrait.texture=t
@@ -65,13 +66,13 @@ func WidgetUpdate(stateHandle):
 	var scalingFactor=float(viewportHeight/240)#240 is the height of the screen that this was drawn for
 	self.rect_scale=Vector2(scalingFactor,scalingFactor)
 	var hp_percent=float(self.value/self.max_value)
-	if(hp_percent<0.301):
+	if(hp_percent<0.301):#Starts flashing bar if below 30%
 		Flash()
 	else:
 		self.tint_progress=Color(1,1,1,1)
 		
 	
-
+#This function causes the HP Bar to flash red and black when low
 func Flash():
 	if(flashDown):
 		self.tint_progress.r-=0.10
