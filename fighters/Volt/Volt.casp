@@ -830,7 +830,7 @@ LAttackHasHit:
 		TransitionBuffer(Arc-Phalanx-Choke, 3)
 	endif
 	F28+:
-		Log(Going to Pivot)
+		#Log(Going to Pivot)
 		Transition(Arc-Phalanx-Toss-1, 2)
 	endif
 endif
@@ -896,7 +896,7 @@ LAttackHasHit:
 		TransitionBuffer(Arc-Phalanx-Choke, 3)
 	endif
 	F28+:
-		Log(Going to Pivot)
+		#Log(Going to Pivot)
 		Transition(Arc-Phalanx-Toss-1, 2)
 	endif
 endif

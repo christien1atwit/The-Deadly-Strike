@@ -408,7 +408,7 @@ endif
 Call(DashInputHelper)
 
 LAir-Change:
-Log(airchange)
+#Log(airchange)
 endif
 :Correct-Scale:
 Vcurrent_lane==0:
@@ -484,7 +484,7 @@ VFXScale(4000)
 VFXCreate()
 :Custom-OnBlock:
 CallParent()
-#Log(_Flags)
+Log(_Flags)
 Move(-100)
 
 SFXPlay(Block)
@@ -502,7 +502,6 @@ VMeter>MeterMax:
 endif
 :Custom-OnHit:
 CallParent()
-Log(_Flags)
 ### Dragging Logic ###
 LAF_DragIn:
 	Log("Drag In")
@@ -546,7 +545,6 @@ endif
 
 
 LAF_AirChange:
-	Log(Gooba)
 	Set(hit_in_air,1)
 endif
 :Custom-OnReturnToNeutral:
