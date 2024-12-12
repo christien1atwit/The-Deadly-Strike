@@ -579,6 +579,8 @@ def GRAPHICS_SPRITE_ANIMATIONS_Walk___9_Spritesheet str() =
 
 def Win_Quote_0 str() = "Pathetic, not even worth remembering... Who are you again?"
 def Win_Quote_1 str() = "Next time, get a body that can stand a few thousand volts!"
+
+var op_flags str()
 :5A:
 ##Linear; Pulls Enemy closer on hit
 # Simple medium attack template
@@ -590,6 +592,9 @@ AttackDuration(15)
 AttackFrameAdvantage(4, -2)
 AttackMomentumHit(-300)
 AttackMomentumBlock(400)
+
+
+
 # Put your animation here
 Anim(5A)
 VFXPosition(18000, 30000)
@@ -739,33 +744,71 @@ CallParent()
 
 Anim(Walk)
 AnimLoop(25)
+:Arc-Phalanx-Choke:
+# Simple medium attack template
+AttackRegister(Special)
+
+# Adjust parameters here
+AttackDamage(1500)
+AttackDuration(50)
+AttackFlag(Heavy)
+
+# Put your animation here
+AnimFrame(Arc-Phalanx-Linear, 27)
+Colbox(-20000, -18000, 5000, 22000)
+
+AttackTransitionTo(Knockdown)
+AttackKnockdown(40,40)
+# Active frames and hitboxes
+F1:
+	AddMomentum(3000,0)
+endif
+SetTargetPosition(3000,000)
+
+LPF_Grounded:
+	InflictAttack()
+endif
+
+
+F49:
+	Transition(JumpB)
+endif
 :Arc-Phalanx-Linear-H:
 ##Linear, Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
 AttackRegister(Special, 623C)
 
 # Adjust parameters here
 AttackDamage(0)
-AttackDuration(48)
+AttackDuration(47)
 AttackUnblockable(PF_Grounded)
 AttackFlag(Light)
 AttackHitstop(15)
 AttackFA(77,-13)
 AttackMinHitstun(77)
+
+AttackOverride(Airborne)
+AttackFlag(AirChange)
+AttackDamage(200)
+AttackHitstop(0)
+
+
 # Put your animation here
 Anim(Arc-Phalanx-Linear)
 Flag(SpecialSpark)
 Flag(Grab-Move)
 VFXPosition(16500, 16000)
 
+
 F1:
 AddMomentum(3000,3000)
 endif
+
 
 # Active frames and hitboxes
 F22-27:
 	Vcurrent_lane==0:
 		HitboxRequires(BackLane)
-		#Hitbox(7000, 26000, 8000, 24000)
+		Hitbox(-2000, 19000, 8000, 21000)
 	endif
 	Vcurrent_lane==1:
 		HitboxRequires(MidLane)
@@ -773,15 +816,25 @@ F22-27:
 	endif
 	Vcurrent_lane==2:
 		HitboxRequires(FrontLane)
-		#Hitbox(7000, 26000, 8000, 24000)
+		Hitbox(-2000, 19000, 8000, 21000)
 	endif
 endif
 
 LAttackHasHit:
 	SetMomentum(0,0)
-	Transition(Arc-Phalanx-Toss-1)
-	
+	FlagNext(IgnoreGravity)
+	CopyFromTarget(air_change, hit_in_air)
+	Vair_change==1:
+		Set(air_change,0)
+		SetIntInTarget(hit_in_air, 0)
+		TransitionBuffer(Arc-Phalanx-Choke, 3)
+	endif
+	F28+:
+		Log(Going to Pivot)
+		Transition(Arc-Phalanx-Toss-1, 2)
+	endif
 endif
+
 F5+:
 	LPF_Grounded:
 		BreakMomentum(160)
@@ -799,6 +852,13 @@ AttackFlag(Light)
 AttackHitstop(15)
 AttackFA(77,-13)
 AttackMinHitstun(77)
+
+AttackOverride(Airborne)
+AttackFlag(AirChange)
+AttackDamage(200)
+AttackHitstop(0)
+
+
 # Put your animation here
 Anim(Arc-Phalanx-Linear)
 Flag(SpecialSpark)
@@ -814,7 +874,7 @@ endif
 F22-27:
 	Vcurrent_lane==0:
 		HitboxRequires(BackLane)
-		#Hitbox(7000, 26000, 8000, 24000)
+		Hitbox(-2000, 19000, 8000, 21000)
 	endif
 	Vcurrent_lane==1:
 		HitboxRequires(MidLane)
@@ -822,15 +882,27 @@ F22-27:
 	endif
 	Vcurrent_lane==2:
 		HitboxRequires(FrontLane)
-		#Hitbox(7000, 26000, 8000, 24000)
+		Hitbox(-2000, 19000, 8000, 21000)
 	endif
 endif
 
 LAttackHasHit:
 	SetMomentum(0,0)
-	Transition(Arc-Phalanx-Toss-1)
-	
+	FlagNext(IgnoreGravity)
+	CopyFromTarget(air_change, hit_in_air)
+	Vair_change==1:
+		Set(air_change,0)
+		SetIntInTarget(hit_in_air, 0)
+		TransitionBuffer(Arc-Phalanx-Choke, 3)
+	endif
+	F28+:
+		Log(Going to Pivot)
+		Transition(Arc-Phalanx-Toss-1, 2)
+	endif
 endif
+
+
+
 F5+:
 	LPF_Grounded:
 		BreakMomentum(160)
@@ -1035,3 +1107,9 @@ VFXTime(2)
 VFXPosition(0,0)
 VFXScale(999999)
 VFXCreate()
+:Custom-AttackOverrides-OnHit:
+CallParent()
+:Custom-AttackOverrides-OnTouch:
+CallParent()
+:Custom-OnAttackHit:
+CallParent()

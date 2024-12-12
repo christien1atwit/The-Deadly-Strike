@@ -251,6 +251,12 @@ var opponent_id int() = 1
 
 var frame_count int() = 0
 
+#These are booleans, 0 is false, 1 is true
+#Set for moves that change ending on air hit
+var air_change int() = 0
+var hit_in_air int() = 0
+#
+
 var juggle_count int() = 0
 var op_juggle_count int() = 0
 
@@ -400,6 +406,10 @@ endif
 ######
 
 Call(DashInputHelper)
+
+LAir-Change:
+Log(airchange)
+endif
 :Correct-Scale:
 Vcurrent_lane==0:
 	Set(current_scale, BAK_SCALE)
@@ -412,6 +422,8 @@ endif
 Vcurrent_lane==2:
 	Set(current_scale, FRN_SCALE)
 endif
+:Custom-AttackOverrides-OnHit:
+CallParent()
 :Custom-NeutralStateCommon:
 CallParent()
 Call(Raise-Lane-Flag)
@@ -490,7 +502,7 @@ VMeter>MeterMax:
 endif
 :Custom-OnHit:
 CallParent()
-
+Log(_Flags)
 ### Dragging Logic ###
 LAF_DragIn:
 	Log("Drag In")
@@ -531,6 +543,12 @@ LAF_Juggle:
 	Add(juggle_count, 1)
 endif
 ######
+
+
+LAF_AirChange:
+	Log(Gooba)
+	Set(hit_in_air,1)
+endif
 :Custom-OnReturnToNeutral:
 CallParent()
 BreakMomentumX(1000)
