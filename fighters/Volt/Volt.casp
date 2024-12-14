@@ -47,6 +47,7 @@ def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksThrows:
 # Automatic creation
 :Specs-Anims:
+def ANIMS_UseStandardAnims bool() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5A int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5A___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5A___10_Frame int() = 0
@@ -144,16 +145,16 @@ def GRAPHICS_SPRITE_ANIMATIONS_5D int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_5D___10_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Frame int() = 21
 def GRAPHICS_SPRITE_ANIMATIONS_5D___1_Spritesheet str() = Volt
-def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 4
+def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Duration int() = 12
 def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Frame int() = 22
 def GRAPHICS_SPRITE_ANIMATIONS_5D___2_Spritesheet str() = Volt
-def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Duration int() = 6
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Frame int() = 23
 def GRAPHICS_SPRITE_ANIMATIONS_5D___3_Spritesheet str() = Volt
-def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Duration int() = 2
+def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Duration int() = 4
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Frame int() = 24
 def GRAPHICS_SPRITE_ANIMATIONS_5D___4_Spritesheet str() = Volt
 def GRAPHICS_SPRITE_ANIMATIONS_5D___5_Duration int() = 4
@@ -673,6 +674,7 @@ AttackMustBlock(Overhead)
 AttackFA(3,-6)
 AttackKnockdown(30,30)
 
+
 # Put your animation here
 Anim(5C)
 
@@ -719,15 +721,20 @@ endif
 AttackRegister(Heavy)
 
 # Adjust parameters here
-AttackDamage(1000)
-AttackDuration(16)
-# AttackFlag(Low)
+AttackDamage(800)
+AttackDuration(32)
+AttackFlag(Heavy)
+AttackFA(8,0)
+AttackMomentumHit(2500, 1800, 10000, 3200)
+AttackMomentumBlock(400, 0)
 
+AttackOverride(Airborne)
+AttackKnockdown(45,45)
 # Put your animation here
 Anim(5D)
 
 # Active frames and hitboxes
-F10-12:
+F22-26:
 	Hitbox(0, 15000, 5000, 15000)
 endif
 :AnimStand:
