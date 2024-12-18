@@ -22,6 +22,7 @@ def MOVE_Run_StartTime int() = 4
 def MOVE_Walk_SpeedB int() = -1600
 def MOVE_Walk_SpeedF int() = 1900
 :Specs-MenuData:
+def MENU_Hidden bool() = 0
 def MENU_Name str() = Volt Tribune
 :Specs-Graphics:
 def GRAPHICS_SPRITESHEET_Flash int() = 0
@@ -751,6 +752,89 @@ CallParent()
 
 Anim(Walk)
 AnimLoop(25)
+:Arc-Phalanx-Back:
+##Sway[Back], Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
+AttackRegister(Special, 623D)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(65)
+AttackUnblockable(PF_Grounded)
+AttackFlag(Light)
+AttackHitstop(15)
+AttackFA(77,-13)
+AttackMinHitstun(77)
+
+AttackOverride(Airborne)
+AttackFlag(AirChange)
+AttackDamage(200)
+AttackHitstop(0)
+
+
+# Put your animation here
+Anim(Arc-Phalanx-Linear)
+Flag(SpecialSpark)
+Flag(Grab-Move)
+VFXPosition(16500, 16000)
+
+
+
+F1:
+AddMomentum(3000,3000)
+endif
+
+#Shift into BG
+Vcurrent_lane>0:
+SpriteOrderOffset(-1)
+	F1-20:
+		Sub(current_scale, 25)
+		ModelScale(current_scale)
+	endif
+	
+	F10:
+		Sub(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+endif
+
+
+# Active frames and hitboxes
+F22-27:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+endif
+
+LAttackHasHit:
+	SetMomentum(0,0)
+	FlagNext(IgnoreGravity)
+	CopyFromTarget(air_change, hit_in_air)
+	Vair_change==1:
+		Set(air_change,0)
+		SetIntInTarget(hit_in_air, 0)
+		TransitionBuffer(Arc-Phalanx-Choke, 3)
+	endif
+	F28+:
+		#Log(Going to Pivot)
+		Transition(Arc-Phalanx-Toss-1, 2)
+	endif
+endif
+
+F5+:
+	LPF_Grounded:
+		BreakMomentum(160)
+	endif
+endif
 :Arc-Phalanx-Choke:
 # Simple medium attack template
 AttackRegister(Special)
@@ -770,15 +854,97 @@ AttackKnockdown(40,40)
 F1:
 	AddMomentum(3000,0)
 endif
-SetTargetPosition(3000,000)
+SetTargetPosition(8000,-25000)
 
 LPF_Grounded:
+	SetTargetPosition(3000,000)
 	InflictAttack()
 endif
 
 
 F49:
 	Transition(JumpB)
+endif
+:Arc-Phalanx-Fore:
+##Sway[Back], Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
+AttackRegister(Special, 623B)
+
+# Adjust parameters here
+AttackDamage(0)
+AttackDuration(65)
+AttackUnblockable(PF_Grounded)
+AttackFlag(Light)
+AttackHitstop(15)
+AttackFA(77,-13)
+AttackMinHitstun(77)
+
+AttackOverride(Airborne)
+AttackFlag(AirChange)
+AttackDamage(200)
+AttackHitstop(0)
+
+
+# Put your animation here
+Anim(Arc-Phalanx-Linear)
+Flag(SpecialSpark)
+Flag(Grab-Move)
+VFXPosition(16500, 16000)
+
+F1:
+AddMomentum(3000,3000)
+endif
+
+#Shift into BG
+Vcurrent_lane<2:
+	SpriteOrderOffset(1)
+	F1-20:
+		Add(current_scale, 25)
+		ModelScale(current_scale)
+	endif
+	
+	F10:
+		Add(current_lane, 1)
+		SetColboxLayer(current_lane)
+		Call(Raise-Lane-Flag)
+	endif
+endif
+
+
+# Active frames and hitboxes
+F22-27:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-2000, 19000, 8000, 21000)
+	endif
+endif
+
+LAttackHasHit:
+	SetMomentum(0,0)
+	FlagNext(IgnoreGravity)
+	CopyFromTarget(air_change, hit_in_air)
+	Vair_change==1:
+		Set(air_change,0)
+		SetIntInTarget(hit_in_air, 0)
+		TransitionBuffer(Arc-Phalanx-Choke, 3)
+	endif
+	F28+:
+		#Log(Going to Pivot)
+		Transition(Arc-Phalanx-Toss-1, 2)
+	endif
+endif
+
+F5+:
+	LPF_Grounded:
+		BreakMomentum(160)
+	endif
 endif
 :Arc-Phalanx-Linear-H:
 ##Linear, Command Grab, Unblockable in Air + Ground; Choke Slam if it hits in air, Shock & Toss if it hits on ground.
@@ -983,6 +1149,7 @@ AttackRegister(Special)
 AttackDamage(100)
 AttackDuration(16)
 AttackFlag(Light)
+AttackFlag(Shock-Attack)
 
 # Put your animation here
 Anim(Covalent-Suplex-Shock)
@@ -1014,6 +1181,7 @@ AttackRegister(Special)
 AttackDamage(2500)
 AttackDuration(36)
 AttackFlag(Heavy)
+AttackFlag(Shock-Attack)
 
 Unflag(FaceTarget)
 # Put your animation here
