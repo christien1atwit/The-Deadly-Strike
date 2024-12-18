@@ -538,6 +538,16 @@ LAF_DragOut:
 	SpriteOrder(current_lane)
 	Call(Raise-Lane-Flag)
 endif
+
+
+LAF_DragTo:
+	Log("Same Drag")
+	CopyFromTarget(current_lane)
+	SetColboxLayer(current_lane)
+	SpriteOrder(current_lane)
+	Call(Raise-Lane-Flag)
+endif
+
 #######
 
 
