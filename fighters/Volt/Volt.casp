@@ -40,7 +40,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 10
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 11
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
@@ -755,7 +755,6 @@ AttackProrationDamage(900,750)
 AttackMomentumHit(2000,0,3000,900)
 AttackMomentumBlock(700)
 AttackKnockdown(10,10)
-# AttackFlag(Low)
 AttackFlag(Light)
 
 
@@ -807,7 +806,7 @@ AttackRegister(Heavy)
 # Adjust parameters here
 AttackDamage(1000)
 AttackDuration(38)
-AttackFlag(Low)
+
 AttackFlag(Heavy)
 AttackProrationDamage(700,650)
 # Put your animation here
@@ -841,6 +840,7 @@ F11:
 endif
 
 F13-21:
+	AttackMustBlock(Low)
 	AttackFA(15,-10)
 	VFXPosition(15000, 12000)
 	AttackFlag(Juggle)
@@ -862,6 +862,78 @@ F13-21:
 				endif
 
 endif
+:2D:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(800)
+AttackDuration(30)
+AttackMustBlock(Low)
+AttackFlag(Heavy)
+AttackFA(4,-8)
+AttackTransitionTo(Knockdown)
+
+
+# Put your animation here
+VFXPosition(12000,2000)
+#Anim(5B)
+F1-4:
+Sprite(Volt,93)
+endif
+F5-6:
+Sprite(Volt,94)
+endif
+F7-11:
+Sprite(Volt,95)
+endif
+F13-14:
+AddMomentum(1100)
+Sprite(Volt,96)
+endif
+F15-16:
+Sprite(Volt,97)
+endif
+F17-18:
+Sprite(Volt,98)
+endif
+F19-21:
+Sprite(Volt,99)
+endif
+F22-30
+Sprite(Volt,100)
+endif
+
+# Active frames and hitboxes
+F13-14:
+Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(4500, 21000, 10000, 23000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(4500, 21000, 10000, 23000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(4500, 21000, 10000, 23000)
+			endif
+endif
+
+F15-22:
+	Vcurrent_lane==0:
+				HitboxRequires(BackLane)
+				Hitbox(1500, 28000, 00000, 13000)
+			endif
+			Vcurrent_lane==1:
+				HitboxRequires(MidLane)
+				Hitbox(1500, 28000, 00000, 13000)
+			endif
+			Vcurrent_lane==2:
+				HitboxRequires(FrontLane)
+				Hitbox(1500, 28000, 00000, 13000)
+			endif
+endif
 :5A:
 ##Linear; Pulls Enemy closer on hit
 # Simple medium attack template
@@ -873,7 +945,6 @@ AttackDuration(15)
 AttackFrameAdvantage(4, -2)
 AttackMomentumHit(-300)
 AttackMomentumBlock(400)
-
 
 
 # Put your animation here
@@ -911,7 +982,7 @@ AttackDuration(10)
 AttackFrameAdvantage(1, -2)
 AttackMomentumHit(300)
 AttackMomentumBlock(200)
-AttackFlag(Low)
+AttackMustBlock(Low)
 
 
 
