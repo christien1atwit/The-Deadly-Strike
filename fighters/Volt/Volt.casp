@@ -40,7 +40,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 11
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 13
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
@@ -707,6 +707,8 @@ def Win_Quote_0 str() = "Pathetic, not even worth remembering... Who are you aga
 def Win_Quote_1 str() = "Next time, get a body that can stand a few thousand volts!"
 
 var op_flags str()
+
+var HPMax int() = 8000
 :2A:
 # Simple medium attack template
 AttackRegister(Light)
@@ -953,17 +955,17 @@ VFXPosition(18000, 30000)
 # Active frames and hitboxes
 F5-12:
 	Vcurrent_lane==0:
-				HitboxRequires(BackLane)
-				Hitbox(1500, 21000, 20000, 30000)
-			endif
-			Vcurrent_lane==1:
-				HitboxRequires(MidLane)
-				Hitbox(1500, 21000, 20000, 30000)
-			endif
-			Vcurrent_lane==2:
-				HitboxRequires(FrontLane)
-				Hitbox(1500, 21000, 20000, 30000)
-			endif
+		HitboxRequires(BackLane)
+		Hitbox(1500, 21000, 20000, 30000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(1500, 21000, 20000, 30000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(1500, 21000, 20000, 30000)
+	endif
 endif
 
 F10:
@@ -1735,3 +1737,215 @@ CallParent()
 CallParent()
 :Custom-OnAttackHit:
 CallParent()
+:j5A:
+# Simple medium attack template
+AttackRegister(Light)
+
+# Adjust parameters here
+AttackDamage(500)
+AttackDuration(22)
+AttackFA(4,-4)
+AttackFlag(Light)
+
+# Put your animation here
+#Anim(5B)
+F1-4:
+Sprite(Volt,101)
+endif
+#Start Active
+F5-6:
+Sprite(Volt,102)
+endif
+F8-9:
+Sprite(Volt,103)
+endif
+F10-13:
+Sprite(Volt,104)
+endif
+#End active
+F14-17:
+Sprite(Volt,105)
+endif
+F18-22:
+Sprite(Volt,106)
+endif
+VFXPosition(6000,30000)
+
+
+
+
+# Active frames and hitboxes
+F5-13:
+	Hurtbox(-12000,000,0,34000)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-3000, 15000, 20000, 40000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-3000, 15000, 20000, 40000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-3000, 15000, 20000, 40000)
+	endif
+endif
+:j5B:
+# Simple medium attack template
+AttackRegister(Light)
+
+# Adjust parameters here
+AttackDamage(600)
+AttackDuration(30)
+AttackFA(6,-2)
+AttackFlag(Light)
+
+# Put your animation here
+#Anim(5B)
+
+F1-2:
+	Sprite(Volt,107)
+endif
+F3-8:
+	Sprite(Volt,108)
+endif
+F9-10:
+	Sprite(Volt,109)
+endif
+F11-12:
+	Sprite(Volt,110)
+endif
+F13-14:
+	Sprite(Volt,111)
+endif
+F15-17:
+	AddMomentum(0,-800)
+	Sprite(Volt,112)
+endif
+F18-21:
+	AddMomentum(0,-1800)
+	Sprite(Volt,113)
+endif
+F22-25:
+	Sprite(Volt,114)
+endif
+F26-29:
+	Sprite(Volt,115)
+endif
+
+
+
+
+# Active frames and hitboxes
+F1-2:
+	AttackDamage(150)
+	AttackFA(-2,-6)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		#Hitbox(-3000, 13000, 16000, 40000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-3000, 13000, 16000, 40000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		#Hitbox(-3000, 13000, 16000, 40000)
+	endif
+endif
+
+F9-10:
+	AttackOverride(CounterHit)
+	AttackFA(10,-1)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-17000, 1000, 1000, 31000)
+	endif
+	Vcurrent_lane==1:
+		Vop_lane==0:
+			AttackFlag(DragOut)
+		endif
+		HitboxRequires(MidLane)
+		Hitbox(-17000, 1000, 1000, 31000)
+		HitboxRequires()
+		HitboxRequires(BackLane)
+		Hitbox(-17000, 1000, 1000, 31000)
+	endif
+	Vcurrent_lane==2:
+		Vop_lane==1:
+			AttackFlag(DragOut)
+		endif
+		HitboxRequires(FrontLane)
+		Hitbox(-17000, 1000, 1000, 31000)
+		HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(-17000, 1000, 1000, 31000)
+	endif
+endif
+
+F11-12:
+	AttackOverride(CounterHit)
+	AttackFA(10,-1)
+	Vcurrent_lane==0:
+		Vop_lane==1:
+			AttackFlag(DragIn)
+		endif
+		HitboxRequires(BackLane)
+		Hitbox(-24000, 3500, -4000, 23000)
+		HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(-24000, 3500, -4000, 23000)
+	endif
+	Vcurrent_lane==1:
+		Vop_lane==2:
+			AttackFlag(DragIn)
+		endif
+		HitboxRequires(MidLane)
+		Hitbox(-24000, 3500, -4000, 23000)
+		HitboxRequires()
+		HitboxRequires(FrontLane)
+		Hitbox(-24000, 3500, -4000, 23000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-24000, 3500, -4000, 23000)
+	endif
+
+endif
+
+F13-14:
+	AttackOverride(CounterHit)
+	AttackFA(10,-1)
+	Vcurrent_lane==0:
+		Vop_lane==2:
+			AttackFlag(DragIn)
+		endif
+		HitboxRequires(BackLane)
+		Hitbox(-17000, 12500, -8000, 20000)
+		HitboxRequires()
+		HitboxRequires(MidLane)
+		Hitbox(-17000, 12500, -8000, 20000)
+	endif
+	Vcurrent_lane==1:
+		Vop_lane==2:
+			AttackFlag(DragIn)
+		endif
+		HitboxRequires(MidLane)
+		Hitbox(-17000, 12500, -8000, 20000)
+		HitboxRequires()
+		HitboxRequires(FrontLane)
+		Hitbox(-17000, 12500, -8000, 20000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-17000, 12500, -8000, 20000)
+	endif
+
+endif
+
+
+F18+:
+	#LAttackHasHit:
+		#AttackCancel(Run,44)
+	#endif
+endif
