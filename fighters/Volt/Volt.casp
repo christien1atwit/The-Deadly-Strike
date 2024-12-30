@@ -40,7 +40,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 13
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 15
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
@@ -580,33 +580,33 @@ def GRAPHICS_SPRITE_ANIMATIONS_Run int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Frame int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Run___10_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Duration int() = 1
-def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Frame int() = 5
+def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Frame int() = 134
 def GRAPHICS_SPRITE_ANIMATIONS_Run___1_Spritesheet str() = Volt
-def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Spritesheet str() = 
-def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Duration int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Frame int() = 0
-def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Spritesheet str() = 
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Frame int() = 135
+def GRAPHICS_SPRITE_ANIMATIONS_Run___2_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Frame int() = 136
+def GRAPHICS_SPRITE_ANIMATIONS_Run___3_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Frame int() = 137
+def GRAPHICS_SPRITE_ANIMATIONS_Run___4_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Frame int() = 135
+def GRAPHICS_SPRITE_ANIMATIONS_Run___5_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Frame int() = 139
+def GRAPHICS_SPRITE_ANIMATIONS_Run___6_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Frame int() = 140
+def GRAPHICS_SPRITE_ANIMATIONS_Run___7_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Frame int() = 141
+def GRAPHICS_SPRITE_ANIMATIONS_Run___8_Spritesheet str() = Volt
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Duration int() = 3
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Frame int() = 142
+def GRAPHICS_SPRITE_ANIMATIONS_Run___9_Spritesheet str() = Volt
 def GRAPHICS_SPRITE_ANIMATIONS_Stand int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Duration int() = 0
 def GRAPHICS_SPRITE_ANIMATIONS_Stand___10_Frame int() = 0
@@ -1948,4 +1948,102 @@ F18+:
 	#LAttackHasHit:
 		#AttackCancel(Run,44)
 	#endif
+endif
+:j5C:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(800)
+AttackDuration(40)
+AttackFlag(Heavy)
+AttackFA(8,-8)
+AttackMomentumHit(3000)
+
+# Put your animation here
+F1:
+	Sprite(Volt,116)
+endif
+F2:
+	Sprite(Volt,117)
+endif
+F3:
+	Sprite(Volt,118)
+endif
+F4:
+	Sprite(Volt,119)
+endif
+F5:
+	Sprite(Volt,120)
+endif
+F6:
+	Sprite(Volt,121)
+endif
+F7-8:
+	Sprite(Volt,122)
+endif
+F9-14:
+	Sprite(Volt,123)
+endif
+#HIT START
+F14-15:
+	Sprite(Volt,124)
+endif
+F16-17:
+	Sprite(Volt,125)
+endif
+F18-19:
+	Sprite(Volt,126)
+endif
+#Hit end
+F20-21:
+	Sprite(Volt,127)
+endif
+F22+:
+	Sprite(Volt,128)
+	LPF_Grounded:
+		Sprite(Volt,79)
+	endif
+endif
+
+
+
+# Active frames and hitboxes
+F14-15:
+	AttackOverride(Airborne)
+	AttackKnockdown(40,40)
+	AttackMomentumHit(2500,0,2500,-4000)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+		
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+
+	endif
+endif
+
+F16-19:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+		Hitbox(-18000, -3000, 11000, 37000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+		Hitbox(-18000, -3000, 11000, 37000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(-3000, 15000, 5000, 27000)
+		Hitbox(-18000, -3000, 11000, 37000)
+	endif
 endif
