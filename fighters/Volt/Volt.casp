@@ -40,7 +40,7 @@ def GRAPHICS_SPRITESHEET_Volt___PaletteMode int() = 0
 def GRAPHICS_SPRITESHEET_Volt___Path str() = res://fighters/Volt/Graphics/Volt_DS-Sheet.png
 def GRAPHICS_SPRITESHEET_Volt___PixelSize int() = 100
 def GRAPHICS_SPRITESHEET_Volt___SpritesX int() = 10
-def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 15
+def GRAPHICS_SPRITESHEET_Volt___SpritesY int() = 16
 def GRAPHICS_UseModel bool() = 0
 def GRAPHICS_UseSprites bool() = 1
 :Specs-AttacksTypes:
@@ -747,7 +747,7 @@ F20:
 endif
 :2B:
 # Simple medium attack template
-AttackRegister(Light)
+AttackRegister(Medium)
 
 # Adjust parameters here
 AttackDamage(300)
@@ -1090,6 +1090,8 @@ Anim(5D)
 F22-26:
 	Hitbox(0, 15000, 5000, 15000)
 endif
+:AnimAirborne:
+CallParent()
 :AnimCrouching:
 CallParent()
 
@@ -1737,6 +1739,308 @@ CallParent()
 CallParent()
 :Custom-OnAttackHit:
 CallParent()
+:Shock-Veil-H:
+# Simple medium attack template
+AttackRegister(Special, 236D)
+
+# Adjust parameters here
+AttackDamage(700)
+AttackDuration(60)
+AttackFlag(Heavy)
+AttackFA(6,-17)
+AttackMomentumBlock(2000,0)
+# Put your animation here
+#Anim(5B)
+#Startup
+F1-2:
+	Sprite(Volt,143)
+endif
+F3-4:
+	Sprite(Volt,144)
+endif
+F5-6:
+	Sprite(Volt,145)
+endif
+F7-8:
+	Sprite(Volt,146)
+endif
+
+#Dash
+F9-14:
+	SetMomentum(6500,0)
+	HurtboxAvoids(Projectile)
+endif
+
+
+F9-10:
+	Sprite(Volt,147)
+endif
+F11-12:
+	Sprite(Volt,148)
+endif
+F13-14:
+	Sprite(Volt,149)
+endif
+
+#Brake Anticipation
+F19-25:
+	SetMomentum(3600,0)
+endif
+
+
+F19-20:
+	Sprite(Volt,150)
+endif
+F21-22:
+	Sprite(Volt,151)
+endif
+F23-25:
+	Sprite(Volt,152)
+endif
+
+#Brake
+F26-28:
+	BreakMomentum(3400)
+endif
+
+F26:
+	Sprite(Volt,153)
+endif
+F27-29:
+	Sprite(Volt,154)
+endif
+F30-31:
+	Sprite(Volt,155)
+endif
+F32-33:
+	Sprite(Volt,156)
+endif
+
+#Recovery
+F34-35:
+	Sprite(Volt,157)
+endif
+F36-37:
+	Sprite(Volt,158)
+endif
+F38-39:
+	Sprite(Volt,159)
+endif
+
+
+
+
+
+
+# Active frames and hitboxes
+F9-14:
+	VFXPosition(8500,17000)
+	AttackMomentumHit(2000,2500,1500,1000)
+	AttackFloat(150)
+	AttackFlag(Juggle)
+	AttackKnockdown(30,30)
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	
+endif
+
+
+F26-29:
+	VFXPosition(18000, 7000)
+	AttackOverride(CounterHit)
+	AttackDamage(1300)
+	AttackMomentumHit(0,3000,0,3000)
+	AttackFloat(170)
+	AttackFlag(Juggle)
+	AttackKnockdown(30,30)
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+	
+endif
+
+
+F9-25:
+	AttackCancel(JumpF, 9)
+endif
+
+F29+:
+		AttackCancel(Covalent-Suplex-Start,236A,4)
+		AttackCancel(Arc-Phalanx-Linear-L ,623A,4)
+		AttackCancel(Arc-Phalanx-Linear-H,623C,4)
+endif
+:Shock-Veil-L:
+# Simple medium attack template
+AttackRegister(Special, 236B)
+
+# Adjust parameters here
+AttackDamage(600)
+AttackDuration(50)
+AttackFlag(Heavy)
+AttackFA(5,-16)
+AttackMomentumBlock(1200,0)
+# Put your animation here
+#Anim(5B)
+#Startup
+F1:
+	Sprite(Volt,143)
+endif
+F2:
+	Sprite(Volt,144)
+endif
+F3:
+	Sprite(Volt,145)
+endif
+F4-5:
+	Sprite(Volt,146)
+endif
+
+#Dash
+F6-11:
+	SetMomentum(5600,0)
+	HurtboxAvoids(Projectile)
+endif
+
+
+F6-7:
+	Sprite(Volt,147)
+endif
+F8-9:
+	Sprite(Volt,148)
+endif
+F10-11:
+	Sprite(Volt,149)
+endif
+
+#Brake Anticipation
+F12-18:
+	SetMomentum(3500,0)
+endif
+
+
+F12-13:
+	Sprite(Volt,150)
+endif
+F14-15:
+	Sprite(Volt,151)
+endif
+F16-18:
+	Sprite(Volt,152)
+endif
+
+#Brake
+F19-21:
+	BreakMomentum(3000)
+endif
+
+F19:
+	Sprite(Volt,153)
+endif
+F20-22:
+	Sprite(Volt,154)
+endif
+F23-24:
+	Sprite(Volt,155)
+endif
+F25-26:
+	Sprite(Volt,156)
+endif
+
+#Recovery
+F27-28:
+	Sprite(Volt,157)
+endif
+F29-30:
+	Sprite(Volt,158)
+endif
+F31-32:
+	Sprite(Volt,159)
+endif
+
+
+
+
+
+
+# Active frames and hitboxes
+F6-11:
+	VFXPosition(8500,17000)
+	AttackMomentumHit(2000,2500,1500,1000)
+	AttackFloat(150)
+	AttackFlag(Juggle)
+	AttackKnockdown(30,30)
+	
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(0, 15000, 5000, 29000)
+	endif
+	
+endif
+
+
+F19-22:
+	VFXPosition(18000, 7000)
+	AttackOverride(CounterHit)
+	AttackDamage(1200)
+	AttackMomentumHit(0,3000,0,3000)
+	AttackFloat(170)
+	AttackFlag(Juggle)
+	AttackKnockdown(30,30)
+	
+	
+	Vcurrent_lane==0:
+			HitboxRequires(BackLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+		Vcurrent_lane==1:
+			HitboxRequires(MidLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+		Vcurrent_lane==2:
+			HitboxRequires(FrontLane)
+			Hitbox(8000, 26000, 2000, 12000)
+		endif
+	
+endif
+
+
+F6-18:
+	AttackCancel(JumpF, 9)
+endif
+
+F27+:
+		AttackCancel(Covalent-Suplex-Start,236A,4)
+		AttackCancel(Arc-Phalanx-Linear-L ,623A,4)
+		AttackCancel(Arc-Phalanx-Linear-H,623C,4)
+endif
 :j5A:
 # Simple medium attack template
 AttackRegister(Light)
@@ -2012,7 +2316,7 @@ endif
 F14-15:
 	AttackOverride(Airborne)
 	AttackKnockdown(40,40)
-	AttackMomentumHit(2500,0,2500,-4000)
+	AttackMomentumHit(2500,0,3500,-4000)
 	Vcurrent_lane==0:
 		HitboxRequires(BackLane)
 		Hitbox(-3000, 15000, 5000, 27000)
@@ -2045,5 +2349,70 @@ F16-19:
 		HitboxRequires(FrontLane)
 		Hitbox(-3000, 15000, 5000, 27000)
 		Hitbox(-18000, -3000, 11000, 37000)
+	endif
+endif
+:j5D:
+# Simple medium attack template
+AttackRegister(Heavy)
+
+# Adjust parameters here
+AttackDamage(780)
+AttackDuration(20)
+AttackFlag(Heavy)
+AttackFA(8,-6)
+
+
+
+
+
+# Put your animation here
+F1-2:
+	Sprite(Volt,129)
+	VFXSprite(Volt, 129)
+endif
+F3-8:
+	Sprite(Volt,130)
+	VFXSprite(Volt, 130)
+
+endif
+F9-10:
+	Sprite(Volt,131)
+	VFXSprite(Volt, 131)
+
+endif
+F11-14:
+	Sprite(Volt,132)
+	VFXSprite(Volt, 132)
+
+endif
+F15-19:
+	Sprite(Volt,133)
+	VFXSprite(Volt, 133)
+
+endif
+
+VFXTime(4)
+VFXScale(4000)
+VFXPosition(-5000,0)
+VFXCreate()
+
+VFXPosition(15500,7500)
+
+# Active frames and hitboxes
+F9-14:
+	Vcurrent_lane==0:
+		HitboxRequires(BackLane)
+		Hitbox(3000, 13000, 3000, 20000)
+		Hitbox(14000, 28000, -5000,9000)
+	endif
+	Vcurrent_lane==1:
+		HitboxRequires(MidLane)
+		Hitbox(3000, 13000, 3000, 20000)
+		Hitbox(14000, 28000, -5000,9000)
+	endif
+	Vcurrent_lane==2:
+		HitboxRequires(FrontLane)
+		Hitbox(3000, 13000, 3000, 20000)
+		Hitbox(14000, 28000, -5000,9000)
 	endif
 endif
