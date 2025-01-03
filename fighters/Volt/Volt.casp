@@ -1744,7 +1744,7 @@ CallParent()
 AttackRegister(Special, 236D)
 
 # Adjust parameters here
-AttackDamage(700)
+AttackDamage(900)
 AttackDuration(60)
 AttackFlag(Heavy)
 AttackFA(6,-17)
@@ -1834,6 +1834,7 @@ endif
 
 # Active frames and hitboxes
 F9-14:
+
 	VFXPosition(8500,17000)
 	AttackMomentumHit(2000,2500,1500,1000)
 	AttackFloat(150)
@@ -1856,6 +1857,7 @@ endif
 
 
 F26-29:
+	AttackMustBlock(Low)
 	VFXPosition(18000, 7000)
 	AttackOverride(CounterHit)
 	AttackDamage(1300)
@@ -1894,7 +1896,7 @@ endif
 AttackRegister(Special, 236B)
 
 # Adjust parameters here
-AttackDamage(600)
+AttackDamage(700)
 AttackDuration(50)
 AttackFlag(Heavy)
 AttackFA(5,-16)
@@ -2007,6 +2009,7 @@ endif
 
 
 F19-22:
+	AttackMustBlock(Low)
 	VFXPosition(18000, 7000)
 	AttackOverride(CounterHit)
 	AttackDamage(1200)
