@@ -2341,7 +2341,7 @@ Set(frame_count, 0)
 	#AttackMomentumHit(1200, 4500, 600, 5000 )
 	AttackHitstop(3)
 	# Put your animation here
-	VFXPosition(14000,14000)
+	
 	F1:
 		HaltFrames(30)
 		Anim(Rapid-Phoenix-1)
@@ -2358,6 +2358,14 @@ Set(frame_count, 0)
 	endif
 	
 	F31+:
+	
+	VFXSprite(Haley,_SpriteFrame)
+	VFXScale(4000)
+	VFXPosition(0,0)
+	VFXTime(5)
+	VFXCreate()
+	
+	
 	Anim(Rapid-Phoenix-1)
 	AnimLoop(17)
 
@@ -2397,6 +2405,7 @@ endif
 
 FlagNext(Rapid-Phoenix)
 endif
+VFXPosition(14000,14000)
 :Rapid-Phoenix-2:
 AttackRegister(Super)
 
@@ -2413,6 +2422,11 @@ Set(frame_count, 0)
 	#AttackMomentumHit(1200, 4500, 600, 5000 )
 	AttackHitstop(3)
 	# Put your animation here
+	VFXSprite(Haley,_SpriteFrame)
+	VFXScale(4000)
+	VFXPosition(0,0)
+	VFXTime(5)
+	VFXCreate()
 	Anim(Rapid-Phoenix-2)
 	VFXPosition(22000,32000)
 	AnimLoop(18)
@@ -2482,6 +2496,11 @@ AttackKnockdown()
 AttackFrameAdvantage(20,-10)
 
 # Put your animation here
+VFXSprite(Haley,_SpriteFrame)
+	VFXScale(4000)
+	VFXPosition(0,0)
+	VFXTime(5)
+	VFXCreate()
 Anim(Flying-High)
 VFXPosition(13000,32000)
 AnimLoop(28)
